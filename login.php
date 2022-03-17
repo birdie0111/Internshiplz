@@ -28,9 +28,9 @@ $password = $_POST["password"];
 
 // connection avec mysql
 $db_host = "localhost";
-$db_user = "root";
-$db_pwd = "";
-$db_name = "login_m1s2";
+$db_user = "liuqinyu";
+$db_pwd = "L9Q9Y0l1qy;:";
+$db_name = "liuqinyu";
 $db_port = 3306;
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
