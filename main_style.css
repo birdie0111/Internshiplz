@@ -1,0 +1,137 @@
+/*——————————————————————————————————————————————————————————————————————————顶部状态栏——div id="begin"————*/
+#begin {
+    border-bottom-style:solid;
+    border-bottom-color:rgb(206,192,148);
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #695d46;
+}
+/*—————————————————————————————————————选项卡—————————————————————————————*/
+#menu li:hover{
+    background-color: #ff5e0e;
+    color: white;
+    cursor: pointer;
+}
+#menu li:active {
+    box-shadow: 0px 2px 0px 0px rgba(0,0,0,.2);
+    top: 1px;
+}
+.page {
+    background-color: #ff5e0e;
+    color: white;
+}
+
+/*—————————————————————————————————————右上角账户状态——————————————————————*/
+#user {
+    border: rgb(206,192,148);
+    border-style: dashed;
+    border-radius: 25px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+    color: #ff5e0e;
+}
+
+/*————————————————————————————————————————————————————————————————————————介绍与登录页面——div id="accueil"————*/
+
+/*—————————————————————————————————————介绍板块————————————————————————*/
+h1 {
+    font-family: comic sans ms;
+    font-size: 22px;
+    color: #ff5e0e;
+}
+h2 {
+    font-family: comic sans ms;
+    font-size: 22px;
+    color: #008575;
+    margin-bottom: -5px;
+}
+#intro p {
+    font-family: open sans;
+    font-size: 20px;
+    color:#695d46;
+}
+/*—————————————————————————————————————账户板块————————————————————————*/
+#compte {
+    background-color: rgba(206,192,148,.3);
+}
+#compte p {
+    color:#695d46;
+}
+/*———————————账户板块下——按钮板块——————————————————————*/
+.moyen {
+    font-size: 18px;
+    background-color:#ff5e0e;
+    border: none;
+    color: white;
+}
+.moyen:hover{
+    cursor: pointer;
+}
+.moyen:active {
+    box-shadow: 0px 2px 0px 0px rgba(0,0,0,.2);
+    top: 1px;
+}
+/*————————————————————————————————————————————————————————————————————————搜索与下载页面——div id="recherche"————*/
+
+/*—————————————————————————————————————操作板块————————————————————————*/
+#options {
+    /*   深蓝  background-color: rgb(115,187,173);  */
+    /*   淡蓝  background-color: rgb(163,231,218);  */
+    background-color: rgba(163,231,218,.5);
+	font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #695d46;
+}
+.options {
+    background-color: rgb(115,187,173);
+    color: white;
+}
+/*———————————操作板块下——按钮板块——————————————————————*/
+button.grand {
+    background: linear-gradient(to bottom, #4eb5e5 0%,#389ed5 100%);
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    border-bottom: 4px solid #2b8bc6;
+    color: #fbfbfb;
+    font-weight: 300;
+    font-family: comic sans ms;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+    text-align: left;
+    text-indent: 5px;
+    box-shadow: 0px 3px 0px 0px rgba(0,0,0,.2);
+    cursor: pointer;
+    padding-right: 30px;
+    display: block;
+    margin: 0 auto;
+}
+button.grand:active {
+    box-shadow: 0px 2px 0px 0px rgba(0,0,0,.2);
+    top: 1px;
+}
+button.grand:after {
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    border-top: 15px solid #187dbc;
+    border-bottom: 15px solid #187dbc;
+    border-left: 16px solid transparent;
+    border-right: 20px solid #187dbc;
+    position: absolute;
+    opacity: 0.6; 
+    right: 0;
+    top: 0;
+    border-radius: 0 5px 5px 0;  
+}
+
+/*—————————————————————————————————————内容板块————————————————————————*/
+#resultat p{
+    background-color: rgba(163,231,218,.3);
+}
+#consigne {
+    font-size: 18px;
+}
+
+/*————————————————————————————————————————————————————————————————————————搜索与下载页面——div id="discussion"————*/

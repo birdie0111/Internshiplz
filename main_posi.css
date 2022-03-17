@@ -1,0 +1,137 @@
+body {
+    display: flex;
+    flex-direction:column;
+}
+
+/*——————————————————————————————————————————————————————————————————————————顶部状态栏——div id="begin"————*/
+#begin {
+    position:relative;
+    display: flex;
+    letter-spacing:2px;
+    justify-content:space-around;
+	padding : 5px 5px 5px 5px;
+    height: 30px;
+}
+/*—————————————————————————————————————左上角UGA图标——————————————————————*/
+#icone {
+    position:absolute;
+    display: flex;
+    left:0px;
+    top:0px;
+    width:6%;
+}
+#imguga {
+    width:95%;
+    height:auto;
+}
+/*—————————————————————————————————————选项卡—————————————————————————————*/
+#menu {
+    display: flex;
+    justify-content: space-around;
+    width:70%;
+}
+#menu li {
+    padding : 1px 20px 5px 20px;
+}
+/*—————————————————————————————————————右上角账户状态——————————————————————*/
+#user {
+    position:absolute;
+    right:1%;
+    top: 2%;
+    padding : 5px 10px 5px 10px;
+    align-items:center;
+}
+
+/*————————————————————————————————————————————————————————————————————————介绍与登录页面——div id="accueil"————*/
+#accueil {
+    display: flex;
+    position:relative;
+}
+/*—————————————————————————————————————介绍板块————————————————————————*/
+#intro {
+    width: 83%;
+    padding-bottom: 20px;
+}
+/*—————————————————————————————————————账户板块————————————————————————*/
+#compte {
+    position:relative;
+    display: flex;
+    float:right;
+    flex-direction:column;
+    justify-content:left;
+    align-items:left;
+    width: 17%;
+    padding-bottom: 20px;
+}
+#compte p{
+    margin-left: 10px;
+}
+/*———————————账户板块下——按钮板块——————————————————————*/
+.moyen {
+    width: 150px;
+    margin: 10px 10px 10px 10px;
+}
+
+/*————————————————————————————————————————————————————————————————————————搜索与下载页面——div id="recherche"————*/
+#recherche {
+    display: none;
+    position:relative;
+}
+/*—————————————————————————————————————操作板块————————————————————————*/
+#options {
+    position:relative;
+    display: flex;
+    flex-direction:column;
+    justify-content:left;
+    align-items:left;
+    width: 20%;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+form {
+    margin: 0% 3% 2% 3%;
+}
+.options {
+    border-radius: 15px;
+    padding-left: 10%;
+}
+.checkbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+.checkbox label {
+    margin: 0 3px 0 6px !important;
+    flex-basis: 100%;
+    display: flex;
+    align-items:center;
+}
+/*———————————操作板块下——按钮板块——————————————————————*/
+#operer {
+    float:right;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    padding : 10px 5px 0px 5px;
+}
+/*—————————————————————————————————————内容板块————————————————————————*/
+#resultat {
+    width: 80%;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+#resultat p{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+#consigne {
+    padding-left: 3%;
+}
+
+/*————————————————————————————————————————————————————————————————————————搜索与下载页面——div id="discussion"————*/
+#discussion {
+    display: none;
+}
+
+#commentaire {
+    width: 50%;
+}
