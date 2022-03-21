@@ -26,7 +26,12 @@ $("#pageDis").on({
 //----------------发表评论
 $("#bCom").on({
     "click": function () {
+        /*
         $("#listCom").append("<li>" + $("#commentaire").val() + "</li>");
         $("#commentaire").val("");
+        */
+        window.location.reload();
+        $("#accueil,#recherche").css("display", "none");
+        $("#discussion").css("display", "block");
     },
 });

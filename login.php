@@ -63,6 +63,7 @@ if ($result->num_rows == 0){
         echo "Mots de passe pas correct";
     }else{
         echo "Login succeeded";
+        $connect->close();
         header('Location: connected.php?connected='.$username);
     }
 }

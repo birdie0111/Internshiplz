@@ -23,6 +23,7 @@ if (isset($_POST["new_user"]) and isset($_POST["new_psword"])){
     $query = "INSERT INTO Users(Username, Psword) VALUES('".$new_user."','".$new_psword."'".")";
     mysqli_query($connect, $query);
 
+    $connect->close();
     header('Location: index.php');
 }
 ?>
