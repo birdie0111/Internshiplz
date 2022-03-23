@@ -64,7 +64,7 @@ if ($result->num_rows == 0){
     }else{
         echo "Login succeeded";
         $connect->close();
-        header('Location: connected.php?connected='.$username);
+        header('Location: /~liuqinyu/connected.php?connected='.$username);
     }
 }
 

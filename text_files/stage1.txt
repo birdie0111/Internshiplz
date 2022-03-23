@@ -1,0 +1,86 @@
+title: Machine Learning pour les réseaux sociaux et les images
+date: 08/03/2022
+institute: CERES
+places: Paris
+*Offre de Stage en Machine Learning pour les réseaux sociaux et les
+images, Sorbonne Université*
+
+Le stage s'inscrit dans une recherche conduite à CERES (Centre
+d'Expérimentation en méthodes numériques pour les recherches en SHS),
+Faculté des Lettres - Sorbonne Université, en partenariat avec
+l'Université Paris 8.
+
+*Contexte*
+
+La recherche d'information est un domaine de recherche en perpétuel
+mutation à cause de la transformation numérique. Le volume des données
+produit via les outils numériques connectés excède la capacité humaine
+de les traiter manuellement et un recours à l'intelligence artificielle
+(IA) devient incontournable. Toutefois, ces modèles intelligents issus
+d'IA doivent garantir au moins le passage à l'échelle, la compréhension
+des données hétérogènes et la catégorisation sémantique de ces données.
+Dans ce contexte, la recherche de similitudes au sein d'un large corpus
+multimédia où se mêlent images, vidéos et textes (structurés ou non)
+est une tâche très complexe.
+Dans le cadre d'une recherche sur les controverses en ligne, nous nous
+intéressons à la circulation d'informations et de discours dans les
+réseaux sociaux numériques (Twitter, TikTok, Instagram par exemple)
+sous différentes formes (textes, images, vidéo). Plus spécifiquement,
+nous cherchons à capturer, caractériser, analyser et expliquer les
+déclinaisons iconographiques, textuelles et narratives des images à
+mesure qu'elles circulent dans les RSN.
+
+*Sujet et missions*
+
+Quand il s'agit d'une image, celle-ci peut subir différentes
+transformations faisant appel à de nombreux outils de traitement
+d'images. Ces traitements peuvent être simples et agissent par exemple
+sur les couleurs, ou encore sur la répartition spatiale des pixels (le
+recadrage, le découpage, etc.), ou bien plus complexes afférant à des
+outils : de génération d'images à partir de motifs d'une image de
+référence ; de substitution de l'image source ; de l'augmentation de
+l'image source par une caricature, un slogan, un tag, une image
+codifiée, voire même une nouvelle image.
+
+*Travail demandé*
+-   cibler des événements clés sur les réseaux sociaux : constituer des
+    corpus de référence ;- élaborer un état de l'art sur les outils
+    d'analyse de corpus massifs pluri-sémiotique : focus sur des
+    corpus d'images ;
+-   étudier l'état des lieux bibliographique des mesures de similarité
+    entre images ;
+-   développer un modèle d'extraction semi-automatique d'objets
+    caractéristiques d'un événement fixé : les signatures
+    iconographiques qui symbolisent l'événement par apprentissage. Le
+    modèle se base sur une architecture de réseaux de neurones profonds
+    à base de graphe ;
+-   augmenter le modèle par un algorithme de reconnaissance d'un
+    événement par reconnaissance de signatures ;
+-   implémenter et tester de nouvelles mesures de similarité qui soient
+    à la fois robustes aux différences de cadrage, de résolution, de
+    couleurs, de contraste, etc. et aux différentes évolutions,
+    transformations, des objets caractéristiques au fil du temps de
+    manifestation de l'événement étudié ;
+-   visualiser les schémas narratifs d'un objet caractéristique pour
+    une collection d'événements de tests.
+
+*Prérequis*
+-   Python, PyTorch, OpenCV, CUDA, gestion des données,
+    machine-learning, deep-learning, visualisation
+
+*Profil du/de la candidate :*
+
+Vous êtes étudiant·e dans un Master 2 en informatique, sciences des
+données ou statistiques, ou étudiant·e· dans une école d'ingénieur
+(informatique). Vous êtes enthousiaste pour la recherche, vous aimez
+comprendre en profondeur les problèmes et trouver des solutions
+élégantes. Vous êtes intéressé·e par l'intelligence artificielle, et
+plus précisément l'apprentissage automatique des techniques
+d'optimisation d'analyse de données. Vous avez un intérêt pour le
+domaine des sciences humaines et sociales.
+
+
+Candidature à adresser à virginie.julliard@sorbonne-universite.fr ;
+n.mellouli@iut.univ-paris8.fr et orion.alie@gmail.com
+ayant pour objet « Candidature Stage CERES-Semiosis »
+
