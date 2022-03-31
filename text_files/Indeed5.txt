@@ -1,0 +1,48 @@
+Titre: STAGE 2022 - Développeuse ou Développeur backend JAVA Spring Boot / Spring Cloud Data Flow
+Date: 01/03/2022
+Organisme: Berger-Levrault
+Lieu: Pérols (34)
+
+
+STAGE 2022 - Développeuse ou Développeur backend JAVA Spring Boot / Spring Cloud Data FlowBerger-Levrault25 avisPérols (34)StageBerger-Levrault25 avisLisez les avis des gens qui travaillent ici.Informations générales
+Localisation du poste
+Pérols (34) ou Labège (31), FRANCE
+Envie de rejoindre une entreprise qui encourage à exprimer ses idées, à libérer sa créativité et à partager ses passions ? Alors postulez dès maintenant et devenez notre STAGE 2022 - Développeuse ou Développeur backend JAVA Spring Boot / Spring Cloud Data Flow en STAGE!
+Qui sommes-nous ?
+Berger-Levrault, éditeur de logiciels international, accompagne les professionnels privés et publics à répondre aux exigences croissantes de performance et de transformation de leurs métiers. Ancrés dans 5 siècles d’expertise du service public, inspirés par notre ADN d’inventeur, nous avançons dans l’intérêt général, partout où nous sommes présents.
+
+
+Le Groupe étend son expertise métier dans les domaines des ressources humaines, de la gestion financière, de la gestion de la maintenance des infrastructures, ainsi que des solutions spécifiques destinées aux citoyens, aux établissements scolaires et de santé. Berger-Levrault c'est 2000 collaborateurs réunis autour de plusieurs marques (CARL Software, Segilog, Sigems, Infosilem, Neolink, Expertiz Santé) à l'international (France, Canada, Espagne, Maroc, Italie, Belgique) avec plus de 51 000 clients et 25% de son CA investi dans la R&D.
+
+Pour nous découvrir en vidéo cliquez vite ici
+Votre future équipe
+En rejoignant l'équipe de Florent, vous faites le pari de la complémentarité. Au sein de la DRIT (département de recherche, innovation et technologie), nous cultivons notre enthousiasme et nous valorisons le travail d'équipe, dans la reconnaissance de la singularité de chacun.
+La DRIT est l'équipe qui se charge de faire le pont entre les activités de production et le monde de la recherche et l'innovation au sein de Berger-Levrault. Sa mission principale est de trouver des solutions à des problèmes que l'activité (l'équipe de production) ne parvient pas à résoudre, et cela se fait généralement en collaboration avec des laboratoires de recherche académiques.
+Ici, notre ambition partagée est de mener à bien nos projets innovants, en misant sur les synergies et en développant le potentiel de nos équipes.
+Vos missions
+Stage à pourvoir pour une durée de 4 à 6 mois à compter du premier trimestre 2022.
+Contexte de la mission :
+Afin de toujours proposer à ses clients des produits innovants, Berger-Levraut entreprend des travaux de recherche et développement. Ces missions sont assurées par le département de R&D, c’est donc en son sein que ce stage s’inscrit.
+Plus précisément, vous interviendrez sur deux services en cours de développement : un moteur d’optimisation de planning nommé BL.Optim et un moteur de recherche sémantique appelé DEESSE.
+Le service BL.Optim nécessite différents composants pour son fonctionnement, en particulier un service assurant le calcul de coûts de déplacement. Nous souhaiterons proposer différents modes de calcul et également apporter des optimisations au service existant. La réalisation de cette nouvelle version passera par des phases de spécifications de l’API REST, de développements et de tests. D’autre part, un autre chantier doit être entrepris pour la réalisation d’un nouveau service adaptation métier. Une phase de conception préalable sera nécessaire puisque le nouveau service s’interfacera avec le moteur BL.Optim et des produits commerciaux Berger-Levrault. Selon les compétences du stagiaire, des actions de refactoring sont envisageables pour une meilleure intégration dans les architectures Spring Cloud Data Flow. Également, quelques développements front-end (Angular) sont envisageables.
+Le service DEESSE, propose principalement des fonctionnalités d’indexation et recherche documentaire. Il propose également des opérations annexes, en particulier, un service d’autocomplétions textuelles. Différentes solutions sont envisagées pour son amélioration. Cependant, ces évolutions ne doivent pas se faire au détriment des temps de réponse. Selon l’appétence du candidat pour la recherche et l’innovation, différentes expérimentations sont envisageables. D’autre part, le développement de nouveaux services annexes sont nécessaire, par exemple, pour la prise en compte de feedback utilisateur ou pour (l’auto)-correction des textes. Enfin, un travail de fond est en cours pour une refonte architecturale du service DEESSE, le stagiaire, s’il le souhaite, peut y prendre part.
+Cette offre est faite pour vous ? Uniquement si...
+Vous préparez un diplôme de niveau BAC+5 de type école d'ingénieurs en informatique ou une formation universitaire équivalente.
+Vous justifiez de bonnes compétences en programmation JAVA ;
+Vous éprouvez un intérêt pour les domaines de la recherche opérationnelle et/ou le traitement automatique de la langue.
+Vous comprenez les principaux concepts du Framework Spring Boot est fortement souhaitée, et idéalement des architectures Spring Cloud Data Flow ;
+Des connaissances sur Swagger et/ou sur ElasticSearch sont un plus.
+Pour quelles raisons nous rejoindre ?
+Parce que nous sommes une entreprise en pleine croissance et ça dure depuis plus de 500 ans… (Nous mettons tout en œuvre pour y arriver) ;
+Parce que nous sommes une entreprise ouverte à l’international mais nous n’en restons pas moins une entreprise à taille humaine ;
+Parce que nous avons la volonté d'offrir des aventures internationales à nos collaborateurs, dans les pays où nous sommes implantés ;
+Parce que nous nous sommes fiers de devenir les acteurs du changement et de la transformation numérique des citoyens
+Parce que nous proposons des évènements conviviaux pour les alternants et les stagiaires :-)
+Quelles sont les étapes du processus de recrutement ?
+Première étape : Envoyez votre CV et lettre de motivation via l'espace candidat
+Deuxième étape : Votre profil attire notre attention, alors vous nous vous demanderons de passer une pré-sélection vidéo via la plateforme ICIMS. Vous serez informé.e par mail. Votre spontanéité fera la différence !
+Troisième étape : Vous avez suscité notre curiosité:-), nous vous contacterons pour un 2ème entretien à distance ou au sein de nos locaux.
+Naturellement, vous aurez une réponse de notre part suite à votre candidature.
+Et s'il faut encore vous convaincre, allez voir les témoignages de nos étudiants ici.
+Alors, êtes-vous la nouvelle recrue que nous recherchons ?
+Cliquez sur le bouton "Postuler via l'espace candidat" - le plus tôt sera le mieux !

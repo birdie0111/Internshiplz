@@ -1,0 +1,108 @@
+Titre: How well can deep learning algorithms generalize over unseen data: A case study in multiword expression identification
+Date: 10/01/2022
+Organisme: LISN
+Lieu: Gif-sur-Yvette
+
+
+How well can deep learning algorithms generalize over unseen data:
+A case study in multiword expression identification
+
+Master internship proposal, 2022
+
+   -    Domain: natural language processing
+   -    Location: UniversitÃ© Paris-Saclay, Gif-sur-Yvette, France
+        (LISN https://www.lisn.upsaclay.fr/ )
+   -    Research teams: ILES
+        (https://www.limsi.fr/en/research/iles, Written and Sign
+        Language Processing) of the LISN;
+        TALEP (https://talep.lis-lab.fr/, Written and Spoken Language
+        Processing) of the LIS
+   -    Supervisors:
+        -   Agata Savary (LISN)
+            http://www.info.univ-tours.fr/~savary/
+        -   Carlos Ramisch (LIS)
+            http://pageperso.lis-lab.fr/carlos.ramisch/
+   -    Funding: UniversitÃ© Paris-Saclay
+   -    Duration: 3-6 months
+   -    Remuneration: around 606â‚¬/month
+
+     Motivation and context
+
+The aim of this internship is to boost applications in Natural Language
+Processing (NLP), by focusing on one of their major challenges: multiword expressions (MWEs). MWEs are groups of words which exhibit unpredicted properties (Baldwin & Kim, 2010). Most prominently, their meaning does not straightforwardly derive from the meanings of their components. For instance, faire`make/do' and valoir`be worth sth' are verbs, while their combination yields a noun: faire-valoir`a stooge, a person who is used by somebody to do things that are unpleasant or dishonest'. Similarly, the meaning of casser sa pipe `to die' (literally to break one's pipe) cannot be straightforwardly deduced from the meanings of the individual components. Due to these properties, MWEs are very challenging in applications like machine translation, information retrieval, opinion mining, etc.
+
+A major task related to MWEs is to automatically identify their occurrences in running text (so as to provide more accurate representations to downstream applications). The PARSEME
+(https://gitlab.com/parseme/corpora/-/wikis/home) network has been addressing this task via a series of shared tasks on automatic identification of verbal MWEs (https://gitlab.com/parseme/corpora/-/wikis/home#shared-tasks).
+Edition 1.1 of the PARSEME shared task (in 2018) showed critical hardness of identifying MWEs which have not been previously seen in the training corpus. Edition 1.2 saw the advent of transformer-based language models (BERT), which brought substantial progress to MWE
+identification performances. Still, only modest progress was achieved in generalization over unseen data.
+
+     Objectives
+
+The aim of this internship is to better understand the potential of transformer-based models in generalising over unseen data in MWE
+identification. More precisely we wish to:
+
+    -   analyze the results of edition 1.2 of the PARSEME shared task, (https://gitlab.com/parseme/sharedtask-data/-/tree/master/1.2/system-results)
+        and in particular those related to unseen data
+   -    propose an error analysis methodology for MWEs which are and
+        are not correctly identified, and try to understand the reasons
+        behind this state of the affairs
+   -    put forward recommendations for future enhancements of the
+        state-of-the-art MWE identifiers
+   -    (depending on the candidate's profile and the length of the
+        internship) implement a prototype based on these
+        recommendations
+
+     Candidate's profile
+
+   -    2nd or 1st year master student in computational linguistics,
+        computer science or alike ; excellent 3rd year bachelor
+        students will also be considered
+   -    Interests in linguistics and familiarity with language
+        technology
+   -    Good programming skills, preferably in Python
+
+     Important dates
+
+   -    Application deadline: 24 January 2022 (or until filled)
+   -    Notification: 5 February 2022
+   -    Position starts: March-May 2022
+   -    Position ends: June-July 2022
+
+     How to apply
+
+Send your CV and a transcript of your bachelor and master grades to
+Agata Savary <first.last@universite-paris-saclay.fr> and
+Carlos Ramisch <first.last@lis-lab.fr>.
+
+     References
+
+   -    Baldwin, T. and Kim, S. N. (2010)Multiword Expressions https://people.eng.unimelb.edu.au/tbaldwin/pubs/handbook2009.pdf,
+        in Nitin Indurkhya and Fred J. Damerau (eds.) Handbook of
+        Natural Language Processing, Second Edition, CRC Press, Boca
+        Raton, USA, pp. 267-292.
+
+   -    Matthieu Constant, GÃ¼lÅŸen EryiÄŸit, Johanna Monti, Lonneke van
+        der Plas, Carlos Ramisch, Michael Rosner, and Amalia Todirascu.
+        2017.Multiword expression processing: A survey https://www.mitpressjournals.org/doi/full/10.1162/COLI_a_00302.
+        Computational Linguistics, 43(4):837-892.
+
+   -    Carlos Ramisch, Agata Savary, Bruno Guillaume, Jakub Waszczuk,
+        Marie Candito, Ashwini Vaidya, Verginica Barbu Mititelu, Archna
+        Bhatia, Uxoa IÃ±urrieta, Voula Giouli, Tunga GÃ¼ngÃ¶r, Menghan
+        Jiang, Timm Lichte, Chaya Liebeskind, Johanna Monti, Sara
+        Stymne, Abigail Walsh, Renata Ramisch, Hongzhi Xu (2020)
+        Edition 1.2 of the PARSEME Shared Task on Semi-supervised
+        Identification of Verbal Multiword Expressions
+        https://www.aclweb.org/anthology/2020.mwe-1.14/ ,
+        in the Proceedings of the Joint Workshop on Multiword
+        Expressions and Electronic Lexicons (MWE-LEX 2020), 13
+        December 2020, Barcelona, Spain (online).
+
+   -    Agata Savary, Silvio Ricardo Cordeiro, Carlos Ramisch (2019)
+        Without lexicons, multiword expression identification will
+        never fly: A position statement
+        https://www.aclweb.org/anthology/papers/W/W19/W19-5110/,
+        In the Proceedings of the Joint Workshop on Multiword
+        Expressions and WordNet (MWE-WN 2019), 2 August 2019,
+        Florence, Italy.*
+

@@ -1,7 +1,9 @@
-title: Adaptation au domaine en traduction neuronale
-date: 03/02/2022
-institute: CEA LIST
-places: Palaiseau
+Titre: Adaptation au domaine en traduction neuronale
+Date: 03/02/2022
+Organisme: CEA LIST
+Lieu: Palaiseau
+
+
 Titre de stage: Adaptation au domaine en traduction neuronale
 
 Lieu du stage: CEA Saclay Nano-INNOV, Laboratoire Analyse Sémantique
@@ -11,12 +13,7 @@ Encadrant: Nasredine Semmar, CEA LIST, Laboratoire Analyse Sémantique
 Texte et Image (LASTI)
 
 
-Le Laboratoire d'Analyse Sémantique des Textes et des Images (LASTI)
-est une équipe de 25 personnes (chercheurs, ingénieurs, doctorants)
-menant des travaux de recherche sur les technologies de description et
-de compréhension du contenu multimédia (image, texte, parole) et des
-documents multilingues, en particulier à grande échelle. Les enjeux
-scientifiques sont:
+Le Laboratoire d'Analyse Sémantique des Textes et des Images (LASTI) est une équipe de 25 personnes (chercheurs, ingénieurs, doctorants) menant des travaux de recherche sur les technologies de description et de compréhension du contenu multimédia (image, texte, parole) et des documents multilingues, en particulier à grande échelle. Les enjeux scientifiques sont:
 -   développer des algorithmes efficaces et robustes pour l'analyse et
     l'extraction de contenu multimédia, leur classification et analyse
     sémantique;
@@ -31,39 +28,14 @@ scientifiques sont:
 
 Contexte :
 
-L'adaptation au domaine en traduction automatique est devenu un axe de
-recherche important en Traitement Automatique des Langues (TAL) et en
-apprentissage profond. Cet axe de recherche englobe généralement
-l'adaptation de la terminologie et du style de la rédaction. Au cours
-des dernières années, plusieurs approches ont été explorées pour
-adapter des modèles de traduction automatique statistique construits
-pour un domaine source pour lequel existe une quantité suffisante de
-données d'apprentissage vers un domaine cible pour lequel peu de
-données sont disponibles (Lewis et al., 2010; Pecina et al., 2011; Wang
-et al., 2012). L'approche la plus étudiée est celle qui explore
-l'utilisation des lexiques bilingues spécialisés. La plupart des
-travaux fondés sur cette approche consistent, soit à ajouter au corpus
-d'apprentissage un lexique bilingue ou un corpus parallèle du domaine
-de spécialité, soit à étendre les tables de traduction du modèle
-statistique en leur incorporant les entrées du lexique spécialisé
-(Langlais, 2002; Bouamor et al., 2012; Semmar et al., 2017). En
-comparaison avec la traduction statistique, peu de travaux ont été
-réalisés pour intégrer des lexiques bilingues dans des systèmes de
-traduction utilisant des modèles neuronaux pour leur adaptation au
-domaine (Wang et al., 2017; Duan et al., 2019; Nag et al., 2019; Hu et
-al., 2019), et ceci même si, plusieurs études récentes ont abordé
-l'adaptation au domaine en traduction neuronale (Chu et al., 2020).
-Cette adaptation au domaine peut être appliquée à trois différents
-niveaux : en amont, en cours ou en aval de la phase d'apprentissage
-(Servan et al., 2017).
+L'adaptation au domaine en traduction automatique est devenu un axe de recherche important en Traitement Automatique des Langues (TAL) et en apprentissage profond. Cet axe de recherche englobe généralement l'adaptation de la terminologie et du style de la rédaction. Au cours des dernières années, plusieurs approches ont été explorées pour adapter des modèles de traduction automatique statistique construits pour un domaine source pour lequel existe une quantité suffisante de données d'apprentissage vers un domaine cible pour lequel peu de données sont disponibles (Lewis et al., 2010; Pecina et al., 2011; Wang et al., 2012). L'approche la plus étudiée est celle qui explore l'utilisation des lexiques bilingues spécialisés. La plupart des travaux fondés sur cette approche consistent, soit à ajouter au corpus d'apprentissage un lexique bilingue ou un corpus parallèle du domaine de spécialité, soit à étendre les tables de traduction du modèle statistique en leur incorporant les entrées du lexique spécialisé (Langlais, 2002; Bouamor et al., 2012; Semmar et al., 2017). En comparaison avec la traduction statistique, peu de travaux ont été réalisés pour intégrer des lexiques bilingues dans des systèmes de traduction utilisant des modèles neuronaux pour leur adaptation au domaine (Wang et al., 2017; Duan et al., 2019; Nag et al., 2019; Hu et al., 2019), et ceci même si, plusieurs études récentes ont abordé l'adaptation au domaine en traduction neuronale (Chu et al., 2020).
+Cette adaptation au domaine peut être appliquée à trois différents niveaux : en amont, en cours ou en aval de la phase d'apprentissage (Servan et al., 2017).
 
 
 Sujet de stage:
 
-L'objectif de ce stage est d'explorer et d'expérimenter les différentes
-approches pour l'adaptation au domaine en traduction neuronale.
-L'approche qui consiste à intégrer des lexiques bilingues spécialisés
-dans un modèle de traduction factorisé sera privilégiée.
+L'objectif de ce stage est d'explorer et d'expérimenter les différentes approches pour l'adaptation au domaine en traduction neuronale.
+L'approche qui consiste à intégrer des lexiques bilingues spécialisés dans un modèle de traduction factorisé sera privilégiée.
 
 
 Le stage se déroulera selon les étapes suivantes:
@@ -83,14 +55,10 @@ Le stage se déroulera selon les étapes suivantes:
     du système OpenNMT.
 
 
-Les expérimentations concerneront de préférence le couple de langues
-anglais-français et un domaine de spécialité pour lequel un lexique
-bilingue est disponible.
+Les expérimentations concerneront de préférence le couple de langues anglais-français et un domaine de spécialité pour lequel un lexique bilingue est disponible.
 
 Mots-clés :
-Traitement automatique des langues, traduction automatique,
-adaptation au domaine, extraction terminologique,
-lexique bilingue spécialisé, réseaux de neurones.
+Traitement automatique des langues, traduction automatique, adaptation au domaine, extraction terminologique, lexique bilingue spécialisé, réseaux de neurones.
 
 Références:
 -   Lewis W. D., Wendt C., Bullock D. Achieving Domain Specificity in
@@ -148,8 +116,7 @@ Compétences requises :
 -   notions de base en traitement automatique des langues.
 
 Modalité de dépôt de candidature :
-Les candidatures (CV + Lettre de motivation) sont à envoyer le plus
-rapidement possible à Nasredine Semmar (nasredine.semmar@cea.fr).
+Les candidatures (CV + Lettre de motivation) sont à envoyer le plus rapidement possible à Nasredine Semmar (nasredine.semmar@cea.fr).
 
 Contacts pour plus d'information :
 Nasredine SEMMAR,

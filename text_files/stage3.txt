@@ -1,35 +1,25 @@
-title: Développement d'un outil de correction de réponses à un examen
-date: 08/03/2022
-institute: CRIT
-places: Besançon ou télétravail
+Titre: Développement d'un outil de correction de réponses à un examen
+Date: 08/03/2022
+Organisme: CRIT
+Lieu: Besançon ou télétravail
+
+
 
 
 Offre de Stage :
 Développement d'un outil de correction de réponses à un examen (h/f)
 
 Ce stage est proposé par le laboratoire C.R.I.T de l'Université de
-Franche-Comté à Besançon, en partenariat avec la start-up E-cole, dans
-le domaine du traitement automatique des langues.
+Franche-Comté à Besançon, en partenariat avec la start-up E-cole, dans le domaine du traitement automatique des langues.
 
 
 Organisation
 
-Le CRIT (Centre de Recherches Interdisciplinaires et Transculturelles)
-de l'Université de Franche-Comté intègre une équipe en Traitement
-Automatique des Langues (TAL) qui développe des méthodes linguistiques
-pour le traitement de textes écrits. De nombreux projets et
-collaborations avec des entreprises sont issues de la recherche en TAL.
-Le stage sera co-encadré par le Dr Iana ATANASSOVA, maître de
-conférences HDR au CRIT.
+Le CRIT (Centre de Recherches Interdisciplinaires et Transculturelles) de l'Université de Franche-Comté intègre une équipe en Traitement
+Automatique des Langues (TAL) qui développe des méthodes linguistiques pour le traitement de textes écrits. De nombreux projets et collaborations avec des entreprises sont issues de la recherche en TAL.
+Le stage sera co-encadré par le Dr Iana ATANASSOVA, maître de conférences HDR au CRIT.
 
-E-cole est une start-up crée par Pierre-Louis Gourdoux et Stéphan
-e Murday, professeurs d'économie et Alexandre Lefort, ingénieur en
-informatique. Notre ambition est de révolutionner l'enseignement en
-diminuant les tâches chronophages de l'enseignant et lui permettre de
-se concentrer sur l'essentiel : le suivi et l'accompagnement des
-étudiants. Pour cela E-Cole proposera des cours interactifs,
-entrainements et examens autogénérés, autocorrigés et renouvelables à
-l'infini tant pour les données que pour la forme de l'énoncé.
+E-cole est une start-up crée par Pierre-Louis Gourdoux et Stéphan e Murday, professeurs d'économie et Alexandre Lefort, ingénieur en informatique. Notre ambition est de révolutionner l'enseignement en diminuant les tâches chronophages de l'enseignant et lui permettre de se concentrer sur l'essentiel : le suivi et l'accompagnement des étudiants. Pour cela E-Cole proposera des cours interactifs, entrainements et examens autogénérés, autocorrigés et renouvelables à l'infini tant pour les données que pour la forme de l'énoncé.
 
 Le stage sera co-encadré par Dr Iana ATANASSOVA, maître de conférences
 HDR au CRIT, et Alexandre LEFORT.
@@ -37,10 +27,7 @@ HDR au CRIT, et Alexandre LEFORT.
 
 Description du poste
 
-L'objectif du stage est de développer un algorithme de traitement de
-réponses aux exercices en texte libre, afin de proposer des
-fonctionnalités d'évaluation automatique des exercices. Son
-fonctionnement pourra être le suivant :
+L'objectif du stage est de développer un algorithme de traitement de réponses aux exercices en texte libre, afin de proposer des fonctionnalités d'évaluation automatique des exercices. Son fonctionnement pourra être le suivant :
 -   Dans un premier temps, un professeur renseigne un cours (document
     textuel) et une question portant sur ce cours au format texte.
 -   Dans un deuxième temps un étudiant donne une réponse en texte
@@ -48,14 +35,8 @@ fonctionnement pourra être le suivant :
 -   Enfin, l'algorithme corrige la réponse de l'étudiant. Il lui
     renseigne si la réponse donnée est juste ou si elle contient des
     éléments faux ou manquants.
-L'algorithme exploitera l'état de l'art des méthodes de traitement des
-données textuelles, notamment celles permettant de construire
-automatiquement des structures logiques à partir de texte, qui seront
-appliquées au cours, à la question et à la réponse fournie par
-l'étudiant.
-Le stage se limitera au traitement d'un ensemble prédéterminé de cours
-et de questions, portant sur les domaines de l'économie et de la
-gestion.
+L'algorithme exploitera l'état de l'art des méthodes de traitement des données textuelles, notamment celles permettant de construire automatiquement des structures logiques à partir de texte, qui seront appliquées au cours, à la question et à la réponse fournie par l'étudiant.
+Le stage se limitera au traitement d'un ensemble prédéterminé de cours et de questions, portant sur les domaines de l'économie et de la gestion.
 Les étapes du stage seront les suivantes :
 -   1 : Avec l'aide de l'équipe d'E-cole, familiarisation du stagiaire
     avec le corpus de cours et de question fournis.
@@ -90,4 +71,4 @@ Comment candidater
 Envoyez votre CV et lettre de motivation (avec nom et coordonnées de 2
 référents) aux adresses suivantes :
 -   alexandre.lefort@e-cole.io
--   iana.atanassova@univ-fcomte.fr
+-   iana.atanassova@univ-fcomte.fr 

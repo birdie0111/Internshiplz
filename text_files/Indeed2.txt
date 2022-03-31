@@ -1,0 +1,37 @@
+Titre: Stage : Analyse sémantique et raisonnement
+Date: 01/03/2022
+Organisme: advanced decision
+Lieu: Paris 17e (75)
+
+
+Stage : Analyse sémantique et raisonnementadvanced decisionParis 17e (75)Stageadvanced decision est une startup ambitieuse spécialisée en IA.
+Nous développons des produits innovants : analyse sémantique, apprentissage automatique, raisonnement automatisé.
+Nous recherchons un stagiaire pour participer au développement du produit.
+
+THEMES
+Extraction de signaux discrets à partir de corpus sociaux
+Affinement d'ontologies métier
+Application au tourisme
+DUREE
+
+5 à 6 mois
+
+COMPETENCES
+Traitement des langues
+Représentation des connaissannces
+Apprentissage automatique
+RESSOURCES
+
+Note de cadrage, bibliographie
+
+FORMATION
+
+Ingénieur, DEA, DESS, M2
+
+LIEU DE TRAVAIL
+
+Paris 17è
+
+CONTACT
+
+Envoyez votre candidature à : stage@advanceddecision.fr

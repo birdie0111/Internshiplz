@@ -1,0 +1,60 @@
+Titre: Finalisation et évaluation de la version libtorch native de LIMA
+Date: 20/01/2022
+Organisme: CEA
+Lieu: Palaiseau
+
+
+
+Le laboratoire LASTI a développé l'analyseur linguistique multilingue libre LIMA [1].
+
+Des modules d'analyse à base de réseaux de neurones fondés sur
+TensorFlow ont été développés permettant d'obtenir une qualité d'analyse au niveau de l'état de l'art [3] sur les plus de 65 langues du projet Universal Dependencies [4].
+
+Cette implémentation fondée sur TensorFlow présente quelques défauts (maintenance difficile, vitesse d'analyse insuffisante). Une réimplémentation des modules deep learning a été initiée. Cette réimplémentation C++ native utilise les bibliothèque libtorch et
+Eigen3. Elle présente une qualité actuellement supérieure à l'état de l'art avec des vitesses plus élevées. Mais quelques modules doivent être complétés pour obtenir une version incluant toutes les fonctionnalités précédentes.
+
+L'objectif de ce stage consiste à participer à la complétion des modules (lemmatisation, entités nommées, analyse syntaxique) et à la mise au point des meilleurs paramètres.
+
+
+Durée du contrat (en mois) : 5-6
+
+Le travail du/de la stagiaire consistera à :
+-   se familiariser avec LIMA Deep, son fonctionnement, son
+    entraînement et son évaluation ;
+-   participer à la fin du développement des modules ;
+-   entraîner les modules d'analyse et optimiser les paramètres sur le
+    cluster FactoryIA [5] du CEA ;
+-   évaluer la vitesse et la qualité d'analyse de LIMA par rapport aux
+    systèmes concurrents (Spacy, Stanza,...) ;
+
+Moyens / Méthodes / Logiciels
+Expertise linguistique, analyseur linguistique, superordinateur, C++,
+Python, bash, linux
+
+Profil du/de la candidat·e: Étudiant·e en informatique de niveau Bac+5, avec des connaissances en
+IA (deep learning et TAL) et une bonne maîtrise du C++ sous Linux.
+
+Localisation du poste
+Nano Innov, CEA, Université Paris-Saclay,
+Palaiseau, France, Ile-de-France.
+
+Contact:
+Gaël de Chalendar (gael.de-chalendar@cea.fr) https://www.emploi.cea.fr/offre-de-emploi/emploi-finalisation-et-evaluation-de-la-version-libtorch-native-de-deep-lima-h-f_19575.aspx
+
+
+
+[1] R. Besançon, G. de Chalendar, O. Ferret, F. Gara, M. Laib,
+    O. Mesnard, and N. Semmar. 2010. Lima: A multilingual framework for
+    linguistic analysis and linguistic resources development and
+    evaluation. In Proceedings of LREC, Malta.
+[2] https://github.com/aymara/lima/wiki [3] V. Bocharov and Gaël de Chalendar. 2020. The Russian language
+    pipeline in the LIMA multilingual analyzer. In Proceedings of the
+    Computational Linguistics and Intellectual Technologies:
+    Proceedings of the International Conference "Dialogue 2020".
+[4] Joakim Nivre, Marie-Catherine de Marneffe, Filip Ginter, Yoav
+    Goldberg, Jan Haji, Christopher D. Manning, Ryan McDonald, Slav
+    Petrov, Sampo Pyysalo, Natalia Silveira, Reut Tsarfaty, Daniel
+    Zeman. 2016. Universal Dependencies v1: A Multilingual Treebank
+    Collection. In Proceedings of LREC.
+[5] https://www.hpcg-benchmark.org/custom/index.html?lid=155&slid=310
+

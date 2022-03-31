@@ -1,7 +1,7 @@
-title: Extraction et typage des Entités Nommées en anglais
-date: 14/03/2022
-institute: GEOLSemantics
-places: Le Kremlin-Bicêtre
+Titre: Extraction et typage des Entités Nommées en anglais
+Date: 14/03/2022
+Organisme: GEOLSemantics
+Lieu: Le Kremlin-Bicêtre
 
 
 
@@ -9,26 +9,11 @@ Sujet de Stage :
 Extraction et typage des Entités Nommées en anglais
 
 Contexte :
-Créé en 2009, GEOLSemantics est un éditeur de logiciels innovants dans
-le domaine des technologies de l'information et de la communication, et
-particulièrement dans les domaines de la linguistique et de la
-sémantique. Les solutions de GEOLSemantics analysent les contenus
-textuels pour identifier, normaliser et structurer les données
-pertinentes qu'ils contiennent, afin de les rendre directement
-exploitables par des processus automatiques.
+Créé en 2009, GEOLSemantics est un éditeur de logiciels innovants dans le domaine des technologies de l'information et de la communication, et particulièrement dans les domaines de la linguistique et de la sémantique. Les solutions de GEOLSemantics analysent les contenus textuels pour identifier, normaliser et structurer les données pertinentes qu'ils contiennent, afin de les rendre directement exploitables par des processus automatiques.
 
 Objectifs du stage :
-Dans le cadre d'un projet de recherche dans le domaine de la sécurité,
-nous souhaitons améliorer la reconnaissance des Entités Nommées
-(principalement organisations, lieux et personnes) en anglais, pour les
-textes issus de comptes-rendus d'opérations ou de mains-courantes. Nous
-nous appuierons pour cela sur la solution d'analyse linguistique de
-GEOLSemantics, qui utilise l'IA symbolique via des ressources
-linguistiques et des règles, ainsi que sur le traitement du français
-déjà en place. La mission principale du stage sera donc de mettre
-au point la reconnaissance des Entités Nommées en anglais en
-enrichissant les ressources existantes et en participant à
-l'élaboration des règles d'extraction des Entités Nommées.
+Dans le cadre d'un projet de recherche dans le domaine de la sécurité, nous souhaitons améliorer la reconnaissance des Entités Nommées (principalement organisations, lieux et personnes) en anglais, pour les textes issus de comptes-rendus d'opérations ou de mains-courantes. Nous nous appuierons pour cela sur la solution d'analyse linguistique de
+GEOLSemantics, qui utilise l'IA symbolique via des ressources linguistiques et des règles, ainsi que sur le traitement du français déjà en place. La mission principale du stage sera donc de mettre au point la reconnaissance des Entités Nommées en anglais en enrichissant les ressources existantes et en participant à l'élaboration des règles d'extraction des Entités Nommées.
 
 Tâches principales à réaliser :
     -   Prise en main du système de GEOLSemantics
@@ -59,6 +44,4 @@ Caractéristiques du stage :
     -   Lieu : Le Kremlin-Bicêtre
 
 
-Pour postuler, envoyez votre candidature à
-aurelie.rossi@geolsemantics.com en indiquant dans l'object du mail
-"stage sur la reconnaissance des Entités Nommées en anglais"
+Pour postuler, envoyez votre candidature à aurelie.rossi@geolsemantics.com en indiquant dans l'object du mail "stage sur la reconnaissance des Entités Nommées en anglais" 

@@ -1,20 +1,16 @@
-title: Prédiction de l'état mental d'un participant d'une conversation écrite à l'aide d'émojis et d'adaptation au domaine
-date: 08/02/2022
-institute: LS2N
-places: Nantes
-Nous recherchons un(e) stagiaire pour travailler sur la problématique
-de prédiction des émotions à partir des émojis et son "adaptation" à
-des corpus autres que Twitter.
+Titre: Prédiction de l'état mental d'un participant d'une conversation écrite à l'aide d'émojis et d'adaptation au domaine
+Date: 08/02/2022
+Organisme: LS2N
+Lieu: Nantes
 
-Si votre profil correspond à la description ci-dessous et que vous
-êtes intéressé(e), merci d'envoyer votre dossier de candidature à
-nicolas.hernandez@univ-nantes.fr.
 
-**Titre** : Prédiction de l'état mental d'un participant d'une
-conversation écrite à l'aide d'émojis et d'adaptation au domaine
+Nous recherchons un(e) stagiaire pour travailler sur la problématique de prédiction des émotions à partir des émojis et son "adaptation" à des corpus autres que Twitter.
 
-**Lieu du stage** : Laboratoire des Sciences du Numérique de Nantes
-(LS2N) - Équipe Traitement Automatique du Langage Naturel (TALN)
+Si votre profil correspond à la description ci-dessous et que vous êtes intéressé(e), merci d'envoyer votre dossier de candidature à nicolas.hernandez@univ-nantes.fr.
+
+**Titre** : Prédiction de l'état mental d'un participant d'une conversation écrite à l'aide d'émojis et d'adaptation au domaine
+
+**Lieu du stage** : Laboratoire des Sciences du Numérique de Nantes (LS2N) - Équipe Traitement Automatique du Langage Naturel (TALN)
 
 **Durée** : 5 mois - **Début** : Mars 2022
 
@@ -32,17 +28,13 @@ conversation écrite à l'aide d'émojis et d'adaptation au domaine
 -   Des qualités relationnelles (accompagnement, collaboration)
 -   Dynamique et curieux.se
 
-**Candidature** : CV, lettre de motivation, derniers bulletins de notes
-à envoyer à nicolas.hernandez@univ-nantes.fr
+**Candidature** : CV, lettre de motivation, derniers bulletins de notes à envoyer à nicolas.hernandez@univ-nantes.fr
 
-**Mots clefs** : Traitement Automatique des Langues, Apprentissage
-profond, Fouille de texte, Adaptation au domaine, Analyse d'émotions,
+**Mots clefs** : Traitement Automatique des Langues, Apprentissage profond, Fouille de texte, Adaptation au domaine, Analyse d'émotions,
 Emojis, Twitter
 
 **Description courte** : Comprendre les intentions, désirs, croyances...
-d'un intervenant au sein d'une conversation écrite est un problème
-difficile en l'absence d'information non verbale comme la modulation de
-la voix ou de l'expression du visage.
+d'un intervenant au sein d'une conversation écrite est un problème difficile en l'absence d'information non verbale comme la modulation de la voix ou de l'expression du visage.
 
 Les objectifs de ce stage sont
     - 1)    de faire un état des performances et des limites d'un
@@ -57,11 +49,7 @@ Les objectifs de ce stage sont
             tâches voisines (analyse de la polarité d'une opinion, de
             l'intensité d'une émotion, de la subjectivité d'un propos...).
 
-L'étude portera sur des architectures classiques à base d'apprentissage
-profond (plongement de mots + Bi-LSTM, modèle de langage à base de
-Transformer) décrites dans la littérature. La recherche s'appuiera sur
-les données rendues disponibles ces dernières années au travers des
-campagnes d'évaluation SemEval.
+L'étude portera sur des architectures classiques à base d'apprentissage profond (plongement de mots + Bi-LSTM, modèle de langage à base de
+Transformer) décrites dans la littérature. La recherche s'appuiera sur les données rendues disponibles ces dernières années au travers des campagnes d'évaluation SemEval.
 
-**Description étendue du sujet** :
-https://www.ls2n.fr/stage-these/prediction-de-letat-mental-dun-utilisateur-de-twitter
+**Description étendue du sujet** : https://www.ls2n.fr/stage-these/prediction-de-letat-mental-dun-utilisateur-de-twitter 
