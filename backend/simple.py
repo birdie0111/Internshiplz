@@ -44,10 +44,10 @@ def get_posts_linkedin(url_lin):
 
         print(titles[i])
         with open(filename,'w',encoding="utf-8") as fd:
-            fd.write("title: " + title + "\n")
-            fd.write("date: " + date + "\n")
-            fd.write("institute: " + company + "\n")
-            fd.write("places: " + location + "\n\n\n")
+            fd.write("Titre: " + title + "\n")
+            fd.write("Date: " + date + "\n")
+            fd.write("Organisme: " + company + "\n")
+            fd.write("Lieu: " + location + "\n\n\n")
             fd.write(all_urls[i] + "\n")
 
 def get_posts(url):
@@ -94,10 +94,10 @@ def get_content(real_urls, url):
             c_post.encoding = "Windows-1252"
             filename = "text_files/stage" + str(i) + ".txt"
             with open(filename, "w", encoding = "utf-8") as fd:
-                fd.write("title: " + titles[i] + "\n")
-                fd.write("date: " + dates[i] + "\n")
-                fd.write("institute: " + institutes[i] + "\n")
-                fd.write("places: " + places[i] + "\n")
+                fd.write("Titre: " + titles[i] + "\n")
+                fd.write("Date: " + dates[i] + "\n")
+                fd.write("Organisme: " + institutes[i] + "\n")
+                fd.write("Lieu: " + places[i] + "\n")
                 fd.write(c_post.text)
 
 

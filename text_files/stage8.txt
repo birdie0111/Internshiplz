@@ -1,67 +1,74 @@
-title: Prédiction de l'état mental d'un participant d'une conversation écrite à l'aide d'émojis et d'adaptation au domaine
-date: 08/02/2022
-institute: LS2N
-places: Nantes
-Nous recherchons un(e) stagiaire pour travailler sur la problématique
-de prédiction des émotions à partir des émojis et son "adaptation" à
-des corpus autres que Twitter.
+Titre: Traitement Automatique du Langage
+Date: 08/02/2022
+Organisme: Konverso
+Lieu: Boulogne Billancourt
+Offre de stage 5/ 6 mois - Traitement Automatique du Langage
+Master 2 ou école d'ingénieur en dernière année
 
-Si votre profil correspond à la description ci-dessous et que vous
-êtes intéressé(e), merci d'envoyer votre dossier de candidature à
-nicolas.hernandez@univ-nantes.fr.
+Konverso - plateforme conversationnelle IA.
 
-**Titre** : Prédiction de l'état mental d'un participant d'une
-conversation écrite à l'aide d'émojis et d'adaptation au domaine
+Présentation de Konverso : Konverso, créé en 2017 au sein du programme
+Startup IA de Microsoft France, propose aux entreprises du monde entier
+une plateforme conversationnelle IA pour automatiser les fonctions
+support des entreprises que ce soit l'IT Help Desk, les RH ou le
+support client.
+Konverso est maintenant utilisé aux US, UK, Australie, Canada, France
+et compte des clients internationaux comme Veolia, Colas (groupe
+Bouygues), Alten, Hudson, Neustar/ TransUnion, University of Texas.
+Konverso est suivi par des analystes internationaux comme Everest
+Group. Konverso a intégré le radar des startups du Digital Workplace en
+2021 de Wavestone et a été lauréat du prix i -LAB de Bpifrance et le
+ministère de la Recherche et d'innovation.
+Les technologies de NLP et de Machine Learning sont au coeur de notre
+plateforme. La brique d'IA utilise notamment les données clients pour
+réaliser différentes tâches comme la reconnaissance de langue, la
+classification automatique, l'identification de similarité textuelle,
+la détection d'entités nommées. L'objectif final étant toujours une
+bonne compréhension du verbatim utilisateur à des fins de diagnostic/
+résolution, avec de l'automatisation. Notre plateforme est
+multi-canal : mail, chat et callbot.
 
-**Lieu du stage** : Laboratoire des Sciences du Numérique de Nantes
-(LS2N) - Équipe Traitement Automatique du Langage Naturel (TALN)
+Votre mission
+Vous travaillerez au sein de l'équipe projet et avec des liens avec
+l'équipe de R&D.
 
-**Durée** : 5 mois - **Début** : Mars 2022
+    -   Vos activités :
+        -   Traitement Automatisé du Langage avec en particulier de
+            l'analyse sémantique en vue de l'extraction d'entités.
+        -   Génération Automatisée de Langage pour une amélioration de
+            nos algorithmes de génération de réponses.
+        -   Base de connaissance. En partenariat avec nos ingénieurs
+            Machine Learning, travail sur des algorithmes de
+            classification de textes sur la base de corpus « métier ».
+        -   Revue des labélisations et à l'amélioration des corpus
+            d'entrainements et de tests.
+Dans le cadre de cette mission l'étudiant travaillera avec des outils
+et une méthodologie professionnelle.
 
-**Salaire** : 600 euros/mois environ
+Profil recherché
 
-**Profil recherché** :  Niveau bac+5 (Master 2, ingénieur ou équivalent)
--   Des compétences solides en développement logiciel (python)
--   Une formation en Traitement Automatique des Langues, en
-    Apprentissage Automatique, en Linguistique computationnelle, ou en
-    Sciences des données/Fouille de texte
--   Des qualités d'expression orale et d'écriture (en français et en
-    anglais)
--   Des capacités de travail en autonomie comme en équipe, un sens
-    de l'organisation et une capacité de restitution
--   Des qualités relationnelles (accompagnement, collaboration)
--   Dynamique et curieux.se
+    -   Double compétence informatique et linguistique.
+    -   Diplômé en sciences du langage avec une spécialité en
+        Traitement Automatique du Langage
+    -   Étudiant avec une vraie passion pour la programmation.
+    -   Des connaissances Python, des environnements Linux et des bases
+        de données seraient un plus.
+    -   L'équipe de développement est distribuée et la langue de
+        travail est un mix de français et d'anglais.
+    -   Votre faites preuve de curiosité au quotidien, vous êtes
+        dynamique et autonome.
+    -   Avoir une expérience avec spaCy 3 et quelques Transformers
+        serait un plus.
+Avec un fort plan de croissance de la société en 2022, ce poste
+pourrait ensuite donner lieu à une embauche.
 
-**Candidature** : CV, lettre de motivation, derniers bulletins de notes
-à envoyer à nicolas.hernandez@univ-nantes.fr
+Localisation : Boulogne Billancourt 98 Route de la Reine.
 
-**Mots clefs** : Traitement Automatique des Langues, Apprentissage
-profond, Fouille de texte, Adaptation au domaine, Analyse d'émotions,
-Emojis, Twitter
+Durée : 5/6 mois (temps plein), à partir d'Avril/Mai 2022.
 
-**Description courte** : Comprendre les intentions, désirs, croyances...
-d'un intervenant au sein d'une conversation écrite est un problème
-difficile en l'absence d'information non verbale comme la modulation de
-la voix ou de l'expression du visage.
+Gratification : montant légal en vigueur et fonction de l'expérience du
+candidat + ticket restaurant et 50% du titre de transport
 
-Les objectifs de ce stage sont
-    - 1)    de faire un état des performances et des limites d'un
-            système de prédiction d'émotions construits à partir d'un
-            corpus contenant des émojis
-    - 2)    d'évaluer un tel système après adaptation sur un corpus
-            cible non étiqueté de genre et de domaine différent.
-    - 3)    compte tenu de l'avancement, l'étude pourra chercher à
-            évaluer l'apport de la prise en compte de la structure
-            dialogique des contextes d'expression des émotions ainsi
-            qu'une configuration d'apprentissage avec de multiples
-            tâches voisines (analyse de la polarité d'une opinion, de
-            l'intensité d'une émotion, de la subjectivité d'un propos...).
-
-L'étude portera sur des architectures classiques à base d'apprentissage
-profond (plongement de mots + Bi-LSTM, modèle de langage à base de
-Transformer) décrites dans la littérature. La recherche s'appuiera sur
-les données rendues disponibles ces dernières années au travers des
-campagnes d'évaluation SemEval.
-
-**Description étendue du sujet** :
-https://www.ls2n.fr/stage-these/prediction-de-letat-mental-dun-utilisateur-de-twitter
+Postuler: Envoyer un CV, et une lettre de motivation, par mail à
+Bertrand Lafforgue (bertrand.lafforgue@konverso.ai),
+avant le 01/03/2022.

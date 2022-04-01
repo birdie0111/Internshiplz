@@ -1,74 +1,67 @@
-title: Traitement Automatique du Langage
-date: 08/02/2022
-institute: Konverso
-places: Boulogne Billancourt
-Offre de stage 5/ 6 mois - Traitement Automatique du Langage
-Master 2 ou école d'ingénieur en dernière année
+Titre: Recurrent neural network models of the textualization process
+Date: 14/02/2022
+Organisme: LIPN
+Lieu: Villetaneuse
 
-Konverso - plateforme conversationnelle IA.
+Title: Recurrent neural network models of the textualization process
+Location: LIPN (UMR CNRS 7030), Université Sorbonne Paris Nord (99 Ave
+nue Jean Baptiste Clément, 93430 Villetaneuse)
+Advisors: Nadi Tomeh (tomeh@lipn.fr), Joseph Le Roux (leroux@lipn.fr)
 
-Présentation de Konverso : Konverso, créé en 2017 au sein du programme
-Startup IA de Microsoft France, propose aux entreprises du monde entier
-une plateforme conversationnelle IA pour automatiser les fonctions
-support des entreprises que ce soit l'IT Help Desk, les RH ou le
-support client.
-Konverso est maintenant utilisé aux US, UK, Australie, Canada, France
-et compte des clients internationaux comme Veolia, Colas (groupe
-Bouygues), Alten, Hudson, Neustar/ TransUnion, University of Texas.
-Konverso est suivi par des analystes internationaux comme Everest
-Group. Konverso a intégré le radar des startups du Digital Workplace en
-2021 de Wavestone et a été lauréat du prix i -LAB de Bpifrance et le
-ministère de la Recherche et d'innovation.
-Les technologies de NLP et de Machine Learning sont au coeur de notre
-plateforme. La brique d'IA utilise notamment les données clients pour
-réaliser différentes tâches comme la reconnaissance de langue, la
-classification automatique, l'identification de similarité textuelle,
-la détection d'entités nommées. L'objectif final étant toujours une
-bonne compréhension du verbatim utilisateur à des fins de diagnostic/
-résolution, avec de l'automatisation. Notre plateforme est
-multi-canal : mail, chat et callbot.
+Context
+======
+In the context of the ANR project Pro-TEXT
+(https://pro-text.huma-num.fr/) we aim to conduct a comprehensive
+linguistic analysis of the textualization process, i.e. the real-time
+progressive construction of a text. We will study "bursts of writing",
+which are textual segments produced between "pauses", in order to
+provide insight into the relation between regularities of language
+performance and the cognitive and contextual constraints. The aim is to
+understand some of the layout mechanisms that allow language to give
+rise to novelty out of known and prefabricated structures. The
+project's aim is to build on recent developments in linguistics,
+cognitive psychology and machine learning to analyze burst data.
 
-Votre mission
-Vous travaillerez au sein de l'équipe projet et avec des liens avec
-l'équipe de R&D.
+Internship proposal
+===============
+Burst data are collected through real-time recording of the writing
+process using keystroke logging tools Inputlog
+(http://www.inputlog.net/) and Scriptlog, which produces temporal data
+(chronology and duration of text production and pause length), language
+data (language sequences produced continuously between two pauses), and
+topological textual data (dynamics of text planning, revising already
+written text).
 
-    -   Vos activités :
-        -   Traitement Automatisé du Langage avec en particulier de
-            l'analyse sémantique en vue de l'extraction d'entités.
-        -   Génération Automatisée de Langage pour une amélioration de
-            nos algorithmes de génération de réponses.
-        -   Base de connaissance. En partenariat avec nos ingénieurs
-            Machine Learning, travail sur des algorithmes de
-            classification de textes sur la base de corpus « métier ».
-        -   Revue des labélisations et à l'amélioration des corpus
-            d'entrainements et de tests.
-Dans le cadre de cette mission l'étudiant travaillera avec des outils
-et une méthodologie professionnelle.
+In this internship, we propose to explore the use of recurrent neural
+networks such as LSTMs in modeling the three types of sequences
+mentioned above.
+We plan to study multiple modeling tasks. For instance, pause
+prediction can be cast as an LSTM-based sequence labeling task where
+input text is labeled with pause position and duration. A different
+network can be used to model the sequence of text editing actions
+including insertion and deletion of characters but also the intervening
+pauses. The network is then trained to predict the next action as in
+language models. Furthermore, we plan to explore the use of data
+structures inspired by the stack LSTM (Dyer et al., 2015) to use both
+action and word embeddings when predicting pauses.
+Such a structure should allow for updating state representations in a
+non-linear and non-local way while maintaining a low complexity.
 
-Profil recherché
+Candidate profile
+=============
+-   Master in Computer Science or related field
+-   Strong programming skills
+-   Good reading and writing of English
+-   Experience in training deep learning models (with Pytorch/Jax)
 
-    -   Double compétence informatique et linguistique.
-    -   Diplômé en sciences du langage avec une spécialité en
-        Traitement Automatique du Langage
-    -   Étudiant avec une vraie passion pour la programmation.
-    -   Des connaissances Python, des environnements Linux et des bases
-        de données seraient un plus.
-    -   L'équipe de développement est distribuée et la langue de
-        travail est un mix de français et d'anglais.
-    -   Votre faites preuve de curiosité au quotidien, vous êtes
-        dynamique et autonome.
-    -   Avoir une expérience avec spaCy 3 et quelques Transformers
-        serait un plus.
-Avec un fort plan de croissance de la société en 2022, ce poste
-pourrait ensuite donner lieu à une embauche.
+How to apply ?
+===========
+Send your CV and transcript of Master grades to tomeh@lipn.fr and
+leroux@lipn.fr
 
-Localisation : Boulogne Billancourt 98 Route de la Reine.
-
-Durée : 5/6 mois (temps plein), à partir d'Avril/Mai 2022.
-
-Gratification : montant légal en vigueur et fonction de l'expérience du
-candidat + ticket restaurant et 50% du titre de transport
-
-Postuler: Envoyer un CV, et une lettre de motivation, par mail à
-Bertrand Lafforgue (bertrand.lafforgue@konverso.ai),
-avant le 01/03/2022.
+References
+=========
+(Dyer et al., 2015) https://aclanthology.org/P15-1033/
+Transition-Based Dependency Parsing with Stack Long Short-Term Memory.
+Chris Dyer, Miguel Ballesteros, Wang Ling, Austin Matthews, Noah A.
+Smith.
