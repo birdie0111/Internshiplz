@@ -1,60 +1,112 @@
-Titre: Finalisation et évaluation de la version libtorch native de LIMA
-Date: 20/01/2022
-Organisme: CEA
-Lieu: Palaiseau
+Titre: Création de corpus multilingue et de lexiques terminologiques par apprentissage automatique
+Date: 24/01/2022
+Organisme: LIASD
+Lieu: Saint Denis
+
+
+OFFRE DE STAGE DE MASTER OU Dâ€™INGENIEUR
+
+CrÃ©ation de corpus multilingue et de lexiques terminologiques par apprentissage automatique
+
+DurÃ©e du stage : 5/6 mois (dÃ©but : FÃ©vrier/Mars 2022)
+
+Gratification : montant lÃ©gal en vigueur (environ 600â‚¬ / mois).
+
+Laboratoire dâ€™accueil :
+
+Equipe PASTIS du LIASD (EA 4383), UniversitÃ© Paris 8, 2 rue de la libertÃ©, 93526 Saint Denis
+
+
+Sujet de stage
+
+La collecte de donnÃ©es textuelles issues du web a donnÃ© lieu Ã  de nombreuses approches d'extraction de donnÃ©es pour rÃ©soudre des problÃ¨mes spÃ©cifiques opÃ©rant dans des domaines ad-hoc. Nous nous intÃ©ressons Ã  la crÃ©ation d'un corpus multilingue construit Ã  partir de textes issus d'entreprises regroupÃ©es par catÃ©gories (27 catÃ©gories au total).
+
+Partant d'un corpus monolingue dÃ©finissant les relations entre textes, entreprises et catÃ©gories, pour un ensemble de catÃ©gories prÃ©dÃ©finies, une premiÃ¨re Ã©tape d'apprentissage supervisÃ© permet de dÃ©finir un modÃ¨le de ces relations. Par combinaison d'un crawler et d'un scraper, une seconde Ã©tape d'apprentissage non supervisÃ© permet d'Ã©tendre le corpus et ses relations inhÃ©rentes Ã  des relations multilingues. La seconde Ã©tape, traitant de nouvelles donnÃ©es utilise un scraper et un crawler existants.
+
+L'objectif de ce stage est d'adapter ces deux outils afin de crÃ©er un modÃ¨le adaptÃ© aux spÃ©cificitÃ©s multilingues contenues dans les textes pris sur le web et dâ€™enrichir le lexique spÃ©cialisÃ© par apprentissage.
 
 
 
-Le laboratoire LASTI a développé l'analyseur linguistique multilingue libre LIMA [1].
+Le stage comportera les Ã©tapes suivantes (la rÃ©utilisabilitÃ© des ressources et les codes produits, feront l'objet d'une documentation tout au long du stage) :
 
-Des modules d'analyse à base de réseaux de neurones fondés sur
-TensorFlow ont été développés permettant d'obtenir une qualité d'analyse au niveau de l'état de l'art [3] sur les plus de 65 langues du projet Universal Dependencies [4].
+-   CrÃ©ation corpus multilingue (enrichissement dataset existant)
 
-Cette implémentation fondée sur TensorFlow présente quelques défauts (maintenance difficile, vitesse d'analyse insuffisante). Une réimplémentation des modules deep learning a été initiée. Cette réimplémentation C++ native utilise les bibliothèque libtorch et
-Eigen3. Elle présente une qualité actuellement supérieure à l'état de l'art avec des vitesses plus élevées. Mais quelques modules doivent être complétés pour obtenir une version incluant toutes les fonctionnalités précédentes.
+Pour l'apprentissage supervisÃ© comme non supervisÃ©, il s'agit principalement de dÃ©finir les bons paramÃ¨tres d'approches classiques (Random forests, Gradient boosting machines, Convolutionnal networks) avec les corpus actuels et les donnÃ©es disponibles.
 
-L'objectif de ce stage consiste à participer à la complétion des modules (lemmatisation, entités nommées, analyse syntaxique) et à la mise au point des meilleurs paramètres.
+Par la suite nous allons procÃ©der Ã  :
 
+-   la mise en place dâ€™un modÃ¨le basÃ© sur BERT et CamemBERT
+    (l'annotation des termes spÃ©cifiques sera fondÃ©e sur lâ€™analyse des
+    co-occurrences de termes dÃ©signant l'ensemble des mots-clÃ©s de
+    dÃ©part, Ã  lâ€™aide de vecteurs de plongement fournis par ces
+    modÃ¨les) ;
 
-Durée du contrat (en mois) : 5-6
+-   le rÃ©-entraÃ®nement de ces modÃ¨les, lâ€™utilisation des vecteurs de
+    plongement et les mÃ©triques dÃ©veloppÃ©es pour le comparatif entre
+    les termes trouvÃ©s par des modÃ¨les utilisÃ©s avec annotations des
+    mots-clÃ©s et sacs de mots afin de valider les spÃ©cificitÃ©s
+    utilisÃ©es sur le corpus multilingue;
 
-Le travail du/de la stagiaire consistera à :
--   se familiariser avec LIMA Deep, son fonctionnement, son
-    entraînement et son évaluation ;
--   participer à la fin du développement des modules ;
--   entraîner les modules d'analyse et optimiser les paramètres sur le
-    cluster FactoryIA [5] du CEA ;
--   évaluer la vitesse et la qualité d'analyse de LIMA par rapport aux
-    systèmes concurrents (Spacy, Stanza,...) ;
+-   validation des approches sur la crÃ©ation du lexique terminologique
+    du corpus multilingue par comparaison avec celui du corpus
+    monolingue Ã©tabli par analyse statistique (n-grams et tf-idf);
 
-Moyens / Méthodes / Logiciels
-Expertise linguistique, analyseur linguistique, superordinateur, C++,
-Python, bash, linux
-
-Profil du/de la candidat·e: Étudiant·e en informatique de niveau Bac+5, avec des connaissances en
-IA (deep learning et TAL) et une bonne maîtrise du C++ sous Linux.
-
-Localisation du poste
-Nano Innov, CEA, Université Paris-Saclay,
-Palaiseau, France, Ile-de-France.
-
-Contact:
-Gaël de Chalendar (gael.de-chalendar@cea.fr) https://www.emploi.cea.fr/offre-de-emploi/emploi-finalisation-et-evaluation-de-la-version-libtorch-native-de-deep-lima-h-f_19575.aspx
+-   rÃ©daction du rapport de stage, et mise en forme des ressources et
+    codes produits.
 
 
+CompÃ©tences particuliÃ¨res et formation requise
 
-[1] R. Besançon, G. de Chalendar, O. Ferret, F. Gara, M. Laib,
-    O. Mesnard, and N. Semmar. 2010. Lima: A multilingual framework for
-    linguistic analysis and linguistic resources development and
-    evaluation. In Proceedings of LREC, Malta.
-[2] https://github.com/aymara/lima/wiki [3] V. Bocharov and Gaël de Chalendar. 2020. The Russian language
-    pipeline in the LIMA multilingual analyzer. In Proceedings of the
-    Computational Linguistics and Intellectual Technologies:
-    Proceedings of the International Conference "Dialogue 2020".
-[4] Joakim Nivre, Marie-Catherine de Marneffe, Filip Ginter, Yoav
-    Goldberg, Jan Haji, Christopher D. Manning, Ryan McDonald, Slav
-    Petrov, Sampo Pyysalo, Natalia Silveira, Reut Tsarfaty, Daniel
-    Zeman. 2016. Universal Dependencies v1: A Multilingual Treebank
-    Collection. In Proceedings of LREC.
-[5] https://www.hpcg-benchmark.org/custom/index.html?lid=155&slid=310
+Ce stage s'adresse aux Ã©tudiant.e.s de master 2 en Informatique et/ou
+Analyse de donnÃ©es ou en TAL
 
+-   CompÃ©tences en programmation Python (Numpy, Scipy, Pandas,
+    Scikit-learn, Keras).
+
+-   Outils de TAL (outils fondÃ©s sur lâ€™apprentissage, modÃ¨les de
+    langue, classifieurs, si possible outils statistiques de
+    lexicomÃ©trie).
+
+-   CuriositÃ© et volontÃ© de tester de nouvelles mÃ©thodes.
+
+Candidature
+
+L'Ã©tudiant-e sera accueilli-e dans les locaux de lâ€™UniversitÃ©
+Paris 8 au laboratoire LIASD.
+
+
+Contact :
+
+Revekka Kyriakoglou, LIASD, Ã©quipe PASTIS, UP8, kyriakoglou@up8.edu
+Anna Pappa, LIASD, Ã©quipe PASTIS, UP8, ap@up8.edu
+
+
+References
+
+[1] George D. Greenwade. The Comprehensive Tex Archive Network (CTAN).
+TUGBoat, 14(3):342â€“351, 1993.
+
+[2] Emilio Ferrara, Pasquale De Meo, Giacomo Fiumara, and Robert
+Baumgartner. Web data extraction,applications and techniques: A survey.
+Knowledge-Based Systems, 70:301â€“323, 2014.
+
+[3] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion
+Jones, Aidan N Gomez, Lukasz Kaiser,and Illia Polosukhin. Attention is all you need. InAdvances in neural information processing systems, pages5998â€“6008, 2017.
+
+[4] Mahtab Ahmed, Chahna Dixit, Robert E Mercer, Atif Khan, Muhammad
+Rifayat Samee, and Felipe Urra.Multilingual corpus creation for multilingual semantic similarity task. InProceedings of the 12th
+LanguageResources and Evaluation Conference, pages 4190â€“4196, 2020.
+
+[5] Qing Xie, Xinyuan Zhang, Ying Ding, and Min Song. Monolingual and multilingual topic analysis using ldaand bert embeddings.Journal of
+Informetrics, 14(3):101055, 2020.
+
+[6] Boshko Koloski, Senja Pollak, BlaË‡zË‡Skrlj, and Matej Martinc.
+Extending neural keyword extraction withtf-idf tagset matching.arXiv preprint arXiv:2102.00472, 2021.
+
+[7] Jakub Piskorski, Nicolas Stefanovitch, Guillaume Jacquet, and Aldo
+Podavini. Exploring linguistically-lightweight keyword extraction techniques for indexing news articles in a multilingual set-up.
+InProceedingsof the EACL Hackashop on News Media Content Analysis and
+Automated Report Generation, pages 35â€“44,2021.
+
+[8] Ao Xiong, Derong Liu, Hongkang Tian, Zhengyuan Liu, Peng Yu, and
+Michel Kadoch. News keywordextraction algorithm based on semantic clustering and word graph model.Tsinghua Science and Technology, 26(6):886â€“893, 2021

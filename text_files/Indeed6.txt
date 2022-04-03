@@ -1,40 +1,7 @@
-Titre: Stage - détection de navires sur images satellites optiques - h/f
-Date: 03/03/2022
-Organisme: CLS
-Lieu: 29280 Plouzané
+Titre: Stage -Développement méthode autocalibration capteurs online pour véhicules autonomes H/F
+Date: 04/03/2022
+Organisme: Expleo
+Lieu: Montigny-le-Bretonneux (78)
 
 
-Stage - détection de navires sur images satellites optiques - h/fCLS128 avis29280 PlouzanéStageCLS128 avisLisez les avis des gens qui travaillent ici.Description entreprise :
-CLS, filiale du CNES et de CNP, est une société internationale, pionnière dans la fourniture de solutions d’observation et de surveillance de la Terre depuis 1986. Sa vision est d’imaginer et de déployer des solutions innovantes pour comprendre et protéger notre Planète, et gérer durablement ses ressources. CLS emploie 800 salariés, au siège à Toulouse et sur ses 29 autres sites dans le monde. L’entreprise œuvre dans 5 secteurs d’activités stratégiques : la gestion durable des pêches, l'environnement et le climat, la sécurité maritime, la gestion de flottes et les énergies & les mines. L’entreprise fournit notamment des services satellitaires basés sur la localisation et la collecte de données environnementales, l’observation des océans et des eaux continentales, et la surveillance des activités terrestres et maritimes.
-CLS est recommandé par + de 87% de nos stagiaires et alternants dans le cadre du label « Happy Trainees ».
-Description du poste :
-VIGISAT est un centre d’analyse de situation maritimes opéré par CLS à Brest. Ce centre est équipé de l’unique station française de réception directe et d’analyse d’images satellites radar haute résolution (radar à synthèse d’ouverture / SAR) et délivre des services en temps quasi-réel de surveillance maritime par satellite : surveillance des pollutions et identification des pollueurs, détection de la pêche illégale, détection des icebergs, surveillance environnementale, support à l'industrie offshore. Les images radar en provenance de plusieurs satellites sont reçues par un réseau d’antennes au travers de l’Europe et sont traitées en temps réel à Brest.
-La détection de navires sur images SAR et la fusion avec d’autres types d’informations constitue un des services opérés par VIGISAT, contribuant au respect des réglementations maritimes. Afin d’assurer une couverture spatio-temporelle nécessaire à certaines opérations de surveillance maritime, les données optiques sont de plus en plus utilisées par nos services en appui/complément à l’imagerie SAR. Cependant ces images optiques nécessitent des prétraitements liés à la présence de nuages qui empêchent la détection. A partir de données satellitaires Sentinel 2 collectées et analysées en relation avec des données AIS pour réaliser de la détection de navires, il a été envisagé de constituer une base de données d’apprentissage qui sera mise en œuvre dans un algorithme de machine/deep learning afin de procéder à la détection automatique de navires à partir d’images optiques.
-Dans ce contexte, CLS recherche son/sa stagiaire sur le sujet suivant :
-«Détection de navires sur images satellites optiques »
-L’objectif principal de ce stage est de déployer une méthode de deep learning pour la détection automatique de navires sur des images optiques.
-Sous la supervision d’un référent de la business unit « Sécurité Maritime » pour les aspects applicatifs et d’un référent de l’équipe « Data Lab » pour les aspects apprentissage automatique, ce travail s’articulera autour des points suivants :
-Pré-traitement d’une base de référence de détection de navires sur données optiques pour constituer une base d’apprentissage.
-Sélection d’un réseau de neurones adapté aux traitements de données multispectrales (sur les bandes RGB partagées entre la plupart des capteurs optiques) pour réaliser de façon optimale une détection de navire.
-Réalisation des phases d’apprentissage et d’évaluation des performances du réseau retenu.
-Elaboration d’une méthode de détection automatique de nuages sur des images optiques afin de réaliser un masquage automatique des zones non exploitables pour la détection de navires.
-Activités :
-Les activités suivantes seront conduites :
-Prise de connaissance du domaine applicatif de la détection de navires sur images satellite optique
-Etude bibliographique et Etat de l’art sur l’utilisation d’approches Deep Learning pour la détection de features dans des images (CNN) ou/et utilisation d’approches basées sur les signatures spectrales (MLP)
-Mise en forme de la base d’apprentissage
-Prototypage d’un outil de détection
-Evaluation des performances
-Environnement technique :
-Langages de programmation : Python,
-Outils bureautique : Word, Excel, LibreOffice
-Système d'exploitation : Linux (pour les développements)
-Bibliothèques spécifiques : Keras/Tensorflow
-Durée du stage: 6 mois
-Stage rémunéré
-Profil recherché :
-En cours de formation en en traitement d’image / réseau de neurones / Deep Learning (Bac +5), une première expérience dans l’implémentation et l’évaluation d’un réseau de neurones serait un plus..
-La maitrise de la langue anglaise est indispensable pour mener à bien votre mission.
-Nous souhaitons intégrer à nos équipes des stagiaires enthousiastes, passionnés, curieux, prêts à s’investir au quotidien.
-L’ouverture d’esprit, l’aisance relationnelle, l’écoute et l’esprit d’analyse sont attendus.
-Enfin si pour vous l’esprit d’équipe est primordial, que vous êtes force de proposition, et que votre motivation est sans faille, alors n’hésitez plus, et rejoignez-nous !
+Stage -Développement méthode autocalibration capteurs online pour véhicules autonomes H/FExpleoMontigny-le-Bretonneux (78)Stage

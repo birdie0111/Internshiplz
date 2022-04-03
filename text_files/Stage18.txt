@@ -1,108 +1,65 @@
-Titre: How well can deep learning algorithms generalize over unseen data: A case study in multiword expression identification
-Date: 10/01/2022
-Organisme: LISN
-Lieu: Gif-sur-Yvette
+Titre: Evaluation de l'utilisation de Transformers pour l'annotation d'entités et de relations dans des textes
+Date: 12/01/2022
+Organisme: Thales
+Lieu: Palaiseau
 
 
-How well can deep learning algorithms generalize over unseen data:
-A case study in multiword expression identification
+Sujet : Evaluation de l'utilisation de Transformers pour l'annotation
+        d'entités et de relations dans des textes (H/F)
 
-Master internship proposal, 2022
+STAGE de 6 mois à partir de mars 2022, poste basé à Palaiseau (91).
 
-   -    Domain: natural language processing
-   -    Location: UniversitÃ© Paris-Saclay, Gif-sur-Yvette, France
-        (LISN https://www.lisn.upsaclay.fr/ )
-   -    Research teams: ILES
-        (https://www.limsi.fr/en/research/iles, Written and Sign
-        Language Processing) of the LISN;
-        TALEP (https://talep.lis-lab.fr/, Written and Spoken Language
-        Processing) of the LIS
-   -    Supervisors:
-        -   Agata Savary (LISN)
-            http://www.info.univ-tours.fr/~savary/
-        -   Carlos Ramisch (LIS)
-            http://pageperso.lis-lab.fr/carlos.ramisch/
-   -    Funding: UniversitÃ© Paris-Saclay
-   -    Duration: 3-6 months
-   -    Remuneration: around 606â‚¬/month
+Le traitement automatique des langues est un sujet transverse dans le groupe Thales. De nombreux besoins concernent l'analyse rapide de masses textuelles selon des concepts spécifiques, mais le manque de corpus volumineux annotés manuellement, nécessaires pour l'apprentissage, ne permet pas d'utiliser directement les méthodes classiques de machine learning.
 
-     Motivation and context
+L'objectif du stage est de tester les capacités d'adaptation des
+Transformers pour l'identification automatique d'entités et de relations entre entités spécifiques à un domaine, avec un ensemble restreint de données d'apprentissage.
 
-The aim of this internship is to boost applications in Natural Language
-Processing (NLP), by focusing on one of their major challenges: multiword expressions (MWEs). MWEs are groups of words which exhibit unpredicted properties (Baldwin & Kim, 2010). Most prominently, their meaning does not straightforwardly derive from the meanings of their components. For instance, faire`make/do' and valoir`be worth sth' are verbs, while their combination yields a noun: faire-valoir`a stooge, a person who is used by somebody to do things that are unpleasant or dishonest'. Similarly, the meaning of casser sa pipe `to die' (literally to break one's pipe) cannot be straightforwardly deduced from the meanings of the individual components. Due to these properties, MWEs are very challenging in applications like machine translation, information retrieval, opinion mining, etc.
+Nous développons un outil interne, STRASS, visant l'annotation automatique de textes par l'acquisition de patrons linguistiques à partir d'annotations manuelles. L'objectif de la plateforme STRASS est de permettre l'obtention d'annotations automatiques sans disposer au préalable de corpus métier volumineux annoté manuellement ni nécessiter de compétences linguistiques de l'utilisateur. Cette méthode s'appuie sur des patrons linguistiques générés automatiquement à partir d'annotations manuelles réalisées par des experts du domaine.
 
-A major task related to MWEs is to automatically identify their occurrences in running text (so as to provide more accurate representations to downstream applications). The PARSEME
-(https://gitlab.com/parseme/corpora/-/wikis/home) network has been addressing this task via a series of shared tasks on automatic identification of verbal MWEs (https://gitlab.com/parseme/corpora/-/wikis/home#shared-tasks).
-Edition 1.1 of the PARSEME shared task (in 2018) showed critical hardness of identifying MWEs which have not been previously seen in the training corpus. Edition 1.2 saw the advent of transformer-based language models (BERT), which brought substantial progress to MWE
-identification performances. Still, only modest progress was achieved in generalization over unseen data.
+Les récentes approches neuronales regroupées sous l'appellation
+Transformers semblent très prometteuses, notamment parce qu'elles nécessitent moins de données d'apprentissage que les approches statistiques classiques, ce qui est primordial dans les domaines Thales où les entités et relations sont spécifiques à chaque besoin et qu'il n'existe pas de volumineux corpus annotés pour l'apprentissage.
 
-     Objectives
+La mission proposée a pour objet de tester quelques Transformers afin d'évaluer leur adaptabilité à un domaine spécifique ainsi que d'identifier la complémentarité entre ce type d'approche et celle mise en oeuvre par STRASS. Les tests s'appliqueront sur un sous-ensemble de Transformers à définir dans l'offre spaCy 3 afin d'identifier l'approche la plus prometteuse ou complétant au mieux ce qui est proposé par STRASS. L'objectif sera d'évaluer leur capacité à annoter non seulement les entités mais aussi les relations entre entités.
 
-The aim of this internship is to better understand the potential of transformer-based models in generalising over unseen data in MWE
-identification. More precisely we wish to:
+Vous serez ainsi amené.e à :
 
-    -   analyze the results of edition 1.2 of the PARSEME shared task, (https://gitlab.com/parseme/sharedtask-data/-/tree/master/1.2/system-results)
-        and in particular those related to unseen data
-   -    propose an error analysis methodology for MWEs which are and
-        are not correctly identified, and try to understand the reasons
-        behind this state of the affairs
-   -    put forward recommendations for future enhancements of the
-        state-of-the-art MWE identifiers
-   -    (depending on the candidate's profile and the length of the
-        internship) implement a prototype based on these
-        recommendations
+-   Construire un corpus d'apprentissage et un corpus d'évaluation à
+    partir de textes existants et avec un modèle de connaissance
+    pour l'annotation prédéfini ou à adapter aux outils à évaluer.
 
-     Candidate's profile
+-   Définir une grille d'évaluation selon différents critères (volume
+    des données d'apprentissage, nombre d'instances annotées par type
+    d'entité ou de relation=85).
 
-   -    2nd or 1st year master student in computational linguistics,
-        computer science or alike ; excellent 3rd year bachelor
-        students will also be considered
-   -    Interests in linguistics and familiarity with language
-        technology
-   -    Good programming skills, preferably in Python
+-   Effectuer des tests des Transformers pour leur prise en main, la
+    sélection d'un ou deux outils et leur application sur le corpus
+    dédié pour une évaluation selon la grille d'évaluation
+    prédéfinie.
 
-     Important dates
+-   Réaliser également des tests avec l'outil STRASS pour une prise en
+    main puis son évaluation dans les mêmes conditions que les
+    Transformers.
 
-   -    Application deadline: 24 January 2022 (or until filled)
-   -    Notification: 5 February 2022
-   -    Position starts: March-May 2022
-   -    Position ends: June-July 2022
+-   Rédiger un rapport pour détailler le travail réalisé et les
+    résultats obtenus.
 
-     How to apply
 
-Send your CV and a transcript of your bachelor and master grades to
-Agata Savary <first.last@universite-paris-saclay.fr> and
-Carlos Ramisch <first.last@lis-lab.fr>.
+Profil recherché :
 
-     References
+Etudiant.e en école d'Ingénieur.e ou formation équivalente, vous préparez un Master 2. Votre formation vous a permis d'acquérir des compétences dans les domaines suivants :
 
-   -    Baldwin, T. and Kim, S. N. (2010)Multiword Expressions https://people.eng.unimelb.edu.au/tbaldwin/pubs/handbook2009.pdf,
-        in Nitin Indurkhya and Fred J. Damerau (eds.) Handbook of
-        Natural Language Processing, Second Edition, CRC Press, Boca
-        Raton, USA, pp. 267-292.
+-   Traitement automatique du langage naturel
 
-   -    Matthieu Constant, GÃ¼lÅŸen EryiÄŸit, Johanna Monti, Lonneke van
-        der Plas, Carlos Ramisch, Michael Rosner, and Amalia Todirascu.
-        2017.Multiword expression processing: A survey https://www.mitpressjournals.org/doi/full/10.1162/COLI_a_00302.
-        Computational Linguistics, 43(4):837-892.
+-   Connaissance théorique des Transformers
 
-   -    Carlos Ramisch, Agata Savary, Bruno Guillaume, Jakub Waszczuk,
-        Marie Candito, Ashwini Vaidya, Verginica Barbu Mititelu, Archna
-        Bhatia, Uxoa IÃ±urrieta, Voula Giouli, Tunga GÃ¼ngÃ¶r, Menghan
-        Jiang, Timm Lichte, Chaya Liebeskind, Johanna Monti, Sara
-        Stymne, Abigail Walsh, Renata Ramisch, Hongzhi Xu (2020)
-        Edition 1.2 of the PARSEME Shared Task on Semi-supervised
-        Identification of Verbal Multiword Expressions
-        https://www.aclweb.org/anthology/2020.mwe-1.14/ ,
-        in the Proceedings of the Joint Workshop on Multiword
-        Expressions and Electronic Lexicons (MWE-LEX 2020), 13
-        December 2020, Barcelona, Spain (online).
+-   Programmation Python
 
-   -    Agata Savary, Silvio Ricardo Cordeiro, Carlos Ramisch (2019)
-        Without lexicons, multiword expression identification will
-        never fly: A position statement
-        https://www.aclweb.org/anthology/papers/W/W19/W19-5110/,
-        In the Proceedings of the Joint Workshop on Multiword
-        Expressions and WordNet (MWE-WN 2019), 2 August 2019,
-        Florence, Italy.*
+-   Avoir une expérience avec spaCy 3 et quelques Transformers serait
+    un plus
 
+-   Votre faites preuve de curiosité au quotidien, vous êtes dynamique
+    et autonome
+
+-   Vous êtes à l'aise en anglais
+
+CV plus lettre de motivation à envoyer à l'adresse : benedicte.goujon@thalesgroup.com 

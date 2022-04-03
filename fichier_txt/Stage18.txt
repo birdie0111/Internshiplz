@@ -1,0 +1,65 @@
+Titre: Evaluation de l'utilisation de Transformers pour l'annotation d'entités et de relations dans des textes
+Date: 12/01/2022
+Organisme: Thales
+Lieu: Palaiseau
+
+
+Sujet : Evaluation de l'utilisation de Transformers pour l'annotation
+        d'entités et de relations dans des textes (H/F)
+
+STAGE de 6 mois à partir de mars 2022, poste basé à Palaiseau (91).
+
+Le traitement automatique des langues est un sujet transverse dans le groupe Thales. De nombreux besoins concernent l'analyse rapide de masses textuelles selon des concepts spécifiques, mais le manque de corpus volumineux annotés manuellement, nécessaires pour l'apprentissage, ne permet pas d'utiliser directement les méthodes classiques de machine learning.
+
+L'objectif du stage est de tester les capacités d'adaptation des
+Transformers pour l'identification automatique d'entités et de relations entre entités spécifiques à un domaine, avec un ensemble restreint de données d'apprentissage.
+
+Nous développons un outil interne, STRASS, visant l'annotation automatique de textes par l'acquisition de patrons linguistiques à partir d'annotations manuelles. L'objectif de la plateforme STRASS est de permettre l'obtention d'annotations automatiques sans disposer au préalable de corpus métier volumineux annoté manuellement ni nécessiter de compétences linguistiques de l'utilisateur. Cette méthode s'appuie sur des patrons linguistiques générés automatiquement à partir d'annotations manuelles réalisées par des experts du domaine.
+
+Les récentes approches neuronales regroupées sous l'appellation
+Transformers semblent très prometteuses, notamment parce qu'elles nécessitent moins de données d'apprentissage que les approches statistiques classiques, ce qui est primordial dans les domaines Thales où les entités et relations sont spécifiques à chaque besoin et qu'il n'existe pas de volumineux corpus annotés pour l'apprentissage.
+
+La mission proposée a pour objet de tester quelques Transformers afin d'évaluer leur adaptabilité à un domaine spécifique ainsi que d'identifier la complémentarité entre ce type d'approche et celle mise en oeuvre par STRASS. Les tests s'appliqueront sur un sous-ensemble de Transformers à définir dans l'offre spaCy 3 afin d'identifier l'approche la plus prometteuse ou complétant au mieux ce qui est proposé par STRASS. L'objectif sera d'évaluer leur capacité à annoter non seulement les entités mais aussi les relations entre entités.
+
+Vous serez ainsi amené.e à :
+
+-   Construire un corpus d'apprentissage et un corpus d'évaluation à
+    partir de textes existants et avec un modèle de connaissance
+    pour l'annotation prédéfini ou à adapter aux outils à évaluer.
+
+-   Définir une grille d'évaluation selon différents critères (volume
+    des données d'apprentissage, nombre d'instances annotées par type
+    d'entité ou de relation=85).
+
+-   Effectuer des tests des Transformers pour leur prise en main, la
+    sélection d'un ou deux outils et leur application sur le corpus
+    dédié pour une évaluation selon la grille d'évaluation
+    prédéfinie.
+
+-   Réaliser également des tests avec l'outil STRASS pour une prise en
+    main puis son évaluation dans les mêmes conditions que les
+    Transformers.
+
+-   Rédiger un rapport pour détailler le travail réalisé et les
+    résultats obtenus.
+
+
+Profil recherché :
+
+Etudiant.e en école d'Ingénieur.e ou formation équivalente, vous préparez un Master 2. Votre formation vous a permis d'acquérir des compétences dans les domaines suivants :
+
+-   Traitement automatique du langage naturel
+
+-   Connaissance théorique des Transformers
+
+-   Programmation Python
+
+-   Avoir une expérience avec spaCy 3 et quelques Transformers serait
+    un plus
+
+-   Votre faites preuve de curiosité au quotidien, vous êtes dynamique
+    et autonome
+
+-   Vous êtes à l'aise en anglais
+
+CV plus lettre de motivation à envoyer à l'adresse : benedicte.goujon@thalesgroup.com 

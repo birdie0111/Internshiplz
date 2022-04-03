@@ -1,41 +1,147 @@
-Titre: Génération automatique de hashtags pour des messages textuels courts issus de Twitter
+Titre: Évaluation de la cohérence des résumés automatiques par l’étude de la rupture des chaînes de coréférence
 Date: 17/01/2022
-Organisme: LS2N
-Lieu: Nantes
+Organisme: LIFAT
+Lieu: Blois
 
 
-Proposition de stage - 2022
+Évaluation de la cohérence des résumés automatiques par l'étude de la rupture des chaînes de coréférence.
 
-Génération automatique de hashtags pour des messages textuels courts issus de Twitter
+*Encadrant :*
+Valentin Nyzam (LIFAT)
 
-Niveau : Master 2
+*Problématique scientifique :*
+Dès la fin des années 1950, est apparue la volonté de résumer automatiquement des documents (Luhn, 1958). Le besoin de systèmes de résumé automatique s'est alors fait progressivement ressentir jusqu'à aujourd'hui avec l'émergence de notre société de l'information. En effet, l'idée d'affecter la tâche de résumer des documents à une machine plutôt qu'à des humains devient à l'heure actuelle de plus en plus pressante sous l'effet de la masse croissante de documents (textes techniques et scientifiques, courriers électroniques, articles de presse, ...) disponibles en format numérique.
 
-Équipe : TALN - Traitement Automatique du Langage Naturel
+L'écriture d'un résumé court et compréhensif nécessite des capacités de réorganisation, de modification et de fusion des informations issues des différentes phrases des documents sources. La compréhension complète suivie du résumé des documents en entrée n'est pas toujours simple pour une majorité de personnes et n'est pas encore à la portée des systèmes "état de l'art" dans le résumé automatique. La plupart des systèmes évite ainsi la compréhension complète de l'entrée et la génération de texte, en utilisant pour cela des méthodes extractives.
+L'approche extractive du résumé automatique cherche à déterminer quelle phrase est importante au sein d'un ensemble de phrases. Au fil des années, ces méthodes ont pu bénéficier du développement des méthodes globales de traitement automatique des langues et d'apprentissage. Plus récemment, les chercheurs étudient de plus en plus la tâche de génération de résumés en utilisant des méthodes abstractives, notamment grâce aux développement des méthodes d'apprentissage profond (Subramanian et al., 2019; Zhang et al., 2020).
 
-Durée : 6 mois - Début : Février 2022
+Traditionnellement, l'évaluation du résumé implique un jugement humain sur différentes mesures de qualité, telles que la cohérence, la concision, la grammaticalité, la lisibilité et le contenu (Mani and
+Maybury, 2001). Cependant, même une simple évaluation manuelle des résumés à grande échelle sur la qualité linguistique et la couverture du contenu comme dans la campagne d'évaluation DUC (Document
+Understanding Conference) nécessite plus de 3 000 heures d'efforts humains. C'est ainsi très coûteux et difficile à mener fréquemment. Par conséquent, les méthodes d'évaluation de résumés ont attiré beaucoup d'attention au cours des dernières années chez les chercheurs. Ils ont ainsi mis en place des protocoles d'évaluation automatique permettant d'évaluer le contenu d'un résumé (Lin, 2004; Vasilyev, Dharnidharka, and Bohannon, 2020; Fabbri et al., 2021). Depuis très récemment, les chercheurs ont commencé à étudier l'évaluation de la consistance au sein des résumés automatiques (Vasilyev and Bohannon, 2021; Xie et al., 2021). Néanmoins, aucune étude, à notre connaissance, ne s'est focalisée sur l'évaluation de la cohérence au sein d'un résumé. Or, les techniques de résumé automatique utilisées aujourd'hui peuvent entraîner des problèmes importants de cohérence, notamment avec l'utilisation de pronoms sans références.
 
-Salaire : 600 euros/mois environ
+Afin d'analyser cette problématique, nous souhaiterions étudier la rupture des chaînes de coréférence au sein des résumés automatiques. La coréférence est le phénomène qui consiste pour différents syntagmes nominaux à désigner le même objet sémantique. Dans l'exemple ci-dessous, les mots en gras réfèrent à la même personne : le pronom il désigne Paul.
 
-Profil du candidat : Le stage proposé correspond à un profil bac+5
-(Master 2 ou équivalent). Il doit maîtriser au moins un langage de programmation objet courant (Java, C++...) et un langage de script (Python, Perl...). En outre, des cours ou expériences liés au sujet (traitement automatique de langage, fouille de données, apprentissage automatique, réseaux complexes...) seraient appréciés.
+> *Paul* aime les frites et *il* va en manger ce soir.
+>
 
-Résumé du stage :
+La résolution de la coréférence est une tâche fortement étudiée au sein du LIFAT (Adele Désoyer et al., 2016; Adèle Désoyer et al., 2015;
+Muzerelle et al., 2014). Le résumé cherche à condenser l'information la plus importante provenant d'un document (ou de plusieurs documents) afin d'en produire une version abrégée pour un utilisateur. Un résumé automatique de texte correspond à la génération d'un résumé au moyen de techniques informatiques. Il existe deux grandes familles de méthodes de résumé automatique : les méthodes extractives qui vont extraire des phrases des documents, ou bien des méthodes abstractives qui vont réellement générer un résumé à partir des documents (Exemples en
+Annexe). Le résumé automatique a fait partie du sujet de thèse du docteur  Valentin Nyzam, encadrant proposé (Nyzam, 2021).
 
-L'objectif du stage est de proposer des approches originales permettant de générer automatiquement des hashtags sur un message (ici, tweet) à partir de son contenu textuel et des méta-données associées. Il s'agira de mettre l'accent sur la capacité du système à produire des hashtags complémentaires au texte, c.-à-d. qui n'existent pas directement dans le contenu textuel. Afin de mener à bien les expériences, un corpus a déjà été collecté et un premier système de type sequence-to-sequence (seq2seq) a également été mis en place. Globalement, trois sous-objectifs sont visés : 1) terminer et compléter l'évaluation du système seq2seq et en réaliser une étude qualitative, 2) compléter l'état de l'art sur le sujet de la génération de hashtags/mots-clés et proposer d'autres approches, 3) intégrer les méta-données des tweets au sein d'une architecture "multimodale" (i.e. qui intègrera ici les méta-données au contenu textuel).
+Ce stage a pour objectif d'étudier cette problématique en abordant les tâches suivantes :
 
-Mots-clés :
+   -    Mettre en parallèle les phrases du résumé automatique avec les
+        phrases dont elles sont issues dans les documents sources. Il
+        est possible d'utiliser pour cela les méthodes issues de la
+        tâche de Question-Answering,
+   -    Appliquer une détection des chaînes de coréférence entre les
+        différents groupements de phrases obtenus,
+   -    Observer les différences entre les chaînes de coréférences pour
+        les résumés humains et automatiques,
+   -    Déterminer une métrique permettant d'évaluer les différences
+        observées.
 
-Traitement automatique des Langues (TAL), Indexation, Apprentissage automatique, Enrichissement de documents, Réseaux sociaux,
-Métadonnées.
+L'utilisation d'un système de détection de la coréférence apportera potentiellement des erreurs supplémentaires. C'est pourquoi il sera probablement nécessaire d'adapter la métrique à la valeur de certitude obtenue lors de la détection.
 
-Les candidatures doivent être adressées à :
+*Pré-requis :*
+Des compétences sont attendues en programmation et en traitement automatique de la langue. Des connaissances en science des données (Machine Learning et Deep Learning) seront appréciées.
 
-    Florian Boudin (florian.boudin@univ-nantes.fr)
-    Richard Dufour (richard.dufour@univ-nantes.fr)
+Profil recherché : Master 1 ou 2 Informatique
+Lieu du stage : Laboratoire LIFAT, IUT de Blois.
+Période de stage : 5 mois à partir de février 2022
 
-et doivent inclure :
+*Candidature :*
+Envoyer un mail présentant votre parcours et vos motivations ainsi que votre CV à : valentin.nyzam@univ-tours.fr
 
-- un CV détaillé (formation et expériences en recherche)
-- les notes de Licence et de Master
-- éventuellement un lien vers des réalisations personnelles si disponible (ex : github)
+*Bibliographie :*
 
+Désoyer, Adele et al. (2016). "Coreference resolution for french oral data: Machine learning experiments with ANCOR". In: International
+Conference on Intelligent Text Processing and Computational
+Linguistics. Springer, pp.507-519.
+
+Désoyer, Adèle et al. (2015). "Les coréférences à l'oral: une expérience d'apprentissage automatique sur le corpus ANCOR".
+In: Traitement Automatique des Langues 55.2, pp. 97-121.
+
+Fabbri, Alexander R et al. (2021). "Summeval: Re-evaluating summarization evaluation". In: Transactions of the Association for
+Computational Linguistics 9, pp. 391-409.
+
+Lin, Chin-Yew (2004). "Rouge: A package for automatic evaluation of summaries". In: Text summarization branches out, pp. 74-81.
+Luhn, Hans Peter (1958). "The automatic creation of literature abstracts". In: IBM Journal of research and development 2.2, pp. 159-165.
+
+Mani, Inderjeet and Mark T Maybury (2001). "Automatic summarization".
+In. Muzerelle, Judith et al. (2014). "ANCOR_Centre, a large free spoken
+French coreference corpus: description of the resource and reliability measures". In: LREC'2014, 9th Language Resources and Evaluation
+Conference. Pp. 843-847.
+
+Nyzam, Valentin (2021). "Résumé comparatif crosslingue et multilingue".
+PhD thesis. Université Paris 8.
+
+Subramanian, Sandeep et al. (2019). "On extractive and abstractive neural document summarization with transformer language models".
+In: arXiv preprint arXiv:1909.03186.
+
+Vasilyev, Oleg and John Bohannon (2021). "Estimation of Summary-to-Text
+Inconsistency by Mismatched Embeddings". In: arXiv preprint arXiv:2104.05156.
+
+Vasilyev, Oleg, Vedant Dharnidharka, and John Bohannon (2020). "Fill in the blanc: Human-free quality estimation of document summaries".
+In: arXiv preprint arXiv:2002.09836.
+
+Xie, Yuexiang et al. (2021). "Factual Consistency Evaluation for Text
+Summarization via Counterfactual Estimation". In: arXiv preprint arXiv:2108.13134.
+
+Zhang, Jingqing et al. (2020). "Pegasus: Pre-training with extracted gap-sentences for abstractive summarization". In: International
+Conference on Machine Learning. PMLR, pp. 11328-11339.
+
+Ce stage est financé par le groupement de recherche ICVL.
+
+*Exemples de résumé pour le corpus CNN/DM*
+Exemples de résumé pour un article de CNN
+https://edition.cnn.com/2015/04/01/europe/france-germanwings-plane-crash-main/index.html en utilisant l'outil MOTS disponible librement sur github https://github.com/ToolAutomaticSum/MOTS.
+
+*Résumé humain*
+Marseille prosecutor says "so far no videos were used in the crash investigation" despite media reports. Journalists at Bild and Paris
+Match are "very confident" the video clip is real, an editor says.
+Andreas Lubitz had informed his Lufthansa training school of an episode of severe depression, airline says.
+
+*Méthode lead*
+The French prosecutor leading an investigation into the crash of
+Germanwings Flight 9525 insisted Wednesday that he was not aware of any video footage from on board the plane. Marseille prosecutor Brice Robin told CNN that "so far no videos were used in the crash investigation."
+
+*Méthode tf-idf MMR*
+The publications said that they watched the video, which was found by a source close to the investigation. Lubitz told his Lufthansa flight training school in 2009 that he had a "previous episode of severe depression," the airline said Tuesday.
+
+*Méthode centroïde MMR*
+CNN's Frederik Pleitgen, Pamela Boykoff, Antonia Mortensen, Sandrine
+Amiel and Anna-Maja Rappard contributed to this report. Lt. Col.
+Jean-Marc Menichini, a French Gendarmerie spokesman in charge of communications on rescue efforts around the Germanwings crash site, told CNN that the reports were "completely wrong" and "unwarranted."
+
+*Méthode 2G centroïde MMR*
+The two publications described the supposed video, but did not post it on their websites. He added, "A person who has such a video needs to immediately give it to the investigators." Paris Match and Bild reported that the video was recovered from a phone at the wreckage site.
+
+*Méthode LexRank MMR*
+The French prosecutor leading an investigation into the crash of
+Germanwings Flight 9525 insisted Wednesday that he was not aware of any video footage from on board the plane. Cell phones have been collected at the site, he said, but that they "hadn't been exploited yet."
+
+*Méthode 2G LexRank MMR*
+The French prosecutor leading an investigation into the crash of
+Germanwings Flight 9525 insisted Wednesday that he was not aware of any video footage from on board the plane. Marseille prosecutor Brice Robin told CNN that "so far no videos were used in the crash investigation."
+
+*Méthode LDA MMR*
+The French prosecutor leading an investigation into the crash of
+Germanwings Flight 9525 insisted Wednesday that he was not aware of any video footage from on board the plane. CNN's Margot Haddad reported from Marseille and Pamela Brown from Dusseldorf, while Laura
+Smith-Spark wrote from London.
+
+*Méthode KCore Query MMR*
+Reichelt told "Erin Burnett: Outfront" that he had watched the video and stood by the report, saying Bild and Paris Match are "very confident" that the clip is real. Marseille prosecutor Brice Robin told
+CNN that "so far no videos were used in the crash investigation."
+
+*Méthode 2G centroïde KS*
+The French prosecutor leading an investigation into the crash of
+Germanwings Flight 9525 insisted Wednesday that he was not aware of any video footage from on board the plane. He added, "A person who has such a video needs to immediately give it to the investigators."
+
+*Méthode 2G JS KS*
+The French prosecutor leading an investigation into the crash of
+Germanwings Flight 9525 insisted Wednesday that he was not aware of any video footage from on board the plane. But none of the cell phones found so far have been sent to the institute, Menichini said.
+
+*Méthode génétique*
+The French prosecutor leading an investigation into the crash of
+Germanwings Flight 9525 insisted Wednesday that he was not aware of any video footage from on board the plane. Marseille prosecutor Brice Robin told CNN that "so far no videos were used in the crash investigation."  

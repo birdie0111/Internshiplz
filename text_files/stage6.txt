@@ -1,35 +1,35 @@
-Titre: Recurrent neural network models of the textualization process
-Date: 14/02/2022
-Organisme: LIPN
-Lieu: Villetaneuse
+Titre: Data Annotation Specialist
+Date: 21/02/2022
+Organisme: ReciTAL
+Lieu: NR
 
 
+reciTAL recherche un(e) Data Annotation Specialist H/F pour l'analyse et l'annotation de documents en français et anglais, dans le cadre d'un stage d'une durée de 6 mois.
 
-Title: Recurrent neural network models of the textualization process
-Location: LIPN (UMR CNRS 7030), Université Sorbonne Paris Nord (99 Ave nue Jean Baptiste Clément, 93430 Villetaneuse)
-Advisors: Nadi Tomeh (tomeh@lipn.fr), Joseph Le Roux (leroux@lipn.fr)
+*À propos* reciTAL est un éditeur de logiciels B2B d'Intelligence Artificielle spécialisé dans le Traitement Automatique du Langage. La plateforme reciTAL est une solution au problème du traitement des données non structurées dans l'entreprise.
 
-Context ======
-In the context of the ANR project Pro-TEXT
-(https://pro-text.huma-num.fr/) we aim to conduct a comprehensive linguistic analysis of the textualization process, i.e. the real-time progressive construction of a text. We will study "bursts of writing", which are textual segments produced between "pauses", in order to provide insight into the relation between regularities of language performance and the cognitive and contextual constraints. The aim is to understand some of the layout mechanisms that allow language to give rise to novelty out of known and prefabricated structures. The project's aim is to build on recent developments in linguistics, cognitive psychology and machine learning to analyze burst data.
+Porté par une équipe de recherche à la pointe (6 PhD et un comité scientifique avec Facebook Research et l'université de Berkeley), reciTAL compte plusieurs grandes banques et assureurs français parmi ses clients, représentant plus de 30.000 utilisateurs actifs.
 
-Internship proposal ===============
-Burst data are collected through real-time recording of the writing process using keystroke logging tools Inputlog (http://www.inputlog.net/) and Scriptlog, which produces temporal data (chronology and duration of text production and pause length), language data (language sequences produced continuously between two pauses), and topological textual data (dynamics of text planning, revising already written text).
+Lancé en 2017, reciTAL a gagné les AI Awards 2019 et a reçu le label
+DeepTech de la BPI. Il a réalisé une levée de fonds de 3,5M¤ avec
+Breega en septembre 2020 pour accélérer son développement.
 
-In this internship, we propose to explore the use of recurrent neural networks such as LSTMs in modeling the three types of sequences mentioned above.
-We plan to study multiple modeling tasks. For instance, pause prediction can be cast as an LSTM-based sequence labeling task where input text is labeled with pause position and duration. A different network can be used to model the sequence of text editing actions including insertion and deletion of characters but also the intervening pauses. The network is then trained to predict the next action as in language models. Furthermore, we plan to explore the use of data structures inspired by the stack LSTM (Dyer et al., 2015) to use both action and word embeddings when predicting pauses.
-Such a structure should allow for updating state representations in a non-linear and non-local way while maintaining a low complexity.
+*Responsabilités au quotidien*
+-   Annotation de corpus pour l'entraînement des modèles ML et DL
+-   Garant de la qualité des corpus annotés, contribution à l'analyse
+    linguistique pour concevoir/améliorer le guideline d'annotation
+-   Documentation du processus d'annotation
 
-Candidate profile =============
--   Master in Computer Science or related field
--   Strong programming skills
--   Good reading and writing of English
--   Experience in training deep learning models (with Pytorch/Jax)
+*Profil recherché*
+-   De formation supérieure en Linguistique ou Langues (LEA, LLCE ou
+    équivalent), avec idéalement une spécialisation en Linguistique
+    Informatique ou Traitement Automatique des Langues (TAL / NLP).
+-   Maîtrise de l'anglais et du français indispensable
+-   Grande rigueur
+-   Autonomie
+-   Capacité d'analyse et de synthèse
+-   Facilité à travailler et communiquer en équipe
 
-How to apply ? ===========
-Send your CV and transcript of Master grades to tomeh@lipn.fr and leroux@lipn.fr
-
-References ========= (Dyer et al., 2015) https://aclanthology.org/P15-1033/
-Transition-Based Dependency Parsing with Stack Long Short-Term Memory.
-Chris Dyer, Miguel Ballesteros, Wang Ling, Austin Matthews, Noah A.
-Smith.
+*Contact*
+Envoyer votre candidature (CV + lettre de motivation optionnelle) à
+Jiaqi Chang, jiaqi@recital.ai 

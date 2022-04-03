@@ -1,23 +1,7 @@
-Titre: Stage – automatisation de la gestion des vulnérabilités F/H
-Date: 01/03/2022
-Organisme: Orange
-Lieu: 92400 Courbevoie
+Titre: stagiaire ingénieur-développeur en Machine Learning H/F
+Date: 01/04/2022
+Organisme: France Télévisions
+Lieu: Paris (75)
 
 
-Stage – automatisation de la gestion des vulnérabilités F/HOrange3,320 avis92400 CourbevoieStageOrange3,320 avisLisez les avis des gens qui travaillent ici.« Automatiser la gestion des vulnérabilités », c’est quoi ?
-Une veille sécurité actuellement en place garantit la bonne prise en compte dans les meilleurs délais des vulnérabilités au sein du SI de Viaccess-Orca et des produits logiciels développées par l’entreprise.
-Ta mission sera de renforcer l’automatisation du traitement des vulnérabilités en :Agrégeant et croisant efficacement les sources de donnéesIntégrant le processus d’alerte au processus de développementProduisant des tableaux de bords automatiques pour le suivi du traitement des alertes
-Les développements seront réalisés en Python dans un environnement DevOps moderne (Artifactory, GitLab, Jenkins, Kubernetes, ElasticSearch …).
-about you
- Tu es créatif(ve), force de proposition, et tu as envie de développer des compétences dans le domaine de la sécurité et du DevOpsTu aimes les nouvelles technologies, travailler en équipe mais tu sais également être autonome #OneTeam #Agile #DevOpsTu maîtrises la langue de Shakespeare et tu aimes la programmation.
-Si tu as répondu oui à toutes ces questions et que tu recherches un stage de 5 mois a minima, de niveau BAC+3, 4 ou 5 : ce stage est fait pour toi !
-additional information
-Postule et rejoins notre petite filiale qui a tout d’une grande.
-department
-Viaccess-Orca, c’est qui ?
-VO (pour les intimes) est une filiale d’Orange basée en France, à la Défense et à Rennes, mais aussi en Israël, en Finlande, en Asie et en Amérique Latine. VO propose des solutions OTT et de plateformes TV, de protection de contenu et de solutions d'analyse de données avancées pour une expérience TV personnalisée. Nous fournissons nos technologies à des opérateurs de télévision et des fournisseurs de contenu.
-Rejoindre Viacces-Orca c’est donc s’ouvrir à un environnement multiculturel. C’est également retrouver les avantages d’appartenir à un grand groupe (CCNT, Participation groupe, Intéressement VO…) et d’être géré comme une start-up !
-Et parce qu’une vidéo vaut mille mots : https://www.youtube.com/watch?v=vFSqVOApyIU
-contract
-Internship
-Level : Bac+4, Bac+3
+stagiaire ingénieur-développeur en Machine Learning H/FFrance TélévisionsParis (75)Temps plein, Stage

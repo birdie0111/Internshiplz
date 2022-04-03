@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" media="all" href="main_posi.css" />
     <link rel="stylesheet" type="text/css" media="all" href="main_style.css" />
     <script type:"text/javascript" src="jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="script.js" ></script>
+
 </head>
 
 <body>
@@ -72,28 +72,7 @@
         
 ?>
   
-
+<script type="text/javascript" src="script.js" ></script>
 </body>
 
 </html>
-<script>
-    $("#pageAcc").on({
-    "click": function () {
-        $("#accueil").css("display", "flex");
-        $("#recherche,#discussion").css("display", "none");
-    }
-});
-$("#pageRec").on({
-    "click": function () {
-        console.log("research clicked");
-        $("#accueil,#discussion").css("display", "none");
-        $("#recherche").css("display", "flex");
-    }
-});
-$("#pageDis").on({
-    "click": function () {
-        $("#accueil,#recherche").css("display", "none");
-        $("#discussion").css("display", "block");
-    }
-});
-</script>

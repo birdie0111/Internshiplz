@@ -1,0 +1,126 @@
+Titre: Intégration de connaissances expertes dans des modèles neuronaux profonds pour l'adaptation multi-domaine et l’explication de prédictions
+Date: 12/01/2022
+Organisme: CEA LIST
+Lieu: Palaiseau
+
+
+
+Le CEA LIST propose le sujet de stage ci-dessous pour l'année universitaire 2021-2022.
+
+
+Titre de stage: Intégration de connaissances expertes dans des modèles neuronaux profonds pour l'adaptation multi-domaine et l'explication de prédictions
+
+
+Lieu du stage: CEA Saclay Nano-INNOV, Laboratoire Analyse Sémantique
+Texte et Image (LASTI), 8 Avenue de la Vauve, 91120 Palaiseau
+
+
+Encadrant: Nasredine Semmar, CEA LIST, Laboratoire Analyse Sémantique
+Texte et Image (LASTI)
+
+
+Le Laboratoire d'Analyse Sémantique des Textes et des Images (LASTI) est une équipe de 25 personnes (chercheurs, ingénieurs, doctorants) menant des travaux de recherche sur les technologies de description et de compréhension du contenu multimédia (image, texte, parole) et des documents multilingues, en particulier à grande échelle. Les enjeux scientifiques sont:
+-   développer des algorithmes efficaces et robustes pour l'analyse et
+    l'extraction de contenu multimédia, leur classification et analyse
+    sémantique;
+-   reconstitution ou fusion de données hétérogènes pour interpréter
+    des scènes ou documents;
+-   développer des méthodes et des outils pour la construction, la
+    formalisation et l'organisation des ressources et connaissances
+    nécessaires au fonctionnement de ces algorithmes;
+-   intégrer plusieurs de ces briques technologiques afin d'accéder à
+    l'information et répondre à un besoin utilisateur (moteurs de
+    recherche, chatbot, rapports synthétiques de veille).
+
+
+Contexte :
+
+Vu l'importante augmentation des besoins des industriels en traitement automatique de textes, de nombreux logiciels de Traitement Automatique de la Langue (TAL) ont été développés et commercialisés, et différentes connaissances expertes (ontologies, thésaurus, bases de données terminologiques, etc.) et ressources linguistiques (lexiques monolingues ou bilingues, règles grammaticales, corpus annotés avec des informations morphologiques, syntaxiques, sémantiques, etc.) sont désormais accessibles. Il est par conséquent légitime d'envisager d'intégrer ces connaissances expertes et ressources linguistiques de très bonne qualité dans des modèles neuronaux profonds afin d'améliorer leur performance pour les domaines et langues peu dotés en données d'apprentissage.
+
+Plusieurs travaux récents ont abordé l'intégration de connaissances expertes ou ressources linguistiques externes dans des modèles de réseaux de neurones profonds (Hu et al., 2016; Dash et al., 2018;
+Lan & Jiang, 2018; Ye et al., 2018; Jiang et al., 2018; Peters et al., 2019; Plesse, 2020; von Rueden et al., 2021 ; Feng et al., 2021). Trois stratégies d'intégration ont été explorées: les connaissances expertes ou ressources linguistiques sont introduites en amont, en cours ou en aval du processus d'apprentissage, de manière focalisée ou répartie dans le modèle neuronal.
+
+La performance des stratégies d'intégration de connaissances expertes ou ressources linguistiques externes dans des modèles de réseaux de neurones profonds dépend considérablement de leur format de représentation et de la tâche du TAL à traiter. Sachant que la plupart des travaux se sont concentrés sur l'intégration de ces connaissances expertes ou ressources linguistiques aux représentations distributionnelles. Or, une des principales limitations des réseaux de neurones est leur incapacité à prendre en compte les connaissances expertes ou les ressources linguistiques externes dans leur format d'origine.
+
+
+Sujet de stage:
+
+Dans le prolongement des travaux de Peters et al. (2019), l'objectif de ce stage consiste à explorer et expérimenter de nouvelles approches pour l'intégration de connaissances expertes dans des modèles neuronaux profonds en vue d'améliorer leur performance pour les domaines peu dotés en données d'apprentissage. L'idée sous-jacente est que l'ajout de connaissances expertes fiables (car ces ressources sont généralement construites par des experts), même si elles sont de taille modeste peuvent améliorer la performance des modèles neuronaux profonds actuels et expliquer les prédictions produites par ces modèles.
+
+Un premier défi de cette piste réside dans la définition d'un mécanisme de représentation de ces connaissances expertes de nature variées pour une intégration optimale dans le modèle neuronal. En effet, lorsque les connaissances expertes sont homogènes (de même nature ou de même représentation), diverses stratégies d'intégration sont utilisées (von Rueden et al., 2021). Le problème s'avère plus difficile face à des connaissances expertes hétérogènes.
+
+Le deuxième défi est lié à la manière de combiner les données d'apprentissage d'une tâche donnée avec celles d'une autre tâche pour améliorer la prédiction du modèle neuronal de cette dernière sachant que ces données d'apprentissage sont de nature variées. Ce stage propose d'aborder cette problématique sur des domaines pour lesquels nous avons suffisamment de ressources comme les bases de connaissances et les lexiques spécialisés. Par exemple, les domaines du médical et du biomédical présentent de nombreux avantages notamment la disponibilité d'experts ayant produit une quantité non négligeable de ressources externes structurées et fiables, dont des bases de données terminologiques, thésaurus, graphes de connaissances et ontologies (Xie et al., 2021). Toujours pour une meilleure intégration des connaissances expertes dans des modèles neuronaux profonds, ce stage étudiera comment permettre aux vecteurs d'entrée de ces modèles de combiner à la fois des représentations distribuées et des représentations basées sur des ressources externes.
+
+
+Le stage se déroulera selon les étapes suivantes:
+-   Etude bibliographique sur les différentes approches d'intégration
+    de connaissances externes dans des modèles neuronaux profonds.
+-   Identification du type de la connaissance externe à intégrer et de
+    l'architecture du modèle neuronal à enrichir.
+-   Développement d'une méthode permettant de représenter les
+    connaissances externes dans un formalisme exploitable par les
+    modèles neuronaux profonds (plongements de mots, modèles de
+    langue...).
+-   Evaluation de la performance du modèle neuronal enrichi.
+
+Le stage proposé portera sur l'extraction d'information dans le domaine général ou le domaine médical. Plus spécifiquement, les expérimentations concerneront les tâches de Reconnaissance d'Entités
+Nommées (Named Entity Recognition) et de Désambiguïsation d'Entités
+Nommées (Entity Linking), et exploiteront les bases de connaissances externes open source (YAGO, UMLS ...).
+
+Références:
+-   Zhiting Hu, Xuezhe Ma, Zhengzhong Liu, Eduard Hovy, and Eric Xing
+    (2016). Harnessing Deep Neural Networks with Logic Rules.
+    Proceedings of the 54th Annual Meeting of the Association for
+    Computational Linguistics (Volume 1: Long Papers).
+-   Tirtharaj Dash, Sharad Chitlangia, Aditya Ahuja, and Ashwin
+    Srinivasan (2018). Incorporating Domain Knowledge into Deep Neural
+    Networks. 2018 IEEE International Conference on Big Data.
+-   Yunshi Lan et Jing Jiang (2018). Embedding WordNet knowledge for
+    textual entailment. Proceedings of ACL.
+-   Zhe Ye, Fang Li, and Timothy Baldwin (2018). Encoding Sentiment
+    Information into Word Vectors for Sentiment Analysis. Proceedings
+    of the 27th International Conference on Computational Linguistics.
+-   Zhiwei Jiang, Qing Gu, Yafeng Yin, and Daoxu Chen (2018). Enriching
+    Word Embeddings with Domain Knowledge for Readability Assessment.
+    Proceedings of the 27th International Conference on Computational
+    Linguistics.
+-   Matthew E. Peters, Mark Neumann, Robert L. Logan IV, Roy Schwartz,
+    Vidur Joshi, Sameer Singh, et Noah A. Smith (2019). Proceedings of
+    the 2019 Conference on Empirical Methods in Natural Language
+    Processing.
+-   Francois Plesse (2020). Intégration de Connaissances aux Modèles
+    Neuronaux pour la Détection de Relations Visuelles Rares. PhD
+    thesis, Université Paris-Est.
+-   Laura von Rueden, Sebastian Mayer, Katharina Beckh, Bogdan
+    Georgiev, Sven Giesselbach,Raoul Heese, Birgit Kirsch, Julius
+    Pfrommer, Annika Pick, Rajkumar Ramamurthy, Michal Walczak, Jochen
+    Garcke, Christian Bauckhage, and Jannis Schuecker  (2021). Informed
+    Machine Learning - A Taxonomy and Survey of Integrating Prior
+    Knowledge into Learning Systems. IEEE Transactions on Knowledge and
+    Data Engineering.
+-   Yufei Feng, Michael Greenspan, and Xiaodan Zhu (2021). Enhancing
+    Pretrained Models with Domain Knowledge. The 34th Canadian
+    Conference on Artificial Intelligence.
+-   Xiaozheng Xie, Jianwei Niu, Xuefeng Liu, Zhengsu Chen,Shaojie Tang,
+    and Shui Yu (2021). A Survey on Incorporating Domain Knowledge into
+    Deep Learning for Medical Image Analysis. arXiv:2004.12150v4.
+
+Conditions sur les candidatures et Profil recherché:
+Niveau demandé: Master 2, Ingénieur
+Durée : 6 mois
+Rémunération : entre 700 ¤ et 1300 ¤ selon la formation
+Compétences requises :
+-   environnement de travail : linux
+-   maîtrise de langages de programmation : Python, C++, Java
+-   expérience avec une bibliothèque de type Tensorflow, PyTorch, etc.
+-   notion de base en apprentissage automatique et en réseaux de
+    neurones
+-   notions de base en traitement automatique des langues.
+
+Modalité de dépôt de candidature :
+Les candidatures (CV + Lettre de motivation) sont à envoyer le plus rapidement possible à Nasredine Semmar (nasredine.semmar@cea.fr).
+
+Contacts pour plus d'information :
+Nasredine SEMMAR,
+    Email: nasredine.semmar@cea.fr,
+    Tél: +33 (0)1 69 08 01 46

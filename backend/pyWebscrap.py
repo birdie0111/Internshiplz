@@ -31,11 +31,16 @@ def get_posts_linkedin(url_lin):
     
     for i in range(3):
         all_urls[i] = all_urls[i][:-66]
-        roadPare = os.path.abspath(os.path.join(os.path.dirname('__file__'),os.path.pardir))
-        path = roadPare+"\\text_files"
-        if not os.path.exists(path):
-            os.makedirs(path)
-        filename = path+"\Linkedin" + str(i) + ".txt"
+        roadPare = os.path.abspath(os.path.join(os.path.dirname('__file__'),os.path.pardir)) # obtenir le chemin du dossier
+        pathFile = roadPare+"\\text_files" # définir le chemin des dossier
+        if not os.path.exists(pathFile):   # Si le dossier n'existe pas encore, créer un
+            os.makedirs(pathFile)
+        filename = pathFile+"\Linkedin" + str(i) + ".txt"
+        pathWindow = roadPare+"\\fichier_txt" # le dossier pour les .txt en Encodage Windows1252
+        if not os.path.exists(pathWindow):
+            os.makedirs(pathWindow)
+        fileWindow = pathWindow+"\Linkedin" + str(i) + ".txt"
+
 
 
         title = titles[i].strip(" \n")
@@ -46,7 +51,13 @@ def get_posts_linkedin(url_lin):
         
 
         # print(titles[i])
-        with open(filename,'w',encoding="utf-8") as fd:
+        with open(filename,'w',encoding="UTF-8") as fd:
+            fd.write("Titre: " + title + "\n")
+            fd.write("Date: " + date + "\n")
+            fd.write("Organisme: " + company + "\n")
+            fd.write("Lieu: " + location + "\n\n\n")
+            fd.write(all_urls[i] + "\n")
+        with open(fileWindow,'w',encoding="Windows-1252") as fd:
             fd.write("Titre: " + title + "\n")
             fd.write("Date: " + date + "\n")
             fd.write("Organisme: " + company + "\n")
@@ -101,13 +112,23 @@ def get_content(real_urls, url):
             c_corri_final = re.sub(regex," ",c_corri)
 
             roadPare = os.path.abspath(os.path.join(os.path.dirname('__file__'),os.path.pardir))
-            path = roadPare+"\\text_files"
-            if not os.path.exists(path):
-                os.makedirs(path)
-            filename = path+"\Stage" + str(i) + ".txt"
+            pathFile = roadPare+"\\text_files"
+            if not os.path.exists(pathFile):
+                os.makedirs(pathFile)
+            filename = pathFile+"\Stage" + str(i) + ".txt"
+            pathWindow = roadPare+"\\fichier_txt" # le dossier pour les .txt en Encodage Windows1252
+            if not os.path.exists(pathWindow):
+                os.makedirs(pathWindow)
+            fileWindow = pathWindow+"\Stage" + str(i) + ".txt"
 
 
-            with open(filename, "w", encoding = "utf-8") as fd:
+            with open(filename, "w", encoding = "UTF-8") as fd:
+                fd.write("Titre: " + titles[i] + "\n")
+                fd.write("Date: " + dates[i] + "\n")
+                fd.write("Organisme: " + institutes[i] + "\n")
+                fd.write("Lieu: " + places[i] + "\n\n\n")
+                fd.write(c_corri_final)
+            with open(fileWindow, "w", encoding = "Windows-1252") as fd:
                 fd.write("Titre: " + titles[i] + "\n")
                 fd.write("Date: " + dates[i] + "\n")
                 fd.write("Organisme: " + institutes[i] + "\n")
@@ -193,9 +214,13 @@ def getContent(urlStage):
 # pour chaque site du stage, obtenir les informations et les écrire dans un fichier .txt
 
 roadPare = os.path.abspath(os.path.join(os.path.dirname('__file__'),os.path.pardir))
-path = roadPare+"\\text_files"
-if not os.path.exists(path):
-    os.makedirs(path)
+pathFile = roadPare+"\\text_files"
+if not os.path.exists(pathFile):
+    os.makedirs(pathFile)
+
+pathWindow = roadPare+"\\fichier_txt" # le dossier pour les .txt en Encodage Windows1252
+if not os.path.exists(pathWindow):
+    os.makedirs(pathWindow)
 
 for href in urls : 
     # obtenir les informations
@@ -207,7 +232,8 @@ for href in urls :
     content = getContent(href) # une liste mais pas str
     # et les écrire dans un fichier .txt
     i = urls.index(href)
-    filename = path+"\Indeed" + str(i) + ".txt"
+
+    filename = pathFile+"\Indeed" + str(i) + ".txt"
     txt = open(filename, "w", encoding = "UTF-8")
     txt.write("Titre: " + title + "\n")
     txt.write("Date: " + date + "\n")
@@ -216,5 +242,15 @@ for href in urls :
     txt.write("\n\n")
     for line in content : # écrire ligne par ligne
         txt.write(line)
+    
+    fileWindow = pathWindow+"\Indeed" + str(i) + ".txt"
+    txt = open(fileWindow, "w", encoding = "Windows-1252")
+    txt.write("Titre: " + title + "\n")
+    txt.write("Date: " + date + "\n")
+    txt.write("Organisme: " + inst + "\n")
+    txt.write("Lieu: " + place + "\n")
+    txt.write("\n\n")
+    for line in content : # écrire ligne par ligne
+        txt.write(line)
 
-print("Script fini, ça marche ! Vérifiez les résultats dans \"...\Internshiplz\\text_files\" ")
+print("Script fini, ça marche ! Vérifiez les résultats dans \"...\Internshiplz\\text_files\" et dans \"...\Internshiplz\\fichier_txt\" ")

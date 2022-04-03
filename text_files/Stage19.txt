@@ -1,72 +1,108 @@
-Titre: Building a French pipeline for information extraction and automated knowledge graph construction
+Titre: How well can deep learning algorithms generalize over unseen data: A case study in multiword expression identification
 Date: 10/01/2022
-Organisme: INRIA
-Lieu: Rocquencourt
+Organisme: LISN
+Lieu: Gif-sur-Yvette
 
 
+How well can deep learning algorithms generalize over unseen data:
+A case study in multiword expression identification
 
-Proposition de stage 2022 : « Building a French pipeline for information extraction and automated knowledge graph construction »
+Master internship proposal, 2022
 
-Research intern position at Inria on information extraction and automated knowledge graph construction for French
+   -    Domain: natural language processing
+   -    Location: UniversitÃ© Paris-Saclay, Gif-sur-Yvette, France
+        (LISN https://www.lisn.upsaclay.fr/ )
+   -    Research teams: ILES
+        (https://www.limsi.fr/en/research/iles, Written and Sign
+        Language Processing) of the LISN;
+        TALEP (https://talep.lis-lab.fr/, Written and Spoken Language
+        Processing) of the LIS
+   -    Supervisors:
+        -   Agata Savary (LISN)
+            http://www.info.univ-tours.fr/~savary/
+        -   Carlos Ramisch (LIS)
+            http://pageperso.lis-lab.fr/carlos.ramisch/
+   -    Funding: UniversitÃ© Paris-Saclay
+   -    Duration: 3-6 months
+   -    Remuneration: around 606â‚¬/month
 
-Place of work: Inria's center in Rocquencourt (Paris area)
+     Motivation and context
 
-Duration: 6 months
+The aim of this internship is to boost applications in Natural Language
+Processing (NLP), by focusing on one of their major challenges: multiword expressions (MWEs). MWEs are groups of words which exhibit unpredicted properties (Baldwin & Kim, 2010). Most prominently, their meaning does not straightforwardly derive from the meanings of their components. For instance, faire`make/do' and valoir`be worth sth' are verbs, while their combination yields a noun: faire-valoir`a stooge, a person who is used by somebody to do things that are unpleasant or dishonest'. Similarly, the meaning of casser sa pipe `to die' (literally to break one's pipe) cannot be straightforwardly deduced from the meanings of the individual components. Due to these properties, MWEs are very challenging in applications like machine translation, information retrieval, opinion mining, etc.
 
-Starting date: Anytime in 2022
+A major task related to MWEs is to automatically identify their occurrences in running text (so as to provide more accurate representations to downstream applications). The PARSEME
+(https://gitlab.com/parseme/corpora/-/wikis/home) network has been addressing this task via a series of shared tasks on automatic identification of verbal MWEs (https://gitlab.com/parseme/corpora/-/wikis/home#shared-tasks).
+Edition 1.1 of the PARSEME shared task (in 2018) showed critical hardness of identifying MWEs which have not been previously seen in the training corpus. Edition 1.2 saw the advent of transformer-based language models (BERT), which brought substantial progress to MWE
+identification performances. Still, only modest progress was achieved in generalization over unseen data.
 
-Keywords: artificial intelligence, natural language processing, information extraction, knowledge graph, French language
+     Objectives
 
-Context
-This internship fits within the roadmap activities of Inria's Defense &
-Security Department.
+The aim of this internship is to better understand the potential of transformer-based models in generalising over unseen data in MWE
+identification. More precisely we wish to:
 
-Analysts in geopolitical crises are employed by the French Ministry of
-Armed Forces to better identify emerging or ongoing conflicts throughout the world. These analysts are typically overwhelmed by continuous streams of plain-text information. The goal is to structure that information, so that it can be manipulated as graphs and therefore better formalized, cross-referenced and corroborated; such form would in turn enable more advanced visualizations such as automatically generating reports or various indicators on escalating tensions, with the perspective of better anticipation.
+    -   analyze the results of edition 1.2 of the PARSEME shared task, (https://gitlab.com/parseme/sharedtask-data/-/tree/master/1.2/system-results)
+        and in particular those related to unseen data
+   -    propose an error analysis methodology for MWEs which are and
+        are not correctly identified, and try to understand the reasons
+        behind this state of the affairs
+   -    put forward recommendations for future enhancements of the
+        state-of-the-art MWE identifiers
+   -    (depending on the candidate's profile and the length of the
+        internship) implement a prototype based on these
+        recommendations
 
-The field of Natural Language Processing (NLP) offers numerous tools and algorithms for information extraction, but they face several limitations.
-First, many of those are disparate isolated tools, with few comprehensive and pipelines. While the first steps of information structuring (extraction) are extensively studied, fewer works reach the deeper stage of knowledge graph construction. And when they do, they are often developed for English only, whereas here the information stream would be in French.
+     Candidate's profile
 
-Inria's Defense & Security Department develops and maintains a serious game platform which can simulate the activity of a crisis monitoring cell. Within that platform there will be the opportunity to experiment with the NLP tools developed by the intern, in order to provide the intern with practical feedback from players.
+   -    2nd or 1st year master student in computational linguistics,
+        computer science or alike ; excellent 3rd year bachelor
+        students will also be considered
+   -    Interests in linguistics and familiarity with language
+        technology
+   -    Good programming skills, preferably in Python
 
-The intern will be supervised by Dr Lauriane Aufrant, who is the lead
-NLP researcher within Inria's Defense & Security Department.
+     Important dates
 
+   -    Application deadline: 24 January 2022 (or until filled)
+   -    Notification: 5 February 2022
+   -    Position starts: March-May 2022
+   -    Position ends: June-July 2022
 
-Candidate profile
+     How to apply
 
--   Pursuing a master's degree in Natural Language Processing,
-    Computational Linguistics or Computer Science with a
-    specialization in Machine Learning
+Send your CV and a transcript of your bachelor and master grades to
+Agata Savary <first.last@universite-paris-saclay.fr> and
+Carlos Ramisch <first.last@lis-lab.fr>.
 
--   Theoretical and practical knowledge of deep learning, as well as
-    traditional machine learning and knowledge-driven AI
+     References
 
--   Strong programming skills (at least Python, git, Linux environment,
-    command line and scripting)
+   -    Baldwin, T. and Kim, S. N. (2010)Multiword Expressions https://people.eng.unimelb.edu.au/tbaldwin/pubs/handbook2009.pdf,
+        in Nitin Indurkhya and Fred J. Damerau (eds.) Handbook of
+        Natural Language Processing, Second Edition, CRC Press, Boca
+        Raton, USA, pp. 267-292.
 
--   Fluency in English. Knowledge or interest for the French language.
-    Knowledge of a second foreign language would be appreciated.
+   -    Matthieu Constant, GÃ¼lÅŸen EryiÄŸit, Johanna Monti, Lonneke van
+        der Plas, Carlos Ramisch, Michael Rosner, and Amalia Todirascu.
+        2017.Multiword expression processing: A survey https://www.mitpressjournals.org/doi/full/10.1162/COLI_a_00302.
+        Computational Linguistics, 43(4):837-892.
 
-How to apply
+   -    Carlos Ramisch, Agata Savary, Bruno Guillaume, Jakub Waszczuk,
+        Marie Candito, Ashwini Vaidya, Verginica Barbu Mititelu, Archna
+        Bhatia, Uxoa IÃ±urrieta, Voula Giouli, Tunga GÃ¼ngÃ¶r, Menghan
+        Jiang, Timm Lichte, Chaya Liebeskind, Johanna Monti, Sara
+        Stymne, Abigail Walsh, Renata Ramisch, Hongzhi Xu (2020)
+        Edition 1.2 of the PARSEME Shared Task on Semi-supervised
+        Identification of Verbal Multiword Expressions
+        https://www.aclweb.org/anthology/2020.mwe-1.14/ ,
+        in the Proceedings of the Joint Workshop on Multiword
+        Expressions and Electronic Lexicons (MWE-LEX 2020), 13
+        December 2020, Barcelona, Spain (online).
 
-Send a CV and a cover letter to lauriane.aufrant@inria.fr and frederique.segond@inria.fr
+   -    Agata Savary, Silvio Ricardo Cordeiro, Carlos Ramisch (2019)
+        Without lexicons, multiword expression identification will
+        never fly: A position statement
+        https://www.aclweb.org/anthology/papers/W/W19/W19-5110/,
+        In the Proceedings of the Joint Workshop on Multiword
+        Expressions and WordNet (MWE-WN 2019), 2 August 2019,
+        Florence, Italy.*
 
-Indications of referees or reference letters would be appreciated but are not mandatory.
-
-
-
-Description
-
-Building a knowledge graph from text involves a number of diverse NLP
-tasks, such as named entity recognition, named entity disambiguation, coreference resolution, open relation extraction, relation clustering, document-level event extraction, slot filling, etc.
-
-The intern's work will touch upon the whole panel of tasks, but in varying depth. Considering the large amount of open source code releases in NLP research, priority is set on leveraging existing code and models.
-When French models are not readily available, open source code will need to be retrained on French corpora. And in some cases, it will be necessary to re-implement an algorithm from its published paper.
-
-While deep learning approaches will be ubiquitous in that work, the intern will need to remain open to alternate solutions, as the large-scale datasets required by deep learning will not be available in
-French for all these tasks.
-
-The first research focus will be to study the best combination scheme for these various tasks. For instance, relation clustering can inform named entity disambiguation by providing more comprehensive and consistent information on the named entities to disambiguate; and named entity disambiguation can inform relation clustering by enabling access to structured information on the arguments of those relations. To leverage such interactions within the pipeline, several approaches are possible: run one before the other, or vice-versa, iterate between both, or setup joint predictions. These choices will be made based on both theoretical and empirical analyses.
-
-The second research focus will be a fine-grained evaluation of the performance all over the pipeline, in order to identify where in the pipeline the information is lost the most, and how errors propagate throughout the pipeline. A thorough analysis will lead to identify where to put the most research efforts in the future to improve qualitative and quantitative performance. Depending on the outcomes of that analysis, the opportunity to pursue with a PhD position will be discussed with the intern.
