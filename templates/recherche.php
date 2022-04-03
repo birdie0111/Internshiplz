@@ -49,7 +49,7 @@
         </div>
 
         <div id="resultat">
-            <p id="consigne">1155 résultats - Les résultats de webscraping sont affichés par ordre chronologique, du plus
+            <p id="consigne"><span id="nbWebscrap"></span> résultats - Les résultats de webscraping sont affichés par ordre chronologique, du plus
                 récent au plus ancien.</p>
             <table id="tableAffiche">
                 <tr>

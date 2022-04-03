@@ -64,10 +64,10 @@ if ($result->num_rows == 0){
     }else{
         echo "Login succeeded";
         $connect->close();
-        header('Location: /~liuqinyu/connected.php?connected='.$username);
+        header('Location: /~tangyuhe/Intershiplz-main-7/connected.php?connected='.$username);
+        // header('Location: /~liuqinyu/connected.php?connected='.$username);
     }
 }
-
 
 
 

@@ -15,6 +15,9 @@
 
 <?php 
 
+
+    
+
     if(isset($_GET["connected"])){
         $db_host = "localhost";
         $db_user = "liuqinyu";
@@ -27,10 +30,30 @@
         $connect = mysqli_connect($db_host, $db_user, $db_pwd, $db_name);
         mysqli_set_charset($connect, 'utf8mb4');
 
+
         // verifier la connection
         if(!$connect){
             die("error while connecting to the database: ".mysqli_connect_error());
         }
+
+        // enregistrer les commentaires
+        if(isset($_POST["commentaire"])){
+            $query = "select * from Comments where Comment = '".$_POST['commentaire']."'"."and Username = '".$username."';";
+
+            $result = mysqli_query($connect,$query);
+
+            # Si un nouvel commentaire a ete ecrit:
+            if($result->num_rows == 0){
+                $query = 'INSERT INTO Comments(Username,Comment) VALUES("'.$username.'","'.$_POST["commentaire"].'");';
+               
+                $result = mysqli_query($connect,$query);
+            }
+        }
+        
+
+        // prend les commentaires
+        $query = "select * from Comments;";
+        $result = mysqli_query($connect,$query);
 
         include "templates/acc_connected.php";
         include "templates/recherche.php";
