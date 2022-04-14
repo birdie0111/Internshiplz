@@ -29,7 +29,8 @@ if (is_dir($dir)) {
         // les informations à obtenir
         if (!is_dir($file)) {
             $hfic = fopen("$dir/$file", "r");
-            $Path = "$dir/$file";
+            $file = str_replace(".txt",".html",$file);
+            $Path = "fichier_html/$file"; # ouvrir les fichier .html
             while ($ligne = fgets($hfic)) {
                 // echo "$ligne<br/>";
                 // echo "<tr><td> contenu </td><td> contenu </td></tr>";
@@ -111,11 +112,11 @@ while ($row = mysqli_fetch_row($result)) {
             echo "<td>{$data}</td>";
             $i = $i + 1 ;
         } elseif ($i == 7) {
-            echo "<td> <a href=\"".$data."\">".$data."</a></td>";
+            echo "<td> <a class=\"fakePath\" href=\"".$data."\">".$data."</a></td>";
         } else {
             echo "<td>{$data}</td>";
             $i = $i + 1 ;
-        }
+        }sftp:
     }
     $i = 0 ;
     echo '</tr>';

@@ -1,14 +1,83 @@
+/*------------ parallel scroll body ------------------------*/
+body {
+    background-image: url("bg1.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.a-text {
+    text-align: center;
+    background: rgb(220, 209, 205, 0.62);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 19px;
+    width: 700px;
+}
+
+.a-text1 {
+    text-align: center;
+    background: rgb(220, 209, 205, 0.62);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 19px;
+    padding: 10px;
+}
+
+.a-img1 {
+    height: 100px;
+    background: rgb(220, 209, 205, 0.62);
+    color: #fff;
+    text-align: center;
+    vertical-align:middle;
+
+    background-image: url("bg1.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.a-img2 {
+    height: 100vh;
+    background: rgb(220, 209, 205, 0.62);
+    color: #fff;
+    text-align: center;
+    vertical-align:middle;
+
+    background-image: url("bg1.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.a-img3 {
+    height: 100vh;
+    background: rgb(220, 209, 205, 0.62);
+    color: #fff;
+    text-align: center;
+    vertical-align:middle;
+
+    background-image: url("bg1.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
 /*——————————————————————————————————————————————————————————————————————————顶部状态栏——div id="begin"————*/
 #begin {
+    background: rgb(220, 209, 205, 0.62);
+    letter-spacing:2px;
+    padding : 10px 10px 10px 10px;
+    border-radius: 5px;
     border-bottom-style:solid;
     border-bottom-color:rgb(206,192,148);
 	font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    color: #695d46;
+    color: #fdfdfd;
 }
 /*—————————————————————————————————————选项卡—————————————————————————————*/
 #menu li:hover{
-    background-color: #ff5e0e;
+    background-color: rgba(163, 121, 43, 0.61);
     color: white;
     cursor: pointer;
 }
@@ -17,7 +86,7 @@
     top: 1px;
 }
 .page {
-    background-color: #ff5e0e;
+    background-color: rgba(163, 121, 43, 0.61);;
     color: white;
 }
 
@@ -28,7 +97,7 @@
     border-radius: 25px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 16px;
-    color: #ff5e0e;
+    color: white;
 }
 
 /*————————————————————————————————————————————————————————————————————————介绍与登录页面——div id="accueil"————*/
@@ -37,12 +106,12 @@
 h1 {
     font-family: comic sans ms;
     font-size: 22px;
-    color: #ff5e0e;
+    color: rgb(9, 65, 2);
 }
 h2 {
     font-family: comic sans ms;
     font-size: 22px;
-    color: #008575;
+    color: rgb(83, 71, 59);
     margin-bottom: -5px;
 }
 #intro p {
@@ -50,17 +119,29 @@ h2 {
     font-size: 20px;
     color:#695d46;
 }
+
+a:link{
+    color:#fff;
+}
+
+a:visited{
+    color:#fff;
+}
 /*—————————————————————————————————————账户板块————————————————————————*/
 #compte {
-    background-color: rgba(206,192,148,.3);
+    border-radius: 5px;
+    background-color: rgb(220, 209, 205, 0.62);
+    width: 22%;
+    padding-bottom: 20px;
+    align-items: center;
 }
 #compte p {
-    color:#695d46;
+    color:rgb(255, 255, 255);
 }
 /*———————————账户板块下——按钮板块——————————————————————*/
 .moyen {
     font-size: 18px;
-    background-color:#ff5e0e;
+    background-color:rgba(163, 121, 43, 0.61);;
     border: none;
     color: white;
 }
@@ -77,13 +158,13 @@ h2 {
 #options {
     /*   深蓝  background-color: rgb(115,187,173);  */
     /*   淡蓝  background-color: rgb(163,231,218);  */
-    background-color: rgba(163,231,218,.5);
+    background-color: rgb(220, 209, 205, 0.62);
 	font-family:Arial, Helvetica, sans-serif;
     font-size: 20px;
-    color: #695d46;
+    color: white;
 }
 .options {
-    background-color: rgb(115,187,173);
+    background-color: rgb(220, 209, 205, 0.62);
     color: white;
 }
 /*———————————操作板块下——按钮板块——————————————————————*/
@@ -127,11 +208,17 @@ button.grand:after {
 }
 
 /*—————————————————————————————————————内容板块————————————————————————*/
+#resultat{
+    color:white;
+}
 #resultat p{
-    background-color: rgba(163,231,218,.3);
+    background-color: rgb(220, 209, 205, 0.62);
 }
 #consigne {
     font-size: 18px;
 }
 
 /*————————————————————————————————————————————————————————————————————————搜索与下载页面——div id="discussion"————*/
+#discussion{
+    color: white;
+}

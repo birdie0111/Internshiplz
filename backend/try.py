@@ -1,8 +1,6 @@
-from gettext import find
 import requests
 from lxml import etree
 import re
-from selenium import webdriver
 import sys
 import io
 sys.stdout = io.TextIOWrapper(buffer=sys.stdout.buffer,encoding='utf8')

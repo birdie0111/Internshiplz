@@ -5,7 +5,6 @@ body {
 
 /*——————————————————————————————————————————————————————————————————————————顶部状态栏——div id="begin"————*/
 #begin {
-    position:relative;
     display: flex;
     letter-spacing:2px;
     justify-content:space-around;
@@ -42,29 +41,23 @@ body {
     align-items:center;
 }
 
-/*————————————————————————————————————————————————————————————————————————介绍与登录页面——div id="accueil"————*/
-#accueil {
+#login{
+    margin-top: 15%;
     display: flex;
-    position:relative;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
-/*—————————————————————————————————————介绍板块————————————————————————*/
-#intro {
-    width: 83%;
-    padding-bottom: 20px;
-}
-/*—————————————————————————————————————账户板块————————————————————————*/
-#compte {
-    position:relative;
+
+#compte  {
     display: flex;
-    float:right;
     flex-direction:column;
-    justify-content:left;
-    align-items:left;
-    width: 17%;
-    padding-bottom: 20px;
 }
-#compte p{
-    margin-left: 10px;
+
+#form_login {
+    display: flex;
+    flex-direction:column;
+    padding-bottom: 20px;
+    align-items: center;
 }
 /*———————————账户板块下——按钮板块——————————————————————*/
 .moyen {

@@ -35,25 +35,11 @@
         if(!$connect){
             die("error while connecting to the database: ".mysqli_connect_error());
         }
-
-        // enregistrer les commentaires
-        if(isset($_POST["commentaire"])){
-            $query = "select * from Comments where Comment = '".$_POST['commentaire']."'"."and Username = '".$username."';";
-
-            $result = mysqli_query($connect,$query);
-
-            # Si un nouvel commentaire a ete ecrit:
-            if($result->num_rows == 0){
-                $query = 'INSERT INTO Comments(Username,Comment) VALUES("'.$username.'","'.$_POST["commentaire"].'");';
-               
-                $result = mysqli_query($connect,$query);
-            }
-        }
-        
-
-        // prend les commentaires
-        $query = "select * from Comments;";
-        $result = mysqli_query($connect,$query);
+        $path = dirname(__FILE__);
+        $path = "backend/pyWebscrap.py";
+        echo $path;
+        $array = shell_exec("python3 ".$path);
+        print_r($array);
 
         include "templates/acc_connected.php";
         include "templates/recherche.php";
