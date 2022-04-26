@@ -1,93 +1,86 @@
-Titre: Développement d'un outil de correction de réponses à un examen
+Titre: Machine Learning pour les réseaux sociaux et les images
 Date: 08/03/2022
-Organisme: CRIT
-Lieu: Besançon ou télétravail
+Organisme: CERES
+Lieu: Paris
+*Offre de Stage en Machine Learning pour les réseaux sociaux et les
+images, Sorbonne Université*
+
+Le stage s'inscrit dans une recherche conduite à CERES (Centre
+d'Expérimentation en méthodes numériques pour les recherches en SHS),
+Faculté des Lettres - Sorbonne Université, en partenariat avec
+l'Université Paris 8.
+
+*Contexte*
+
+La recherche d'information est un domaine de recherche en perpétuel
+mutation à cause de la transformation numérique. Le volume des données
+produit via les outils numériques connectés excède la capacité humaine
+de les traiter manuellement et un recours à l'intelligence artificielle
+(IA) devient incontournable. Toutefois, ces modèles intelligents issus
+d'IA doivent garantir au moins le passage à l'échelle, la compréhension
+des données hétérogènes et la catégorisation sémantique de ces données.
+Dans ce contexte, la recherche de similitudes au sein d'un large corpus
+multimédia où se mêlent images, vidéos et textes (structurés ou non)
+est une tâche très complexe.
+Dans le cadre d'une recherche sur les controverses en ligne, nous nous
+intéressons à la circulation d'informations et de discours dans les
+réseaux sociaux numériques (Twitter, TikTok, Instagram par exemple)
+sous différentes formes (textes, images, vidéo). Plus spécifiquement,
+nous cherchons à capturer, caractériser, analyser et expliquer les
+déclinaisons iconographiques, textuelles et narratives des images à
+mesure qu'elles circulent dans les RSN.
+
+*Sujet et missions*
+
+Quand il s'agit d'une image, celle-ci peut subir différentes
+transformations faisant appel à de nombreux outils de traitement
+d'images. Ces traitements peuvent être simples et agissent par exemple
+sur les couleurs, ou encore sur la répartition spatiale des pixels (le
+recadrage, le découpage, etc.), ou bien plus complexes afférant à des
+outils : de génération d'images à partir de motifs d'une image de
+référence ; de substitution de l'image source ; de l'augmentation de
+l'image source par une caricature, un slogan, un tag, une image
+codifiée, voire même une nouvelle image.
+
+*Travail demandé*
+-   cibler des événements clés sur les réseaux sociaux : constituer des
+    corpus de référence ;- élaborer un état de l'art sur les outils
+    d'analyse de corpus massifs pluri-sémiotique : focus sur des
+    corpus d'images ;
+-   étudier l'état des lieux bibliographique des mesures de similarité
+    entre images ;
+-   développer un modèle d'extraction semi-automatique d'objets
+    caractéristiques d'un événement fixé : les signatures
+    iconographiques qui symbolisent l'événement par apprentissage. Le
+    modèle se base sur une architecture de réseaux de neurones profonds
+    à base de graphe ;
+-   augmenter le modèle par un algorithme de reconnaissance d'un
+    événement par reconnaissance de signatures ;
+-   implémenter et tester de nouvelles mesures de similarité qui soient
+    à la fois robustes aux différences de cadrage, de résolution, de
+    couleurs, de contraste, etc. et aux différentes évolutions,
+    transformations, des objets caractéristiques au fil du temps de
+    manifestation de l'événement étudié ;
+-   visualiser les schémas narratifs d'un objet caractéristique pour
+    une collection d'événements de tests.
+
+*Prérequis*
+-   Python, PyTorch, OpenCV, CUDA, gestion des données,
+    machine-learning, deep-learning, visualisation
+
+*Profil du/de la candidate :*
+
+Vous êtes étudiant·e dans un Master 2 en informatique, sciences des
+données ou statistiques, ou étudiant·e· dans une école d'ingénieur
+(informatique). Vous êtes enthousiaste pour la recherche, vous aimez
+comprendre en profondeur les problèmes et trouver des solutions
+élégantes. Vous êtes intéressé·e par l'intelligence artificielle, et
+plus précisément l'apprentissage automatique des techniques
+d'optimisation d'analyse de données. Vous avez un intérêt pour le
+domaine des sciences humaines et sociales.
 
 
-Offre de Stage :
-Développement d'un outil de correction de réponses à un examen (h/f)
+Candidature à adresser à virginie.julliard@sorbonne-universite.fr ;
+n.mellouli@iut.univ-paris8.fr et orion.alie@gmail.com
+ayant pour objet « Candidature Stage CERES-Semiosis »
 
-Ce stage est proposé par le laboratoire C.R.I.T de l'Université de
-Franche-Comté à Besançon, en partenariat avec la start-up E-cole, dans
-le domaine du traitement automatique des langues.
-
-
-Organisation
-
-Le CRIT (Centre de Recherches Interdisciplinaires et Transculturelles)
-de l'Université de Franche-Comté intègre une équipe en Traitement
-Automatique des Langues (TAL) qui développe des méthodes linguistiques
-pour le traitement de textes écrits. De nombreux projets et
-collaborations avec des entreprises sont issues de la recherche en TAL.
-Le stage sera co-encadré par le Dr Iana ATANASSOVA, maître de
-conférences HDR au CRIT.
-
-E-cole est une start-up crée par Pierre-Louis Gourdoux et Stéphan
-e Murday, professeurs d'économie et Alexandre Lefort, ingénieur en
-informatique. Notre ambition est de révolutionner l'enseignement en
-diminuant les tâches chronophages de l'enseignant et lui permettre de
-se concentrer sur l'essentiel : le suivi et l'accompagnement des
-étudiants. Pour cela E-Cole proposera des cours interactifs,
-entrainements et examens autogénérés, autocorrigés et renouvelables à
-l'infini tant pour les données que pour la forme de l'énoncé.
-
-Le stage sera co-encadré par Dr Iana ATANASSOVA, maître de conférences
-HDR au CRIT, et Alexandre LEFORT.
-
-
-Description du poste
-
-L'objectif du stage est de développer un algorithme de traitement de
-réponses aux exercices en texte libre, afin de proposer des
-fonctionnalités d'évaluation automatique des exercices. Son
-fonctionnement pourra être le suivant :
--   Dans un premier temps, un professeur renseigne un cours (document
-    textuel) et une question portant sur ce cours au format texte.
--   Dans un deuxième temps un étudiant donne une réponse en texte
-    libre, à la question posée par le professeur.
--   Enfin, l'algorithme corrige la réponse de l'étudiant. Il lui
-    renseigne si la réponse donnée est juste ou si elle contient des
-    éléments faux ou manquants.
-L'algorithme exploitera l'état de l'art des méthodes de traitement des
-données textuelles, notamment celles permettant de construire
-automatiquement des structures logiques à partir de texte, qui seront
-appliquées au cours, à la question et à la réponse fournie par
-l'étudiant.
-Le stage se limitera au traitement d'un ensemble prédéterminé de cours
-et de questions, portant sur les domaines de l'économie et de la
-gestion.
-Les étapes du stage seront les suivantes :
--   1 : Avec l'aide de l'équipe d'E-cole, familiarisation du stagiaire
-    avec le corpus de cours et de question fournis.
--   2 : Avec l'aide du Dr Iana Atanassova, prise de connaissance de
-    l'état de l'art des méthodes de traitement de données textuelles
-    pour en extraire des structures logiques et des outils de
-    comparaison de paraphrases.
--   3 : Application de ces méthodes sur les éléments du corpus par la
-    création de l'algorithme attendu.
--   4 : Analyse des résultats et propositions d'amélioration de
-    l'algorithme.
-
-Profil
-
--   Vous êtes étudiant de niveau Master (de préférence Master 2, Bac +5)
-    avec une formation en Informatique comprenant des notions en
-    Traitement Automatique des Langues (TAL).
--   Vous avez de solides compétences en Python.
--   Vous êtes organisé, rigoureux, autonome et doté d'une bonne
-    communication
--   Des connaissances en comptabilité et gestion sont un plus.
-
-Détails
-
--   Durée : 4 à 6 mois
--   Date de début : Mars 2022, ou dès que possible.
--   Localisation : Télétravail possible avec des déplacements ponctuels
-    à prévoir au CRIT ( rue Mégevand 25000 Besançon)
-
-Comment candidater
-
-Envoyez votre CV et lettre de motivation (avec nom et coordonnées de 2
-référents) aux adresses suivantes :
--   alexandre.lefort@e-cole.io
--   iana.atanassova@univ-fcomte.fr

@@ -1,67 +1,99 @@
-Titre: Recurrent neural network models of the textualization process
-Date: 14/02/2022
-Organisme: LIPN
-Lieu: Villetaneuse
+Titre: Exploration du Quantum Machine Learning appliqué au NLP
+Date: 24/02/2022
+Organisme: EDF R&D
+Lieu: Palaiseau
 
-Title: Recurrent neural network models of the textualization process
-Location: LIPN (UMR CNRS 7030), Université Sorbonne Paris Nord (99 Ave
-nue Jean Baptiste Clément, 93430 Villetaneuse)
-Advisors: Nadi Tomeh (tomeh@lipn.fr), Joseph Le Roux (leroux@lipn.fr)
+EDF R&D Palaiseau recherche un(e) stagiaire intéressé(e) pour
+travailler sur l'exploration du Quantum Machine Learning pour le
+Traitement Automatique du Langage Naturel. Aucun prérequis n'est
+demandé sur la partie Quantum Machine Learning, si vous possédez des
+bases en TALN et en Deep Learning n'hésitez pas à postuler. Télétravail
+partiel possible selon autorisation de votre école ou université. Vous
+trouverez l'offre détaillée ci-dessous.
 
-Context
-======
-In the context of the ANR project Pro-TEXT
-(https://pro-text.huma-num.fr/) we aim to conduct a comprehensive
-linguistic analysis of the textualization process, i.e. the real-time
-progressive construction of a text. We will study "bursts of writing",
-which are textual segments produced between "pauses", in order to
-provide insight into the relation between regularities of language
-performance and the cognitive and contextual constraints. The aim is to
-understand some of the layout mechanisms that allow language to give
-rise to novelty out of known and prefabricated structures. The
-project's aim is to build on recent developments in linguistics,
-cognitive psychology and machine learning to analyze burst data.
+Mission :
+    Exploration du Quantum Machine Learning appliqué au NLP - H/F
+Durée : 3-6 mois
+Début du stage souhaité : mars à juin 2022
+Lieu : EDF Lab Paris-Saclay, 7 boulevard Gaspard Monge, 91120 Palaiseau
 
-Internship proposal
-===============
-Burst data are collected through real-time recording of the writing
-process using keystroke logging tools Inputlog
-(http://www.inputlog.net/) and Scriptlog, which produces temporal data
-(chronology and duration of text production and pause length), language
-data (language sequences produced continuously between two pauses), and
-topological textual data (dynamics of text planning, revising already
-written text).
 
-In this internship, we propose to explore the use of recurrent neural
-networks such as LSTMs in modeling the three types of sequences
-mentioned above.
-We plan to study multiple modeling tasks. For instance, pause
-prediction can be cast as an LSTM-based sequence labeling task where
-input text is labeled with pause position and duration. A different
-network can be used to model the sequence of text editing actions
-including insertion and deletion of characters but also the intervening
-pauses. The network is then trained to predict the next action as in
-language models. Furthermore, we plan to explore the use of data
-structures inspired by the stack LSTM (Dyer et al., 2015) to use both
-action and word embeddings when predicting pauses.
-Such a structure should allow for updating state representations in a
-non-linear and non-local way while maintaining a low complexity.
+Contexte et objectifs :
 
-Candidate profile
-=============
--   Master in Computer Science or related field
--   Strong programming skills
--   Good reading and writing of English
--   Experience in training deep learning models (with Pytorch/Jax)
+La R&D d'EDF (2000 chercheurs) a pour missions principales de
+contribuer à l'amélioration de la performance des unités
+opérationnelles du groupe EDF, d'identifier et de préparer les relais
+de croissance à moyen et long terme. Dans ce cadre, le département
+Services, Economie, Outils Innovants et IA (SEQUOIA) est un département
+pluridisciplinaire (sciences de l'ingénieur, sciences humaines et
+sociales) qui fournit un appui à l'élaboration et au portage des
+offres, des services et des outils de relation client aux directions
+opérationnelles du groupe EDF. Au sein de ce département, ce stage sera
+rattaché au groupe « Statistiques et Outils d'Aide à la Décision »
+(SOAD) qui compte une vingtaine d'ingénieurs chercheurs spécialisés en
+Data Science.
 
-How to apply ?
-===========
-Send your CV and transcript of Master grades to tomeh@lipn.fr and
-leroux@lipn.fr
+Le développement de l'informatique quantique, une technologie
+radicalement nouvelle, connaît une accélération ces dernières années.
+La R&D d'EDF mène des travaux sur le sujet en partenariat avec des
+acteurs académiques et industriels de premier plan. De nombreux cas
+d'usage sont étudiés, pour lesquels l'informatique quantique ouvre de
+nouvelles perspectives pour des mises en application réelles.
 
-References
-=========
-(Dyer et al., 2015) https://aclanthology.org/P15-1033/
-Transition-Based Dependency Parsing with Stack Long Short-Term Memory.
-Chris Dyer, Miguel Ballesteros, Wang Ling, Austin Matthews, Noah A.
-Smith.
+L'informatique quantique appliquée au Natural Language Processing
+(NLP) est un domaine de recherche récent dont les possibilités
+restent encore à explorer. Des travaux antérieurs ont permis de
+réaliser une tâche de classification de texte sur de petits jeux de
+données (Meichanetzidis et al.,2020, Lorenz et al., 2021), et une
+librairie de développement spécialisée a récemment été créée
+(Kartsaklis, Dimitri, et al., 2021). Notre équipe explore ce sujet
+afin d'en cibler les axes de recherche actuels, et d'identifier les
+possibilités d'application pour les métiers du groupe. Il sera demandé
+de collaborer sur ces objectifs.
+
+Etapes du stage :
+
+    -   Réaliser un état de l'art des publications scientifiques sur le
+        Quantum Computing appliqué au NLP.
+   -    Reproduire une ou plusieurs expérimentations en NLP Quantum
+        Machine Learning décrites dans des publications scientifiques.
+   -    Définir des axes de recherche dans le domaine du Quantum Machine
+        Learning pouvant être appliqués à moyen/long terme aux métiers
+        du groupe.
+
+Profil recherché :
+
+    -   Etudiant(e) en Master 1 ou 2 ou équivalent école d'ingénieur
+    -   Compétences en Machine Learning (Deep Learning)
+    -   Compétences en Natural Language Processing
+    -   Bon niveau en Python
+    -   Spécialisation en Recherche (ex : Master Recherche, ou suivi
+        d'enseignements en Recherche)
+    -   Bon niveau de rédaction en français et en anglais
+
+Un temps sera accordé pour monter en compétence sur les librairies
+de développement pour le Quantum Machine Learning (ex : TensorFlow
+Quantum).
+
+Bibliographie :
+
+-   Kartsaklis, Dimitri, et al. "lambeq: An Efficient High-Level Python
+    Library for Quantum NLP." arXiv preprint arXiv:2110.04236 (2021).
+
+-   Lorenz, Robin, et al. "Qnlp in practice: Running compositional
+    models of meaning on a quantum computer." arXiv preprint
+    arXiv:2102.12846 (2021).
+
+-   Meichanetzidis, Konstantinos, et al. "Grammar-Aware
+    Question-Answering on Quantum Computers." arXiv preprint
+    arXiv:2012.03756 (2020).
+
+Unité d'accueil : Groupe SOAD (Statistique et Outils d'Aide à la
+Décision), département SEQUOIA d'EDF Lab Paris-Saclay, 7 boulevard
+Gaspard Monge, 91120 Palaiseau.
+
+Le stage sera encadré par un ingénieur-chercheur Data Scientist du
+département SEQUOIA.
+
+Transmettre par mail un CV et une lettre de motivation à:
+sabrina.campano@edf.fr (Département SEQUOIA)

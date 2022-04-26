@@ -1,62 +1,93 @@
-Titre: Extraction et typage des Entités Nommées en anglais
-Date: 14/03/2022
-Organisme: GEOLSemantics
-Lieu: Le Kremlin-Bicêtre
+Titre: Energy-Based Models for Controlled Text Generation
+Date: 06/04/2022
+Organisme: Naver Labs Europe
+Lieu: Grenoble
 
-Sujet de Stage :
-Extraction et typage des Entités Nommées en anglais
+Research internship position at NAVER LABS Europe (Grenoble, France)
+on Energy-Based Models for Controlled Text Generation
 
-Contexte :
-Créé en 2009, GEOLSemantics est un éditeur de logiciels innovants dans
-le domaine des technologies de l'information et de la communication, et
-particulièrement dans les domaines de la linguistique et de la
-sémantique. Les solutions de GEOLSemantics analysent les contenus
-textuels pour identifier, normaliser et structurer les données
-pertinentes qu'ils contiennent, afin de les rendre directement
-exploitables par des processus automatiques.
+Start date: June 2022
+Duration: 5-6 months
 
-Objectifs du stage :
-Dans le cadre d'un projet de recherche dans le domaine de la sécurité,
-nous souhaitons améliorer la reconnaissance des Entités Nommées
-(principalement organisations, lieux et personnes) en anglais, pour les
-textes issus de comptes-rendus d'opérations ou de mains-courantes. Nous
-nous appuierons pour cela sur la solution d'analyse linguistique de
-GEOLSemantics, qui utilise l'IA symbolique via des ressources
-linguistiques et des règles, ainsi que sur le traitement du français
-déjà en place. La mission principale du stage sera donc de mettre
-au point la reconnaissance des Entités Nommées en anglais en
-enrichissant les ressources existantes et en participant à
-l'élaboration des règles d'extraction des Entités Nommées.
+DESCRIPTION
+Large language models can now be used to generate highly fluent texts.
+However, the synthesized utterances can be deficient on other important
+levels: semantic consistency, faithfulness to the facts, toxic or
+socially biased content.
 
-Tâches principales à réaliser :
-    -   Prise en main du système de GEOLSemantics
-    -   État de l'art sur la reconnaissance des Entités Nommées
-    -   Réalisation d'un corpus de test et d'une référence
-    -   Reconnaissance des Entités Nommées de lieux
-    -   Reconnaissance des Entités Nommées de personnnes
-    -   Reconnaissance des Entités Nommées d'organisation
-    -   Évaluation des résultats
-    - Réalisation de la documentation technique
+Our team has developed several effective solutions on that front
+[1,2,3,4] exploiting the expressive power of Energy-Based Models in
+defining constraints over generative models. However, certain
+challenges remain: (1) How can we quickly adapt to changing control
+conditions without the need for model retraining? (2) Can we exploit
+these techniques to improve on hard-to-quantify features, such as
+safety, unbiasedness, textual coherence, or matching the human
+intention? (3) Can we improve training speed/robustness, for example,
+by leveraging techniques from RL?
 
-Profil recherché :
-    -   Étudiant(e) en Master de Linguistique Informatique, Traitement
-        automatique des langues ou Traduction
-    -   Langues : anglais, français, autres langues bienvenues
-    -   Connaissance d'un langage de script (Python, Perl, etc)
-    -   Connaissances en Java, Linux et GIT appréciées
+We are looking for a motivated intern to help us develop techniques
+and algorithms addressing these challenges. Experiments will be
+conducted on selected text generation tasks using the state of art
+pre-trained language models.
 
-Autres compétences :
-    -   Autonomie
-    -   Bonne aisance rédactionnelle
-    -   Bonne capacité de communication et aptitude pour le travail en
-        équipe
+The successful candidate should be enrolled in a graduate program, at
+the Master or (preferably) PhD level.
 
-Caractéristiques du stage :
-    -   Durée : minimum 6 mois
-    -   Date de début souhaitée : avril 2022
-    -   Lieu : Le Kremlin-Bicêtre
+The intern will work in a team integrated by Hady Elsahar, Marc
+Dymetman, Germán Kruszewski, and Jos Rozen.
 
+Publication of this internship's results in major
+conferences/journals
+will be strongly encouraged.
 
-Pour postuler, envoyez votre candidature à
-aurelie.rossi@geolsemantics.com en indiquant dans l'object du mail
-"stage sur la reconnaissance des Entités Nommées en anglais"
+REQUIRED SKILLS
+-   Strong programming skills
+-   Relevant experience with training Deep Learning models for NLP
+-   Strong mathematical skills
+-   Ability to communicate research
+
+OPTIONAL SKILLS
+-   Knowledge of MCMC sampling techniques and/or Reinforcement Learning
+-   Publications at peer-reviewed AI conferences
+
+REFERENCES
+[1] Khalifa et al., A Distributional Approach to Controlled Text
+    Generation, In ICLR-2021
+[2] Eikema et al., Sampling from Energy-Based Models with
+    Quality/Efficiency Trade-offs, In CtrlGen at Neurips 2021
+[3] Korbak et al., Energy-Based Models for Code Generation under
+    Compilability Constraints, In NLP4prog at ACL2021
+[4] Korbak et al. Controlling Conditional Language Models with
+    Distributional Policy Gradients, In CtrlGen at Neurips 2021
+
+APPLICATION INSTRUCTIONS
+Please note that applicants must be registered students at a university
+or other academic institution and that this establishment will need to
+sign an 'Internship Convention' with NAVER LABS Europe before the
+student is accepted.
+
+You can apply for this position online at
+https://europe.naverlabs.com/job/energy-based-models-for-controlled-text-generation-internship-2/.
+Don't forget to upload your CV and cover letter before you submit.
+Incomplete applications will not be accepted.
+
+ABOUT NAVER LABS
+NAVER is the #1 Internet portal in Korea with activities that span a
+wide range of businesses including search, commerce, content, financial
+and cloud platforms.
+
+NAVER LABS, co-located in Korea and France, is the organization
+dedicated to preparing NAVER's future. NAVER LABS Europe is
+located in a spectacular setting in Grenoble, in the heart of the
+French Alps. Scientists at NAVER LABS Europe are empowered to pursue
+long-term research problems that, if successful, can have significant
+impact and transform NAVER. We take our ideas as far as research can to
+create the best technology of its kind. Active participation in the
+academic community and collaborations with world-class public research
+groups are, among others, important tools to achieve these goals.
+Teamwork, focus and persistence are important values for us.
+
+NAVER LABS Europe is an equal opportunity employer.
+
+For more information and application see
+https://europe.naverlabs.com/job/energy-based-models-for-controlled-text-generation-internship-2/

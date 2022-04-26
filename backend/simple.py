@@ -92,7 +92,8 @@ def get_content(real_urls, url):
 
             c_post = requests.get(half_url + real_urls[i])
             c_post.encoding = "Windows-1252"
-            filename = "/home/IdL/2021/liuqinyu/public_html/new/text_files/stage" + str(i) + ".txt"
+            #filename = "/home/IdL/2021/liuqinyu/public_html/new/text_files/stage" + str(i) + ".txt"
+            filename = "text_files/stage" + str(i) + ".txt"
             with open(filename, "w", encoding = "utf-8") as fd:
                 fd.write("Titre: " + titles[i] + "\n")
                 fd.write("Date: " + dates[i] + "\n")
@@ -105,4 +106,4 @@ def get_content(real_urls, url):
 real_urls = get_posts(url)
 get_content(real_urls, url)
 
-get_posts_linkedin(url_lin) 
+#get_posts_linkedin(url_lin) 

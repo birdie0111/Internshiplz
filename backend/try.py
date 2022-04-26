@@ -63,6 +63,7 @@ def get_posts(url):
     return real_urls
 
 def get_content(real_urls, url):
+    
     half_url = "http://w3.erss.univ-tlse2.fr/membre/tanguy/"
     if(real_urls == []):
         print("no urls\n")
@@ -90,6 +91,7 @@ def get_content(real_urls, url):
 
             c_post = requests.get(half_url + real_urls[i])
             c_post.encoding = "Windows-1252"
+            
             filename = "/home/IdL/2021/liuqinyu/public_html/new/text_files/stage" + str(i) + ".txt"
             with open(filename, "w", encoding = "utf-8") as fd:
                 fd.write("Titre: " + titles[i] + "\n")
@@ -97,10 +99,12 @@ def get_content(real_urls, url):
                 fd.write("Organisme: " + institutes[i] + "\n")
                 fd.write("Lieu: " + places[i] + "\n")
                 fd.write(c_post.text)
+            print("hahaha")
+
 
 
 
 real_urls = get_posts(url)
 get_content(real_urls, url)
 
-get_posts_linkedin(url_lin) 
+#get_posts_linkedin(url_lin) 

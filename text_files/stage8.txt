@@ -1,74 +1,42 @@
-Titre: Traitement Automatique du Langage
-Date: 08/02/2022
-Organisme: Konverso
-Lieu: Boulogne Billancourt
-Offre de stage 5/ 6 mois - Traitement Automatique du Langage
-Master 2 ou école d'ingénieur en dernière année
+Titre: Data Annotation Specialist
+Date: 21/02/2022
+Organisme: ReciTAL
+Lieu: NR
+reciTAL recherche un(e) Data Annotation Specialist H/F pour l'analyse
+et l'annotation de documents en français et anglais, dans le cadre d'un
+stage d'une durée de 6 mois.
 
-Konverso - plateforme conversationnelle IA.
+*À propos*
+reciTAL est un éditeur de logiciels B2B d'Intelligence Artificielle
+spécialisé dans le Traitement Automatique du Langage. La plateforme
+reciTAL est une solution au problème du traitement des données non
+structurées dans l'entreprise.
 
-Présentation de Konverso : Konverso, créé en 2017 au sein du programme
-Startup IA de Microsoft France, propose aux entreprises du monde entier
-une plateforme conversationnelle IA pour automatiser les fonctions
-support des entreprises que ce soit l'IT Help Desk, les RH ou le
-support client.
-Konverso est maintenant utilisé aux US, UK, Australie, Canada, France
-et compte des clients internationaux comme Veolia, Colas (groupe
-Bouygues), Alten, Hudson, Neustar/ TransUnion, University of Texas.
-Konverso est suivi par des analystes internationaux comme Everest
-Group. Konverso a intégré le radar des startups du Digital Workplace en
-2021 de Wavestone et a été lauréat du prix i -LAB de Bpifrance et le
-ministère de la Recherche et d'innovation.
-Les technologies de NLP et de Machine Learning sont au coeur de notre
-plateforme. La brique d'IA utilise notamment les données clients pour
-réaliser différentes tâches comme la reconnaissance de langue, la
-classification automatique, l'identification de similarité textuelle,
-la détection d'entités nommées. L'objectif final étant toujours une
-bonne compréhension du verbatim utilisateur à des fins de diagnostic/
-résolution, avec de l'automatisation. Notre plateforme est
-multi-canal : mail, chat et callbot.
+Porté par une équipe de recherche à la pointe (6 PhD et un comité
+scientifique avec Facebook Research et l'université de Berkeley),
+reciTAL compte plusieurs grandes banques et assureurs français parmi
+ses clients, représentant plus de 30.000 utilisateurs actifs.
 
-Votre mission
-Vous travaillerez au sein de l'équipe projet et avec des liens avec
-l'équipe de R&D.
+Lancé en 2017, reciTAL a gagné les AI Awards 2019 et a reçu le label
+DeepTech de la BPI. Il a réalisé une levée de fonds de 3,5M¤ avec
+Breega en septembre 2020 pour accélérer son développement.
 
-    -   Vos activités :
-        -   Traitement Automatisé du Langage avec en particulier de
-            l'analyse sémantique en vue de l'extraction d'entités.
-        -   Génération Automatisée de Langage pour une amélioration de
-            nos algorithmes de génération de réponses.
-        -   Base de connaissance. En partenariat avec nos ingénieurs
-            Machine Learning, travail sur des algorithmes de
-            classification de textes sur la base de corpus « métier ».
-        -   Revue des labélisations et à l'amélioration des corpus
-            d'entrainements et de tests.
-Dans le cadre de cette mission l'étudiant travaillera avec des outils
-et une méthodologie professionnelle.
+*Responsabilités au quotidien*
+-   Annotation de corpus pour l'entraînement des modèles ML et DL
+-   Garant de la qualité des corpus annotés, contribution à l'analyse
+    linguistique pour concevoir/améliorer le guideline d'annotation
+-   Documentation du processus d'annotation
 
-Profil recherché
+*Profil recherché*
+-   De formation supérieure en Linguistique ou Langues (LEA, LLCE ou
+    équivalent), avec idéalement une spécialisation en Linguistique
+    Informatique ou Traitement Automatique des Langues (TAL / NLP).
+-   Maîtrise de l'anglais et du français indispensable
+-   Grande rigueur
+-   Autonomie
+-   Capacité d'analyse et de synthèse
+-   Facilité à travailler et communiquer en équipe
 
-    -   Double compétence informatique et linguistique.
-    -   Diplômé en sciences du langage avec une spécialité en
-        Traitement Automatique du Langage
-    -   Étudiant avec une vraie passion pour la programmation.
-    -   Des connaissances Python, des environnements Linux et des bases
-        de données seraient un plus.
-    -   L'équipe de développement est distribuée et la langue de
-        travail est un mix de français et d'anglais.
-    -   Votre faites preuve de curiosité au quotidien, vous êtes
-        dynamique et autonome.
-    -   Avoir une expérience avec spaCy 3 et quelques Transformers
-        serait un plus.
-Avec un fort plan de croissance de la société en 2022, ce poste
-pourrait ensuite donner lieu à une embauche.
-
-Localisation : Boulogne Billancourt 98 Route de la Reine.
-
-Durée : 5/6 mois (temps plein), à partir d'Avril/Mai 2022.
-
-Gratification : montant légal en vigueur et fonction de l'expérience du
-candidat + ticket restaurant et 50% du titre de transport
-
-Postuler: Envoyer un CV, et une lettre de motivation, par mail à
-Bertrand Lafforgue (bertrand.lafforgue@konverso.ai),
-avant le 01/03/2022.
+*Contact*
+Envoyer votre candidature (CV + lettre de motivation optionnelle) à
+Jiaqi Chang, jiaqi@recital.ai
