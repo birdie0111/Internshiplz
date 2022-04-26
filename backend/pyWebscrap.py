@@ -30,14 +30,10 @@ def get_posts_linkedin(url_lin):
     
     for i in range(3):
         all_urls[i] = all_urls[i][:-66]#sftp://liuqinyu@i3l.univ-grenoble-alpes.fr/home/IdL/2021/liuqinyu/public_html/new/fichier_html
-        roadPare = "/home/IdL/2021/liuqinyu/public_html/new" # obtenir le chemin du dossier
+        roadPare = "/home/IdL/2021/liuqinyu/public_html" # obtenir le chemin du dossier
         pathFile = roadPare+"/text_files" # définir le chemin des dossier
-        if not os.path.exists(pathFile):   # Si le dossier n'existe pas encore, créer un
-            os.makedirs(pathFile)
         filename = pathFile+"/Linkedin" + str(i) + ".txt"
         pathWindow = roadPare+"/fichier_html" # le dossier pour les .txt en Encodage Windows1252
-        if not os.path.exists(pathWindow):
-            os.makedirs(pathWindow)
         fileWindow = pathWindow+"/Linkedin" + str(i) + ".html"
 
 
@@ -125,14 +121,10 @@ def get_content(real_urls, url):
             regex = r"(?<!(>|\n|\.|[A-Z]|[0-9]))\n(?!(<|\s|•|[1-9]\.|— |– |- |[A-Z]))"
             c_corri_final = re.sub(regex," ",c_corri)
 
-            roadPare = "/home/IdL/2021/liuqinyu/public_html/new"
+            roadPare = "/home/IdL/2021/liuqinyu/public_html"
             pathFile = roadPare+"/text_files"
-            if not os.path.exists(pathFile):
-                os.makedirs(pathFile)
             filename = pathFile+"/Stage" + str(i) + ".txt"
             pathWindow = roadPare+"/fichier_html" # le dossier pour les .txt en Encodage Windows1252
-            if not os.path.exists(pathWindow):
-                os.makedirs(pathWindow)
             fileWindow = pathWindow+"/Stage" + str(i) + ".html"
 
 
@@ -259,14 +251,10 @@ def getContent(urlStage):
 
 # pour chaque site du stage, obtenir les informations et les écrire dans un fichier .txt
 
-roadPare = "/home/IdL/2021/liuqinyu/public_html/new"
+roadPare = "/home/IdL/2021/liuqinyu/public_html"
 pathFile = roadPare+"/text_files"
-if not os.path.exists(pathFile):
-    os.makedirs(pathFile)
 
 pathWindow = roadPare+"/fichier_html" # le dossier pour les .txt en Encodage Windows1252
-if not os.path.exists(pathWindow):
-    os.makedirs(pathWindow)
 
 for href in urls : 
     # obtenir les informations
