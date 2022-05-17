@@ -5,7 +5,7 @@ import sys
 import io
 sys.stdout = io.TextIOWrapper(buffer=sys.stdout.buffer,encoding='utf8')
 url = "http://w3.erss.univ-tlse2.fr/membre/tanguy/offres.html#Stages"
-url_lin = "https://www.linkedin.com/jobs/search?keywords=Nlp&location=France&locationId=&geoId=105015875&f_TPR=&f_JT=I"
+url_lin = "https://www.linkedin.com/jobs/search/?f_E=1&geoId=105015875&keywords=nlp&location=France"
 days = 10
 
 
@@ -24,15 +24,14 @@ def get_posts_linkedin(url_lin):
     locations = selector.xpath('//*[@class="job-search-card__location"]/text()')
     companies = selector.xpath('//*[@class="hidden-nested-link"]/text()')
 
-    regex = 'href="(.*)" data-tracking-control-name="public_jobs_jserp-result_search-card"'
+    regex = '<a class="base-card__full-link" href="(.*)"'
     all_urls = re.findall(regex, posts.text)
     regex = 'datetime="(.*)">'
     dates = re.findall(regex, posts.text)
-    print(all_urls)
     
     for i in range(3):
-        #all_urls[i] = all_urls[i][:-66]
-        filename = "text_files/linkedin" + str(i) + ".txt"
+        all_urls[i] = all_urls[i][:-66]
+        filename = "/home/IdL/2021/liuqinyu/public_html/new/linkedin" + str(i) + ".txt"
 
         title = titles[i].strip(" \n")
         location = locations[i].strip(" \n")
@@ -64,7 +63,6 @@ def get_posts(url):
     return real_urls
 
 def get_content(real_urls, url):
-    
     half_url = "http://w3.erss.univ-tlse2.fr/membre/tanguy/"
     if(real_urls == []):
         print("no urls\n")
@@ -92,16 +90,13 @@ def get_content(real_urls, url):
 
             c_post = requests.get(half_url + real_urls[i])
             c_post.encoding = "Windows-1252"
-            
-            filename = "text_files/stage" + str(i) + ".txt"
+            filename = "/home/IdL/2021/liuqinyu/public_html/new/text_files/stage" + str(i) + ".txt"
             with open(filename, "w", encoding = "utf-8") as fd:
                 fd.write("Titre: " + titles[i] + "\n")
                 fd.write("Date: " + dates[i] + "\n")
                 fd.write("Organisme: " + institutes[i] + "\n")
                 fd.write("Lieu: " + places[i] + "\n")
                 fd.write(c_post.text)
-            print("hahaha")
-
 
 
 

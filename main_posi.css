@@ -15,8 +15,7 @@ body {
 #icone {
     position:absolute;
     display: flex;
-    left:0px;
-    top:0px;
+    left:3%;
     width:6%;
 }
 #imguga {
@@ -51,6 +50,16 @@ body {
 #compte  {
     display: flex;
     flex-direction:column;
+}
+
+#ins_form {
+    text-align: center;
+    left: 30%;
+}
+
+#no_account {
+    text-align: 30%;
+    left:30%
 }
 
 #form_login {

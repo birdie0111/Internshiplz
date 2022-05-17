@@ -37,9 +37,9 @@
         }
         $path = dirname(__FILE__);
         $path = "backend/pyWebscrap.py";
-        echo $path;
+        //echo $path;
         $array = shell_exec("python3 ".$path);
-        print_r($array);
+        //print_r($array);
 
         include "templates/acc_connected.php";
         include "templates/recherche.php";

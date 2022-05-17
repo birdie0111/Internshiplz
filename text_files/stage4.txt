@@ -1,86 +1,44 @@
-Titre: Machine Learning pour les réseaux sociaux et les images
-Date: 08/03/2022
-Organisme: CERES
-Lieu: Paris
-*Offre de Stage en Machine Learning pour les réseaux sociaux et les
-images, Sorbonne Université*
+Titre: Multilingual chatbot
+Date: 01/04/2022
+Organisme: Luxembourg Institute of Science and Technology
+Lieu: Luxembourg
+Internship position at Luxembourg Institute of Science and Technology
 
-Le stage s'inscrit dans une recherche conduite à CERES (Centre
-d'Expérimentation en méthodes numériques pour les recherches en SHS),
-Faculté des Lettres - Sorbonne Université, en partenariat avec
-l'Université Paris 8.
+We have an opening for a 6-month internship at Luxembourg Institute of
+Science and Technology (LIST). LIST is a Research and Technology
+Organization (RTO) active in the fields of materials, environment and
+IT. By transforming scientific knowledge into technologies, smart data
+and tools, LIST empowers citizens in their choices, public authorities
+in their decisions and businesses in their strategies.
 
-*Contexte*
+https://www.list.lu/
 
-La recherche d'information est un domaine de recherche en perpétuel
-mutation à cause de la transformation numérique. Le volume des données
-produit via les outils numériques connectés excède la capacité humaine
-de les traiter manuellement et un recours à l'intelligence artificielle
-(IA) devient incontournable. Toutefois, ces modèles intelligents issus
-d'IA doivent garantir au moins le passage à l'échelle, la compréhension
-des données hétérogènes et la catégorisation sémantique de ces données.
-Dans ce contexte, la recherche de similitudes au sein d'un large corpus
-multimédia où se mêlent images, vidéos et textes (structurés ou non)
-est une tâche très complexe.
-Dans le cadre d'une recherche sur les controverses en ligne, nous nous
-intéressons à la circulation d'informations et de discours dans les
-réseaux sociaux numériques (Twitter, TikTok, Instagram par exemple)
-sous différentes formes (textes, images, vidéo). Plus spécifiquement,
-nous cherchons à capturer, caractériser, analyser et expliquer les
-déclinaisons iconographiques, textuelles et narratives des images à
-mesure qu'elles circulent dans les RSN.
+The internship will be in the context of the ENRICH4ALL project
+(https://www.enrich4all.eu/) which is about the design and development of a
+multilingual chatbot service that will be deployed in public
+administration in Luxembourg, Denmark, and Romania. ENRICH4ALL is a
+European funded project (CEF-TC-2020-1: Automated Translation) and the
+duration is from 01.06.2021 - 31.05.2023.
 
-*Sujet et missions*
+The intern will work closely with the ENRICH4ALL team of LIST. In
+ENRICH4ALL there are three more partners apart from LIST: BEIA Consult
+International (Romania), SupWiz Aps (Denmark), and the Research
+Institute for Artificial Intelligence, Romanian Academy. The intern
+will participate in biweekly meetings with the other partners, but
+also internal meetings to discuss the progress and show the results of
+the assigned tasks.
 
-Quand il s'agit d'une image, celle-ci peut subir différentes
-transformations faisant appel à de nombreux outils de traitement
-d'images. Ces traitements peuvent être simples et agissent par exemple
-sur les couleurs, ou encore sur la répartition spatiale des pixels (le
-recadrage, le découpage, etc.), ou bien plus complexes afférant à des
-outils : de génération d'images à partir de motifs d'une image de
-référence ; de substitution de l'image source ; de l'augmentation de
-l'image source par une caricature, un slogan, un tag, une image
-codifiée, voire même une nouvelle image.
+Requirements: French or German native speaker, Natural Language
+Processing, JSON, Python
 
-*Travail demandé*
--   cibler des événements clés sur les réseaux sociaux : constituer des
-    corpus de référence ;- élaborer un état de l'art sur les outils
-    d'analyse de corpus massifs pluri-sémiotique : focus sur des
-    corpus d'images ;
--   étudier l'état des lieux bibliographique des mesures de similarité
-    entre images ;
--   développer un modèle d'extraction semi-automatique d'objets
-    caractéristiques d'un événement fixé : les signatures
-    iconographiques qui symbolisent l'événement par apprentissage. Le
-    modèle se base sur une architecture de réseaux de neurones profonds
-    à base de graphe ;
--   augmenter le modèle par un algorithme de reconnaissance d'un
-    événement par reconnaissance de signatures ;
--   implémenter et tester de nouvelles mesures de similarité qui soient
-    à la fois robustes aux différences de cadrage, de résolution, de
-    couleurs, de contraste, etc. et aux différentes évolutions,
-    transformations, des objets caractéristiques au fil du temps de
-    manifestation de l'événement étudié ;
--   visualiser les schémas narratifs d'un objet caractéristique pour
-    une collection d'événements de tests.
+Please send your application with CV at dimitra.anastasiou@list.lu
 
-*Prérequis*
--   Python, PyTorch, OpenCV, CUDA, gestion des données,
-    machine-learning, deep-learning, visualisation
-
-*Profil du/de la candidate :*
-
-Vous êtes étudiant·e dans un Master 2 en informatique, sciences des
-données ou statistiques, ou étudiant·e· dans une école d'ingénieur
-(informatique). Vous êtes enthousiaste pour la recherche, vous aimez
-comprendre en profondeur les problèmes et trouver des solutions
-élégantes. Vous êtes intéressé·e par l'intelligence artificielle, et
-plus précisément l'apprentissage automatique des techniques
-d'optimisation d'analyse de données. Vous avez un intérêt pour le
-domaine des sciences humaines et sociales.
+Closing date: 30.04
 
 
-Candidature à adresser à virginie.julliard@sorbonne-universite.fr ;
-n.mellouli@iut.univ-paris8.fr et orion.alie@gmail.com
-ayant pour objet « Candidature Stage CERES-Semiosis »
 
+_______________________________________________
+UNSUBSCRIBE from this page: http://mailman.uib.no/options/corpora
+Corpora mailing list
+Corpora@uib.no
+https://mailman.uib.no/listinfo/corpora

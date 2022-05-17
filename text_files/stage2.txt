@@ -1,44 +1,106 @@
-Titre: Multilingual chatbot
-Date: 01/04/2022
-Organisme: Luxembourg Institute of Science and Technology
-Lieu: Luxembourg
-Internship position at Luxembourg Institute of Science and Technology
+Titre: Analyse des mentions en coréférence impliquant des Entités Nommées
+Date: 13/04/2022
+Organisme: Nextino
+Lieu: Orléans
+Nextino propose le sujet de stage ci-dessous Ã  partir de mai 2022
 
-We have an opening for a 6-month internship at Luxembourg Institute of
-Science and Technology (LIST). LIST is a Research and Technology
-Organization (RTO) active in the fields of materials, environment and
-IT. By transforming scientific knowledge into technologies, smart data
-and tools, LIST empowers citizens in their choices, public authorities
-in their decisions and businesses in their strategies.
+Offre de stage :    Analyse des mentions en corÃ©fÃ©rence impliquant des
+                    EntitÃ©s NommÃ©es
 
-https://www.list.lu/
+# Contexte
 
-The internship will be in the context of the ENRICH4ALL project
-(https://www.enrich4all.eu/) which is about the design and development of a
-multilingual chatbot service that will be deployed in public
-administration in Luxembourg, Denmark, and Romania. ENRICH4ALL is a
-European funded project (CEF-TC-2020-1: Automated Translation) and the
-duration is from 01.06.2021 - 31.05.2023.
+Nextino est un centre de recherche en intelligence artificielle du
+groupe Atempo dÃ©diÃ© Ã  l'innovation dans le domaine de la protection des
+donnÃ©es. Au sein du DÃ©partement Innovation et Technologies, vous
+rejoindrez une Ã©quipe dÃ©diÃ©e aux travaux dans le domaine du Traitement
+Automatique des Langues (TAL).
 
-The intern will work closely with the ENRICH4ALL team of LIST. In
-ENRICH4ALL there are three more partners apart from LIST: BEIA Consult
-International (Romania), SupWiz Aps (Denmark), and the Research
-Institute for Artificial Intelligence, Romanian Academy. The intern
-will participate in biweekly meetings with the other partners, but
-also internal meetings to discuss the progress and show the results of
-the assigned tasks.
+Dans le cadre du projet RGPD (RÃ¨glement GÃ©nÃ©ral sur la Protection des
+donnÃ©es), Nextino s'engage Ã  protÃ©ger les donnÃ©es Ã  caractÃ¨re personnel
+de ses clients tout en conservant la qualitÃ© informative du contenu.
 
-Requirements: French or German native speaker, Natural Language
-Processing, JSON, Python
+Pour mener Ã  bien sa mission, l'Ã©quipe TAL dÃ©veloppe un systÃ¨me capable
+de dÃ©tecter les donnÃ©es personnelles ; tÃ¢che qui s'apparente en partie
+Ã  la tÃ¢che de reconnaissance d'EntitÃ©s NommÃ©es (EN). Pour atteindre cet
+objectif, il est nÃ©cessaire de dÃ©tecter l'ensemble des chaÃ®nes de
+corÃ©fÃ©rence afin de dÃ©tecter les liens entre les EN.
 
-Please send your application with CV at dimitra.anastasiou@list.lu
-
-Closing date: 30.04
+La rÃ©solution des corÃ©fÃ©rences consiste Ã  identifier les suites
+(chaines) d'unitÃ©s linguistiques faisant rÃ©fÃ©rence Ã  une mÃªme entitÃ© ou
+concept. Le stage proposÃ© ici consiste Ã  dÃ©finir prÃ©cisÃ©ment notre
+sujet d'Ã©tude (les corÃ©fÃ©rences impliquant des EN) par la crÃ©ation et
+l'annotation d'un corpus regroupant des exemples concrets en anglais et
+en franÃ§ais - et participer Ã  l'Ã©tude du risque liÃ© Ã  l'Ã©chec de
+dÃ©tection d'une mention.
 
 
+# Description du stage
 
-_______________________________________________
-UNSUBSCRIBE from this page: http://mailman.uib.no/options/corpora
-Corpora mailing list
-Corpora@uib.no
-https://mailman.uib.no/listinfo/corpora
+Le stage se dÃ©roulera en 4 phases :
+
+-   Phase 1 : Etudier/quantifier/qualifier nos corpus (fr/en) en termes
+    de corÃ©fÃ©rence : il s'agira de relever des exemples dans nos
+    donnÃ©es pour chaque type de relations proposÃ© dans le Guide
+    dÃ©crivant le corpus ANCOR (Muzerelle et al., 2014) et d'analyser et
+    caractÃ©riser plus prÃ©cisÃ©ment les exemples impliquant des EN.
+
+-   Phase 2 : RÃ©cupÃ©rer et analyser les rÃ©sultats de modÃ¨les de
+    dÃ©tections des EN dÃ©jÃ  entrainÃ©s sur les documents relevÃ©s pendant
+    la Phase 1.
+
+-   Phase 3 : CrÃ©er un guide d'annotation adaptÃ© Ã  nos donnÃ©es et
+    tester l'annotation des mentions en corÃ©fÃ©rence. Cette Ã©tape
+    d'annotation impliquera l'utilisation du dÃ©tecteur de mentions
+    (Grobol et al., 2017) et l'analyse de son efficacitÃ© sur nos
+    donnÃ©es. L'outil WebAnno sera utilisÃ© pour rÃ©aliser les
+    annotations.
+
+-   Phase 4 : Etudier l'impact de l'oubli de certaines mentions dans la
+    chaine de corÃ©fÃ©rence.
+
+# Profil recherchÃ©
+
+-   Etudiant(e) en Master 1 ou Master 2 en Traitement Automatique des
+    Langues ou Linguistique
+
+-   FranÃ§ais langue maternelle obligatoire
+
+-   Maitrise de l'anglais Ã  l'Ã©crit
+
+-   CompÃ©tence en analyse linguistique de corpus
+
+-   Connaissance du langage de dÃ©veloppement Python apprÃ©ciÃ©e
+
+-   Connaissance de l'outil d'annotation Webanno apprÃ©ciÃ©e
+
+
+# Informations sur le stage
+
+-   Lieu : OrlÃ©ans, le Lab'O
+
+-   Gratification : Selon les rÃ¨gles en vigueur + tickets restaurant
+
+-   DurÃ©e du stage : 3 Ã  4 mois (ou plus) dÃ©marrage souhaitÃ©
+    courant mai 2022
+
+Pour postuler, envoyer un CV, et une lettre de motivation,
+par mail Ã  bernard.peultier@nextino.eu
+
+
+# RÃ©fÃ©rences
+
+-   LoÃ¯c Grobol, Isabelle Tellier, Ã‰ric de La Clergerie, Marco
+    Dinarelli, and FrÃ©dÃ©ric Landragin. 2017. Apports des analyses
+    syntaxiques pour la dÃ©tection automatique de mentions dans un
+    corpus de franÃ§ais oral (Experiences in using deep and shallow
+    parsing to detect entity mentions in oral French). In Actes des
+    24Ã¨me ConfÃ©rence sur le Traitement Automatique des Langues
+    Naturelles. Volume 2 - Articles courts, pages 200-208, OrlÃ©ans,
+    France. ATALA.
+
+-   Judith Muzerelle, AnaÃ¯s Lefeuvre, Emmanuel Schang, Jean-Yves
+    Antoine, Aurore Pelletier, et al.. ANCOR_Centre, a Large Free
+    Spoken French Coreference Corpus: description of the Resource and
+    Reliability Measures. LREC'2014, 9th Language Resources and
+    Evaluation Conference., May 2014, Reyjavik, Iceland. pp.843-847.
+    (hal-01075679)

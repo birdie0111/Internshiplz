@@ -138,6 +138,19 @@ a:visited{
 #compte p {
     color:rgb(255, 255, 255);
 }
+
+#ins_form {
+    border-radius: 5px;
+    background-color: rgb(220, 209, 205, 0.62);
+    width: 22%;
+    padding-bottom: 20px;
+    align-items: center;
+    color: white;
+}
+
+#no_account p{
+    color:rgb(255, 255, 255);
+}
 /*———————————账户板块下——按钮板块——————————————————————*/
 .moyen {
     font-size: 18px;

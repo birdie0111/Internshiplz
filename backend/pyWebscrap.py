@@ -1,3 +1,5 @@
+
+
 from bs4 import BeautifulSoup
 from lxml import etree
 import requests
@@ -9,9 +11,10 @@ import os
 
 #------------------------------------------------------------------------------------------Internshiplz---Qinyue-LIU---M1-IDL---24/03/2022
 #------------------------------------------------------------------------------------------"Offres d'emploi et de stage en TAL"---et---"Linkedin"
+
 sys.stdout = io.TextIOWrapper(buffer=sys.stdout.buffer,encoding='utf8')
 url = "http://w3.erss.univ-tlse2.fr/membre/tanguy/offres.html#Stages"
-url_lin = "https://www.linkedin.com/jobs/search/?f_E=1&geoId=105015875&keywords=nlp&location=France"
+url_lin = "https://www.linkedin.com/jobs/search?keywords=Nlp&location=France&locationId=&geoId=105015875&f_TPR=&f_JT=I"
 days = 20
 
 def get_posts_linkedin(url_lin):
@@ -23,13 +26,13 @@ def get_posts_linkedin(url_lin):
     locations = selector.xpath('//*[@class="job-search-card__location"]/text()')
     companies = selector.xpath('//*[@class="hidden-nested-link"]/text()')
 
-    regex = '<a class="base-card__full-link" href="(.*)"'
+    regex = 'href="(.*)" data-tracking-control-name="public_jobs_jserp-result_search-card"'
     all_urls = re.findall(regex, posts.text)
     regex = 'datetime="(.*)">'
     dates = re.findall(regex, posts.text)
     
     for i in range(3):
-        all_urls[i] = all_urls[i][:-66]#sftp://liuqinyu@i3l.univ-grenoble-alpes.fr/home/IdL/2021/liuqinyu/public_html/new/fichier_html
+        #sftp://liuqinyu@i3l.univ-grenoble-alpes.fr/home/IdL/2021/liuqinyu/public_html/new/fichier_html
         roadPare = "/home/IdL/2021/liuqinyu/public_html" # obtenir le chemin du dossier
         pathFile = roadPare+"/text_files" # définir le chemin des dossier
         filename = pathFile+"/Linkedin" + str(i) + ".txt"
@@ -169,6 +172,7 @@ get_content(real_urls, url)
 
 
 
+
 #---------------------------------------------------------------------------------------------------Internshiplz---Yuhe-TANG---M1-IDL---29/03/2022
 #---------------------------------------------------------------------------------------------------"Indeed"
 urlIndeed = "https://fr.indeed.com/emplois?q=traitement+automatique+des+langues&jt=internship"
@@ -301,4 +305,4 @@ for href in urls :
 </html>
         """)
 
-print("Script fini, ça marche ! Vérifiez les résultats dans \"...\Internshiplz\\text_files\" et dans \"...\Internshiplz\\fichier_html\" ")
+#print("Script fini, ça marche ! Vérifiez les résultats dans \"...\Internshiplz\\text_files\" et dans \"...\Internshiplz\\fichier_html\" ")

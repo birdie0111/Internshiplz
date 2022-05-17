@@ -3,15 +3,17 @@
         <meta charset="utf-8">
         <title>login in</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" media="all" href="../main_style.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="../main_posi.css" />
     </head>
     <body>
-        <form action="inscrit.php" id = "ins_form" method="post">
-            <h3>username:</h3>
-            <input type="text" name = "new_user">
-            <h3>password:</h3>
-            <input type="text" name = "new_psword">
-            <button type="submit">create</button>
-        </form>
+            <form action="inscrit.php" id = "ins_form" method="post">
+                <h3>username:</h3>
+                <input type="text" name = "new_user">
+                <h3>password:</h3>
+                <input type="text" name = "new_psword">
+                <button type="submit" class="moyen">create</button>
+            </form>
 
     </body>
 </html>
@@ -51,10 +53,12 @@ $result = mysqli_query($connect,$query);
 
 // verifier Si l'utilisateur existe
 if ($result->num_rows == 0){
-    print " <div id='no_account'>
+    print " 
+            <div id='no_account'>
                 <p>Votre username pas trouve, creez un compte plz</p>
-                <button id = 'new_account' >create</button>
-            </div>";
+                <button id = 'new_account' class = 'moyen' >create</button>
+            </div>"
+            ;
         
 }else{
     $query = "select * from Users where Psword = '".$password."'"."and Username = '".$username."';";
