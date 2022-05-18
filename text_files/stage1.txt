@@ -1,47 +1,82 @@
-Titre: Extraction et typage des Entités Nommées en anglais
-Date: 14/03/2022
-Organisme: GEOLSemantics
-Lieu: Le Kremlin-Bicêtre
+Titre: Amélioration d’un ChatBot / Service d’automatisations sémantiques
+Date: 2022-05-09
+Organisme: Besoindinfos
+Lieu: Télétravail
 
 
+Société : Besoin d'infos
+Contact : Renaud lacroix
+Mail : renaud_lacroix@yahoo.fr
 
-Sujet de Stage :
-Extraction et typage des Entités Nommées en anglais
+Stage conventionné
+Lieu : Télétravail
+Durée : 8 semaines
+Début du stage : 30 mai 2022
+Fin de stage : 22 juillet 2022
 
-Contexte :
-Créé en 2009, GEOLSemantics est un éditeur de logiciels innovants dans le domaine des technologies de l'information et de la communication, et particulièrement dans les domaines de la linguistique et de la sémantique. Les solutions de GEOLSemantics analysent les contenus textuels pour identifier, normaliser et structurer les données pertinentes qu'ils contiennent, afin de les rendre directement exploitables par des processus automatiques.
+Gratification de stage :
 
-Objectifs du stage :
-Dans le cadre d'un projet de recherche dans le domaine de la sécurité, nous souhaitons améliorer la reconnaissance des Entités Nommées (principalement organisations, lieux et personnes) en anglais, pour les textes issus de comptes-rendus d'opérations ou de mains-courantes. Nous nous appuierons pour cela sur la solution d'analyse linguistique de
-GEOLSemantics, qui utilise l'IA symbolique via des ressources linguistiques et des règles, ainsi que sur le traitement du français déjà en place. La mission principale du stage sera donc de mettre au point la reconnaissance des Entités Nommées en anglais en enrichissant les ressources existantes et en participant à l'élaboration des règles d'extraction des Entités Nommées.
+##  À propos
 
-Tâches principales à réaliser :
-    -   Prise en main du système de GEOLSemantics
-    -   État de l'art sur la reconnaissance des Entités Nommées
-    -   Réalisation d'un corpus de test et d'une référence
-    -   Reconnaissance des Entités Nommées de lieux
-    -   Reconnaissance des Entités Nommées de personnnes
-    -   Reconnaissance des Entités Nommées d'organisation
-    -   Évaluation des résultats
-    - Réalisation de la documentation technique
+L'entreprise : Besoindinfos est une entreprise internet qui a développé une technologie d'automatisations sémantiques et de dialogue automatisé (langage naturel, scénarisation).
 
-Profil recherché :
-    -   Étudiant(e) en Master de Linguistique Informatique, Traitement
-        automatique des langues ou Traduction
-    -   Langues : anglais, français, autres langues bienvenues
-    -   Connaissance d'un langage de script (Python, Perl, etc)
-    -   Connaissances en Java, Linux et GIT appréciées
+Dans ce cadre, nous sommes en train de mettre en place un Chatbot
+Universel capable de répondre à toute sorte de questions et de dialoguer avec l'internaute :
 
-Autres compétences :
-    -   Autonomie
-    -   Bonne aisance rédactionnelle
-    -   Bonne capacité de communication et aptitude pour le travail en
-        équipe
+- Un ChatBot universel : [www.moomoot.fr](http://www.moomoot.fr/)
+- Une offre professionnelle pour proposer des automatisations
+  sémantiques à nos clients (catégorisation, rééditorialisation,
+  génération de textes...) :
+  [www.semanticall.com](https://semanticall.com/)
 
-Caractéristiques du stage :
-    -   Durée : minimum 6 mois
-    -   Date de début souhaitée : avril 2022
-    -   Lieu : Le Kremlin-Bicêtre
+##Missions
 
+Le stagiaire linguiste aura comme mission : 
 
-Pour postuler, envoyez votre candidature à aurelie.rossi@geolsemantics.com en indiquant dans l'object du mail "stage sur la reconnaissance des Entités Nommées en anglais" 
+Participer à l'amélioration globale de nos outils propriétaires d'analyse sémantique à travers des tâches très opérationnelles de réglages et d'enrichissements sémantiques et de réflexion / R&D
+
+- Créer des Intentions et motifs et leurs réponses *objectif : détecter un motif/intention, extraire des informations, générer un texte)*
+
+    - Créer des modèles de matching utilisant notre langage dédié
+    - Spécifier les variables qui manquent
+    - Créer des modèles de réponses en utilisant notre langage dédié
+    
+- Enrichir les dictionnaires sémantiques (noms propres, néologismes,
+  expressions...)
+    - Travailler sur la polysémie/homographie
+        - Elaborer un moteur de règles en collaboration avec notre développeur
+
+	- Arbitrer dans ce moteur le poids d'un homographe vs un autre par
+  rapport au contexte
+	
+- Catégoriser
+    - Réorganiser le réseau d'hypéronymes
+
+    - Ajouter et catégoriser des mots dans des champs lexicaux et un
+  réseau d'hyperonymes/hyponymes ainsi que sur le registre de langue
+
+- Tester des règles d'analyse de notre outil  pour en vérifier la pertinence
+
+    - Analyser quotidiennement des phrases et corriger les erreurs
+      sémantiques (nature d'un mot)
+
+    - Auditer et corriger des règles existantes
+
+    - Créer et affiner des règles en collaboration avec notre
+      développeur
+    
+
+## Qualités requises
+
+- Envie de vivre le lancement d'un site internet et l'aventure de la
+  création d'entreprise
+
+- Formation : Université - Ecole de linguiste - spécialisation en TAL.
+
+- Très bon relationnel, esprit d'initiative et bonne autonomie,
+
+- Très bonne culture internet et notamment des sites internet grand
+  public
+
+- Maîtrise des outils bureautique Office / Google suite + Navigateurs
+  Chrome et Firefox 

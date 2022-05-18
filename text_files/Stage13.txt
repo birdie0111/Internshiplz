@@ -1,60 +1,55 @@
-Titre: Finalisation et évaluation de la version libtorch native de LIMA
-Date: 20/01/2022
-Organisme: CEA
-Lieu: Palaiseau
+Titre: Prédiction de l'état mental d'un participant d'une conversation écrite à l'aide d'émojis et d'adaptation au domaine
+Date: 2022-02-08
+Organisme: LS2N
+Lieu: Nantes
 
 
+Nous recherchons un(e) stagiaire pour travailler sur la problématique de prédiction des émotions à partir des émojis et son "adaptation" à des corpus autres que Twitter.
 
-Le laboratoire LASTI a développé l'analyseur linguistique multilingue libre LIMA [1].
+Si votre profil correspond à la description ci-dessous et que vous êtes intéressé(e), merci d'envoyer votre dossier de candidature à nicolas.hernandez@univ-nantes.fr.
 
-Des modules d'analyse à base de réseaux de neurones fondés sur
-TensorFlow ont été développés permettant d'obtenir une qualité d'analyse au niveau de l'état de l'art [3] sur les plus de 65 langues du projet Universal Dependencies [4].
+**Titre** : Prédiction de l'état mental d'un participant d'une conversation écrite à l'aide d'émojis et d'adaptation au domaine
 
-Cette implémentation fondée sur TensorFlow présente quelques défauts (maintenance difficile, vitesse d'analyse insuffisante). Une réimplémentation des modules deep learning a été initiée. Cette réimplémentation C++ native utilise les bibliothèque libtorch et
-Eigen3. Elle présente une qualité actuellement supérieure à l'état de l'art avec des vitesses plus élevées. Mais quelques modules doivent être complétés pour obtenir une version incluant toutes les fonctionnalités précédentes.
+**Lieu du stage** : Laboratoire des Sciences du Numérique de Nantes (LS2N) - Équipe Traitement Automatique du Langage Naturel (TALN)
 
-L'objectif de ce stage consiste à participer à la complétion des modules (lemmatisation, entités nommées, analyse syntaxique) et à la mise au point des meilleurs paramètres.
+**Durée** : 5 mois - **Début** : Mars 2022
 
+**Salaire** : 600 euros/mois environ
 
-Durée du contrat (en mois) : 5-6
+**Profil recherché** :  Niveau bac+5 (Master 2, ingénieur ou équivalent)
+-   Des compétences solides en développement logiciel (python)
+-   Une formation en Traitement Automatique des Langues, en
+    Apprentissage Automatique, en Linguistique computationnelle, ou en
+    Sciences des données/Fouille de texte
+-   Des qualités d'expression orale et d'écriture (en français et en
+    anglais)
+-   Des capacités de travail en autonomie comme en équipe, un sens
+    de l'organisation et une capacité de restitution
+-   Des qualités relationnelles (accompagnement, collaboration)
+-   Dynamique et curieux.se
 
-Le travail du/de la stagiaire consistera à :
--   se familiariser avec LIMA Deep, son fonctionnement, son
-    entraînement et son évaluation ;
--   participer à la fin du développement des modules ;
--   entraîner les modules d'analyse et optimiser les paramètres sur le
-    cluster FactoryIA [5] du CEA ;
--   évaluer la vitesse et la qualité d'analyse de LIMA par rapport aux
-    systèmes concurrents (Spacy, Stanza,...) ;
+**Candidature** : CV, lettre de motivation, derniers bulletins de notes à envoyer à nicolas.hernandez@univ-nantes.fr
 
-Moyens / Méthodes / Logiciels
-Expertise linguistique, analyseur linguistique, superordinateur, C++,
-Python, bash, linux
+**Mots clefs** : Traitement Automatique des Langues, Apprentissage profond, Fouille de texte, Adaptation au domaine, Analyse d'émotions,
+Emojis, Twitter
 
-Profil du/de la candidat·e: Étudiant·e en informatique de niveau Bac+5, avec des connaissances en
-IA (deep learning et TAL) et une bonne maîtrise du C++ sous Linux.
+**Description courte** : Comprendre les intentions, désirs, croyances...
+d'un intervenant au sein d'une conversation écrite est un problème difficile en l'absence d'information non verbale comme la modulation de la voix ou de l'expression du visage.
 
-Localisation du poste
-Nano Innov, CEA, Université Paris-Saclay,
-Palaiseau, France, Ile-de-France.
+Les objectifs de ce stage sont
+    - 1)    de faire un état des performances et des limites d'un
+            système de prédiction d'émotions construits à partir d'un
+            corpus contenant des émojis
+    - 2)    d'évaluer un tel système après adaptation sur un corpus
+            cible non étiqueté de genre et de domaine différent.
+    - 3)    compte tenu de l'avancement, l'étude pourra chercher à
+            évaluer l'apport de la prise en compte de la structure
+            dialogique des contextes d'expression des émotions ainsi
+            qu'une configuration d'apprentissage avec de multiples
+            tâches voisines (analyse de la polarité d'une opinion, de
+            l'intensité d'une émotion, de la subjectivité d'un propos...).
 
-Contact:
-Gaël de Chalendar (gael.de-chalendar@cea.fr) https://www.emploi.cea.fr/offre-de-emploi/emploi-finalisation-et-evaluation-de-la-version-libtorch-native-de-deep-lima-h-f_19575.aspx
+L'étude portera sur des architectures classiques à base d'apprentissage profond (plongement de mots + Bi-LSTM, modèle de langage à base de
+Transformer) décrites dans la littérature. La recherche s'appuiera sur les données rendues disponibles ces dernières années au travers des campagnes d'évaluation SemEval.
 
-
-
-[1] R. Besançon, G. de Chalendar, O. Ferret, F. Gara, M. Laib,
-    O. Mesnard, and N. Semmar. 2010. Lima: A multilingual framework for
-    linguistic analysis and linguistic resources development and
-    evaluation. In Proceedings of LREC, Malta.
-[2] https://github.com/aymara/lima/wiki [3] V. Bocharov and Gaël de Chalendar. 2020. The Russian language
-    pipeline in the LIMA multilingual analyzer. In Proceedings of the
-    Computational Linguistics and Intellectual Technologies:
-    Proceedings of the International Conference "Dialogue 2020".
-[4] Joakim Nivre, Marie-Catherine de Marneffe, Filip Ginter, Yoav
-    Goldberg, Jan Haji, Christopher D. Manning, Ryan McDonald, Slav
-    Petrov, Sampo Pyysalo, Natalia Silveira, Reut Tsarfaty, Daniel
-    Zeman. 2016. Universal Dependencies v1: A Multilingual Treebank
-    Collection. In Proceedings of LREC.
-[5] https://www.hpcg-benchmark.org/custom/index.html?lid=155&slid=310
-
+**Description étendue du sujet** : https://www.ls2n.fr/stage-these/prediction-de-letat-mental-dun-utilisateur-de-twitter 

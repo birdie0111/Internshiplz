@@ -1,77 +1,60 @@
-Titre: Constitution de corpus textuels pour le corse
-Date: 12/01/2022
-Organisme: UMR LISA
-Lieu: Corte ou télétravail
+Titre: Finalisation et évaluation de la version libtorch native de LIMA
+Date: 2022-01-20
+Organisme: CEA
+Lieu: Palaiseau
 
 
-Offre de stage : Constitution de corpus textuels pour le corse
 
-Durée : 3 à 6 mois (temps plein), à partir de février-mars 2022.
+Le laboratoire LASTI a développé l'analyseur linguistique multilingue libre LIMA [1].
 
-Localisation : au laboratoire UMR CNRS 6240 LISA et/ou à distance.
+Des modules d'analyse à base de réseaux de neurones fondés sur
+TensorFlow ont été développés permettant d'obtenir une qualité d'analyse au niveau de l'état de l'art [3] sur les plus de 65 langues du projet Universal Dependencies [4].
 
-Gratification : montant légal en vigueur (environ 600¤ / mois).
+Cette implémentation fondée sur TensorFlow présente quelques défauts (maintenance difficile, vitesse d'analyse insuffisante). Une réimplémentation des modules deep learning a été initiée. Cette réimplémentation C++ native utilise les bibliothèque libtorch et
+Eigen3. Elle présente une qualité actuellement supérieure à l'état de l'art avec des vitesses plus élevées. Mais quelques modules doivent être complétés pour obtenir une version incluant toutes les fonctionnalités précédentes.
 
-Postuler : Envoyer un CV, un relevé de notes récent, et une brève description de votre motivation par mail à Stella Retali-Medori (medori_e@univ-corse.fr), Laurent Kevers (kevers_l@univ-corse.fr) et
-Alice Millour (alice.millour@sorbonne-universite.fr), avant le 30/01/2022.
+L'objectif de ce stage consiste à participer à la complétion des modules (lemmatisation, entités nommées, analyse syntaxique) et à la mise au point des meilleurs paramètres.
 
-Motivation et objectifs
 
-Les corpus de textes numériques sont des ressources essentielles pour documenter les langues et permettre des analyses linguistiques détaillées. Elles permettent également le développement d'outils de traitement automatique des langues (TAL) par des méthodes d'apprentissage automatique supervisé (supervised machine learning).
+Durée du contrat (en mois) : 5-6
 
-Il n'existe pas encore de corpus textuel numérique de grande taille pour le corse, qui accuse ainsi un retard important par rapport à d'autres langues de France telles que l'occitan ou le basque.
-L'objectif de ce stage sera de participer à la constitution et à la description d'un corpus de textes en corse. Pour ce faire, il sera possible d'exploiter un fonds de documents de différentes natures (romans, littérature jeunesse, manuels, vulgarisation, etc.) issus du réseau Canopé. D'autres sources pourront également être identifiées et utilisées.
+Le travail du/de la stagiaire consistera à :
+-   se familiariser avec LIMA Deep, son fonctionnement, son
+    entraînement et son évaluation ;
+-   participer à la fin du développement des modules ;
+-   entraîner les modules d'analyse et optimiser les paramètres sur le
+    cluster FactoryIA [5] du CEA ;
+-   évaluer la vitesse et la qualité d'analyse de LIMA par rapport aux
+    systèmes concurrents (Spacy, Stanza,...) ;
 
-Les données devront être préparées pour leur diffusion selon les principes FAIR - Facile à trouver, Accessible, Interopérable et
-Réutilisable (Wilkinson et al. 2016) - via un entrepôt de données pérenne. Les textes seront décrits à l'aide de métadonnées qui permettront d'effectuer des analyses fines à partir de ces textes et de les utiliser pour développer des applications de TAL.
+Moyens / Méthodes / Logiciels
+Expertise linguistique, analyseur linguistique, superordinateur, C++,
+Python, bash, linux
 
-En fonction de la durée du stage et des compétences techniques du ou de la stagiaire il est envisageable de compléter la tâche de constitution du corpus par une analyse puis une exploitation plus poussées de celui-ci.
+Profil du/de la candidat·e: Étudiant·e en informatique de niveau Bac+5, avec des connaissances en
+IA (deep learning et TAL) et une bonne maîtrise du C++ sous Linux.
 
-Tâches
+Localisation du poste
+Nano Innov, CEA, Université Paris-Saclay,
+Palaiseau, France, Ile-de-France.
 
-Le stage se décompose en diverses tâches principales :
+Contact:
+Gaël de Chalendar (gael.de-chalendar@cea.fr) https://www.emploi.cea.fr/offre-de-emploi/emploi-finalisation-et-evaluation-de-la-version-libtorch-native-de-deep-lima-h-f_19575.aspx
 
-- Étude des standards de métadonnées et choix des spécifications les plus adaptées aux besoins du projet ;
 
-- Recensement des ressources disponibles à intégrer au corpus et collecte d'informations nécessaires pour les métadonnées ;
 
-- Participation à la rédaction d'un plan de gestion de données ;
+[1] R. Besançon, G. de Chalendar, O. Ferret, F. Gara, M. Laib,
+    O. Mesnard, and N. Semmar. 2010. Lima: A multilingual framework for
+    linguistic analysis and linguistic resources development and
+    evaluation. In Proceedings of LREC, Malta.
+[2] https://github.com/aymara/lima/wiki [3] V. Bocharov and Gaël de Chalendar. 2020. The Russian language
+    pipeline in the LIMA multilingual analyzer. In Proceedings of the
+    Computational Linguistics and Intellectual Technologies:
+    Proceedings of the International Conference "Dialogue 2020".
+[4] Joakim Nivre, Marie-Catherine de Marneffe, Filip Ginter, Yoav
+    Goldberg, Jan Haji, Christopher D. Manning, Ryan McDonald, Slav
+    Petrov, Sampo Pyysalo, Natalia Silveira, Reut Tsarfaty, Daniel
+    Zeman. 2016. Universal Dependencies v1: A Multilingual Treebank
+    Collection. In Proceedings of LREC.
+[5] https://www.hpcg-benchmark.org/custom/index.html?lid=155&slid=310
 
-- Vérification des droits de diffusion et choix d'une license
-  appropriée.
-
-- Transformation des corpus depuis leur format source (en particulier
-PDF) vers un format structuré standard (XML TEI P5) ;
-
-- Enrichissement avec des métadonnées et préparation pour diffusion sur l'entrepôt de données sélectionné.
-
-Extensions possibles du sujet :
-
-1. Description approfondie et analyse statistique du corpus : mesure de la richesse lexicale, mise en évidence de la variation via l'étude des fréquences de caractères, des n-grammes, et de l'exploitation des métadonnées. Estimation de l'apport du corpus vis-à-vis de l'existant (corpus plus anciens et de genres différents) et comparaisons.
-
-2. Exploitation du corpus : si la taille du corpus recueilli le permet, il pourra être utilisé pour entraîner un outil non supervisé d'annotation en morphosyntaxe (attribution de leur catégorie grammaticale aux mots du corpus, étape fondamentale du traitement automatique de la langue). L'outil devra être évalué et les résultats obtenus pourront être comparés aux travaux d'annotation supervisée et d'exploitation d'un lexique existant menés en parallèle du stage.
-
-Contexte
-
-Ce stage se déroulera dans le cadre projet de recherche ANR DIVITAL
-(Increase the DIgital VITALity and visibility of languages of France : linguistic descriptions and annotated corpora). Il s'intègrera plus particulièrement dans l'équipe Banque de Données Langue Corse - BDLC
-(UMR CNR 6240 LISA, Université de Corse), au sein de laquelle des recherches en TAL sont menées depuis 2019 (voir https://bdlc.univ-corse.fr/tal/).
-
-Formation et compétences requises
-
-- Profil : Licence ou Master en Sciences du langage, Informatique,
-Lettres, Langues ou Humanités numériques.
-
-- Tableur (Excel ou LibreOffice Calc), si possible également XML, TEI
-et RDF ; aisance avec les outils informatiques et intérêt marqué pour les humanités numériques
-
-- Autonomie, rigueur et capacité d'analyse
-
-- La connaissance du corse n'est pas requise, mais un intérêt pour cette langue constitue évidemment un plus.
-
-Le stage permettra une initiation aux travaux de recherche ainsi qu'une familiarisation avec les méthodes mises en oeuvre pour la constitution de corpus et pour la diffusion de données selon les principes FAIR.
-
-Bibliographie
-
-Wilkinson, Mark D., Michel Dumontier, IJsbrand Jan Aalbersberg,
-Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, et al. 2016. « The FAIR Guiding Principles for Scientific Data Management and Stewardship ». Scientific Data 3 (1) : 1-9. https://doi.org/10.1038/sdata.2016.18.

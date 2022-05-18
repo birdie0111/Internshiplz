@@ -1,93 +1,64 @@
-Titre: Analyse contrastive entre fictions climatiques et débats publics de la perception de la ville
-Date: 08/03/2022
-Organisme: IGN
-Lieu: Saint-Mandé
+Titre: Energy-Based Models for Controlled Text Generation
+Date: 2022-04-06
+Organisme: Naver Labs Europe
+Lieu: Grenoble
 
 
 
+Research internship position at NAVER LABS Europe (Grenoble, France) on Energy-Based Models for Controlled Text Generation
 
-stage : Analyse contrastive entre fictions climatiques et débats publics de la perception de la ville
+Start date: June 2022
+Duration: 5-6 months
 
-Mots clés : traitement automatique des langues (TAL), apprentissage, modèle de langue, plongement lexical, CamemBERT, textométrie, approche contrastive entre fictions climatiques et débats publics
+DESCRIPTION
+Large language models can now be used to generate highly fluent texts.
+However, the synthesized utterances can be deficient on other important levels: semantic consistency, faithfulness to the facts, toxic or socially biased content.
 
-1.    Contexte
-Ce stage s'intéresse à la perception de la ville à travers deux corpus. L'un est issu du projet PARVIS et l'autre construit sur les contributions du Grand débat national.
-PARVIS, pour PARoles de VIlleS (https://parvis.hypotheses.org/), est un projet pluridisciplinaire qui vise à étudier les représentations de la ville future, pour identifier les thèmes et questions associés aux imaginaires futuristes urbains, notamment en matière de changement climatique. Le travail de PARVIS s'appuie sur différents corpus (romans, images, créations théâtrales, etc.) construits par les équipes du projet.
-En particulier, des romans en français (version originale ou traduction), étiquetés fiction climatique (environ 40 Mo), ont été rassemblés par les chercheures en littérature pour documenter la ville (corpus clifi).
-Des réseaux sémantiques ont été construits sur les notions d'habitation et de lieu privé, de lieu public et de localisation dans la ville, d'objet matériel permettant le changement de lieu (et en particulier le passage d'un lieu public à un lieu privé), et de mouvement correspondant à un déplacement dans la ville.
-Des travaux ont permis d'étudier la cohérence de ces corpus par rapport à la thématique de la ville (sur la base de ces réseaux sémantiques) grâce à des analyses statistiques (analyses factorielles). Un autre travail s'est focalisé sur l'identification des mots inventés dans le corpus clifi, leurs mécanismes de formation ainsi que sur leur contribution à l'étrangeté développée dans ces romans.
-Le Grand débat national (GDN) (https://granddebat.fr/) consécutif à l'émergence du mouvement des Gilets jaunes, a organisé en 2019 le recueil de contributions sur une plate-forme numérique. Des Cahiers de doléances, renommés ensuite Cahiers citoyens, ont aussi été déposés dans les mairies et remplis librement par les personnes qui le souhaitaient. Sur la plate-forme, les contributions exprimées sont plutôt ciblées sur des thèmes spécifiques ; celles des Cahiers abordent de nombreux thèmes certains plus ancrés dans la vie locale.
-Quantitativement, les contributions des Cahiers (plus de 19 000) représentent plus de 40 millions de mots comptés à partir des transcriptions, et la plate-forme du GDN 26 millions.
-Le corpus issu de la plate-forme du GDN (corpus GDN) a d'ores et déjà fait l'objet de travaux en TAL : repérage des thèmes abordés, extraction de réseaux lexicaux, repérage de motifs ou phrases-type (voir par exemple (Ploux, 2021)). Des Cahiers citoyens, provenant d'aires géographiques circonscrites, ont été étudiés par différentes approches en SHS qui restent peu automatisées. Toutefois, le sous-corpus des Cahiers, dans son ensemble, est en cours d'analyse à travers une démarche qui croise TAL et emprise géographique.
-Ces deux ensembles de textes, constitués en corpus, contiennent - dans des formats, des lexiques, des temporalités, etc. variés - des descriptions, commentaires, critiques, opinions, perceptions, sentiments, émotions relatifs à la ville, vécue ou imaginée, critiquée ou anticipée, à son organisation, et à ses habitants.
+Our team has developed several effective solutions on that front [1,2,3,4] exploiting the expressive power of Energy-Based Models in defining constraints over generative models. However, certain challenges remain: (1) How can we quickly adapt to changing control conditions without the need for model retraining? (2) Can we exploit these techniques to improve on hard-to-quantify features, such as safety, unbiasedness, textual coherence, or matching the human intention? (3) Can we improve training speed/robustness, for example, by leveraging techniques from RL?
 
-2.    Sujet
-Ce stage vise à caractériser la ville de demain et les imaginaires de la spatialité (position, localisation, mouvement, etc.) dans les romans de fictions climatiques par comparaison avec la façon dont le thème de la ville a été abordé lors du GDN (Cahiers citoyens et plateforme du
-GDN) à travers son ancrage dans l'expérience et les suggestions des contributeurs. Ainsi, il s'agira de procéder à une analyse contrastive entre fictions et débats publics à l'aide de méthodes et outils statistiques et linguistiques.
-L'identification des thèmes ou des modalités discriminants se fera par l'analyse directe des corpus à l'aide de méthodes textométriques (termes fréquents, hapax), ou bien par contraste entre les deux corpus (termes significativement sur- ou sous-représentés).
-Topalov et al. (2010) proposent une liste de mots de la ville, ainsi que des listes thématiques : agglomérations, habitations, divisions, circulations. Ces listes permettront de guider les analyses des corpus fondées sur le lexique.
-La comparaison des éléments étudiés des villes entre corpus sera fondée sur la comparaison de leurs contextes d'emploi. D'une part, est-ce que les contextes d'emploi d'un même terme dans des corpus (ou des sous-corpus construits pour tester des hypothèses) permet de caractériser les ressemblances et les différences concernant la ville, son fonctionnement et ses habitants dans les corpus ? D'autre part, est-ce que des contextes d'emploi de termes différents permettent de rapprocher ces termes (et donc les concepts correspondants) à l'intérieur d'un corpus ou entre corpus et sous-corpus ? Par exemple, le terme maison peut être considéré comme la désignation du modèle du lieu privé refuge ; quelles sont les caractéristiques associées à cette notion dans chaque corpus ?
-Sur la base de ces caractéristiques et usages, est-ce que d'autres lieux ou éléments urbains du domaine privé ou public (par exemple le trottoir en ville) jouent aussi un rôle de refuge ?
-L'analyse et la comparaison des contextes d'emploi seront fondées sur l'utilisation d'un modèle de langue comme CamemBERT (Martin et al., 2019) et des plongements lexicaux (Park, 2018) fournis par ce modèle, ainsi que des algorithmes de classification.
-Le stage comportera les étapes suivantes (une attention particulière sera portée aux conditions de réutilisabilité des ressources et codes produits, et donc à leur documentation tout au long du stage) :
--   appropriation des travaux déjà réalisés sur l'analyse des deux
-    corpus ;
--   analyse textométrique des corpus à partir de la liste des termes de
-    la ville retenus ;
--   rédaction d'un état de l'art concernant les modèles BERT et
-    CamemBERT, le réentraînement de ces modèles, l'utilisation des
-    plongements lexicaux et les algorithmes développés pour la
-    comparaison et la classification de ces vecteurs ;
--   mise en place du modèle CamemBERT (la caractérisation des lieux et
-    des usages associés sera fondée sur l'analyse des co-occurrences de
-    termes désignant les lieux, à l'aide de plongements lexicaux
-    fournis par ce modèle éventuellement ré-entraîné) ;
--   formulation d'hypothèses sur les thèmes à étudier et traduction de
-    ces hypothèses en questions sur le ou les corpus ; définition
-    des corpus ou sous-corpus pertinents et mise en place des
-    traitements permettant de documenter les questions ;
--   rédaction du rapport de stage, et mise en forme des ressources et
-    codes produits.
+We are looking for a motivated intern to help us develop techniques and algorithms addressing these challenges. Experiments will be conducted on selected text generation tasks using the state of art pre-trained language models.
 
-[Martin et al., 2019] Martin, L., Muller, B., Suárez, P. J. O., Dupont,
-    Y., Romary, L., de La Clergerie, É. V., Seddah, D., and Sagot, B.
-    (2019). CamemBERT: a tasty french language model. arXiv preprint
-    arXiv:1911.03894.
-[Park, 2018] Park, J. (2018). L'optimisation du plongement de mots pour
-    le français : une application de la classification des phrases
-    (optimization of word embeddings for French: an application of
-    sentence classification). In Actes de la Conférence TALN.
-    Volume 1 - Articles longs, articles courts de TALN, pages 281-292,
-    Rennes, France. ATALA.
-[Ploux et al., 2021] Ploux, S., Genay, M., and Ploux-Chillès, L.
-    (2021). Les mots du grand débat national : les réseaux lexicaux des
-    contributions déposées sur trois plateformes. Humanités numériques,
-    (4).
-[Topalov et al., 2010] Topalov, C., de Lille, L. C., Depaule, J.-C.,
-    and Marin, B. (2010). L'aventure des mots de la ville. Robert
-    Laffont Paris
+The successful candidate should be enrolled in a graduate program, at the Master or (preferably) PhD level.
 
-3.    Formation requise
-Ce stage s'adresse aux étudiant.e.s de master 2 en informatique/analyse de données ou en TAL avec une formation suffisante pour l'utilisation autonome d'un langage de programmation (de préférence Python et R) et d'outils de TAL (outils fondés sur l'apprentissage, modèles de langue, classifieurs, si possible outils statistiques de lexicométrie).
+The intern will work in a team integrated by Hady Elsahar, Marc
+Dymetman, Germán Kruszewski, and Jos Rozen.
 
-4.    Lieu du stage
-Le stage se déroulera principalement au Laboratoire en sciences et technologies de l'information géographique (LaSTIG) sur le site de l'Institut national de l'information géographique et forestière (IGN) à
-Saint-Mandé ; des réunions de travail seront organisées régulièrement au laboratoire CAMS à l'EHESS à Paris (6ème).
-LaSTIG/IGN, 73 avenue de Paris, 94165 Saint-Mandé (métro ligne 1 - Saint-Mandé ou RER A - Vincennes)
-CAMS/EHESS, 54 boulevard Raspail, 75006 Paris
+Publication of this internship's results in major conferences/journals will be strongly encouraged.
 
-5.    Durée et rémunération durée : entre 5 et 6 mois (date butoir 30 septembre 2022) début possible à partir d'avril 2022
-gratification au taux horaire net de 3,90 ¤
+REQUIRED SKILLS
+-   Strong programming skills
+-   Relevant experience with training Deep Learning models for NLP
+-   Strong mathematical skills
+-   Ability to communicate research
 
-6.    Encadrement du stage
-Catherine Dominguès, chercheure HDR au LaSTIG en TAL et géomatique, catherine.domingues@ign.fr
-Sabine Ploux, chercheur HDR au CAMS EHESS-CNRS, en linguistique computationnelle, sabine.ploux@ehess.fr
+OPTIONAL SKILLS
+-   Knowledge of MCMC sampling techniques and/or Reinforcement Learning
+-   Publications at peer-reviewed AI conferences
 
-7.    Pour candidater
-Des entretiens seront organisés à partir du 10 mars. Le dossier de candidature est à envoyer aux encadrantes avant le 10 mars 2022 et devra contenir les documents suivants :
--   CV ;
--   lettre de motivation ;
--   derniers relevés de notes (M1 et premier semestre de M2) ;
--   description des enseignements suivis (un lien vers le site internet
-    de la formation est le bienvenu) ;
--   dernier mémoire ou rapport de stage.  
+REFERENCES
+[1] Khalifa et al., A Distributional Approach to Controlled Text
+    Generation, In ICLR-2021
+[2] Eikema et al., Sampling from Energy-Based Models with
+    Quality/Efficiency Trade-offs, In CtrlGen at Neurips 2021
+[3] Korbak et al., Energy-Based Models for Code Generation under
+    Compilability Constraints, In NLP4prog at ACL2021
+[4] Korbak et al. Controlling Conditional Language Models with
+    Distributional Policy Gradients, In CtrlGen at Neurips 2021
+
+APPLICATION INSTRUCTIONS
+Please note that applicants must be registered students at a university or other academic institution and that this establishment will need to sign an 'Internship Convention' with NAVER LABS Europe before the student is accepted.
+
+You can apply for this position online at https://europe.naverlabs.com/job/energy-based-models-for-controlled-text-generation-internship-2/.
+Don't forget to upload your CV and cover letter before you submit.
+Incomplete applications will not be accepted.
+
+ABOUT NAVER LABS
+NAVER is the #1 Internet portal in Korea with activities that span a wide range of businesses including search, commerce, content, financial and cloud platforms.
+
+NAVER LABS, co-located in Korea and France, is the organization dedicated to preparing NAVER's future. NAVER LABS Europe is located in a spectacular setting in Grenoble, in the heart of the
+French Alps. Scientists at NAVER LABS Europe are empowered to pursue long-term research problems that, if successful, can have significant impact and transform NAVER. We take our ideas as far as research can to create the best technology of its kind. Active participation in the academic community and collaborations with world-class public research groups are, among others, important tools to achieve these goals.
+Teamwork, focus and persistence are important values for us.
+
+NAVER LABS Europe is an equal opportunity employer.
+
+For more information and application see https://europe.naverlabs.com/job/energy-based-models-for-controlled-text-generation-internship-2/ 

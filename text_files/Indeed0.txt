@@ -1,47 +1,7 @@
-Titre: Stage - Apprentissage automatique et traitement des langues pour la détection des codes F/H
-Date: 11/03/2022
-Organisme: SAP
-Lieu: 06254 Mougins
+Titre: Traitement du langage stage
+Date: 2022-05-11
+Organisme: AIRUDIT
+Lieu: 33600 Pessac
 
 
-Stage - Apprentissage automatique et traitement des langues pour la détection des codes F/HSAP2,621 avis06254 MouginsStageSAP2,621 avisLisez les avis des gens qui travaillent ici.Réquisition: 326797
-Secteur de travail: Software-Design and Development
-Déplacement escompté: 0 - 10%
-Statuts de carrière: Étudiant
-Type d’emploi: Intern
-DESCRIPTION DE L’ENTREPRISE
-SAP a vu le jour en 1972, sur l'initiative d'une équipe de cinq collaborateurs désireux de créer quelque chose de nouveau. Ensemble, ils ont révolutionné le secteur des logiciels d'entreprise et réinventé les méthodes de gestion. Aujourd'hui, SAP se positionne en leader sur le marché des logiciels d'entreprise, mais nous restons fidèles à nos racines. C'est pourquoi nous concevons des solutions qui nourrissent l'innovation, favorisent l'égalité et multiplient les opportunités pour nos employés et nos clients, au-delà des frontières et des cultures.
-SAP apprécie l'esprit d'entreprise, encourageant la créativité et établant des relations durables avec nos employés. Notre personnel réfléchit la diversité et l'intégration: nous sommes conscients qu'il s'agit d'une richesse source de compétitivité à long terme et d'opportunités pour tous. Nous pensons qu'ensemble, nous pouvons transformer les secteurs d'activité, faire croître l'économie, faire évoluer les sociétés et préserver l'environnement, car seules les meilleures entreprises sont à même d'améliorer la société et le quotidien des individus.
-OBJECTIFS
-Le but du stage est est d'explorer les techniques d'apprentissage automatique (ML) et de traitement du langage naturel (NLP) pour effectuer une analyse statique au niveau du code source, dans le but de détecter les injections de code malveillant.
-MISSIONS ET RESPONSABILITÉS
-Ce stage se déroulera dans les locaux de SAP Labs France, à Sophia-Antipolis. Les travaux se dérouleront dans le contexte du programme de recherche « Security Research », sur le sujet « Open-Source Security Analysis ». Ce dernier vise à rendre plus sûre la consommation de logiciels open source tout au long du cycle de vie du développement logiciel, tant pour SAP que pour ses clients. Les attaques contre la chaîne d'approvisionnement des logiciels open source ont en effet connu une augmentation en nombre et en sophistication. Dans cette mesure, les attaquants visent à injecter des charges utiles malveillantes dans les composants en aval (c'est-à-dire les paquets) pour infecter les utilisateurs finaux.
-Le travail attendu est de rechercher des techniques d'analyse de code statique, avec un accent particulier sur les méthodologies ML/NLP, afin d'analyser les paquets et le code source ouverts pour la détection de logiciels malveillants.
-Le stage pourra s’articuler autour des taches suivantes:
-Développer des scripts de preuve de concept visant à la détection de code source malveillant.
-Appliquer un algorithme NLP pour analyser les caractéristiques du code source.
-Entraîner plusieurs systèmes d'apprentissage automatique capables de reconnaître des éléments spécifiques du code source.
-Comparer les performances des différents systèmes d'apprentissage automatique développés
-Les technologies/techniques impliquées sont : Python, Spark, NLP, et les bibliothèques d'apprentissage automatique.
-Nous estimons que 40% du temps sera dédié au développement et 60% aux activités de recherche.
-FORMATION / COMPÉTENCES ET APTITUDES
-Niveau universitaire : Dernière année de MSc en informatique ou au-delà
-Solides compétences en développement Python
-Bonne capacité à lire le code source dans différents langages (par exemple, Java, JavaScript, Ruby)
-Connaissances en matière de sécurité
-Connaissance de l'analyse des logiciels malveillants (facultatif)
-Connaissance du Machine Learning/NLP
-Maîtrise de l'anglais (langue de travail)
-Aptitudes à organiser des réunions et à contacter des personnes
-Bonnes capacités de communication orale et écrite
-Capacité à rédiger des documents en anglais, esprit de synthèse
-EXPÉRIENCE PROFESSIONNELLE
-Non requise
-CE QUE NOUS AVONS À VOUS OFFRIR
-La clé de la réussite est entre vos mains. Mais chez SAP, nous vous donnons les moyens de façonner votre propre clé.
-Votre carrière chez SAP pourra vous ouvrir de nombreuses portes. Si vous recherchez une entreprise dédiée de vos idées et de votre développement personnel, qui vous reconnaisse pour vos contributions uniques, qui vous anime d'un grand sens du devoir et qui vous accueille dans un environnement de travail informel, flexible et inclusif, n'attendez plus à appliquer chez nous.
-ENGAGEMENT DE SAP POUR LA DIVERSITÉ
-Pour exploiter toute la puissance de l'innovation, SAP s'emploie à recruter un personnel diversifié. Nous désirons mettre à profit les qualités de tous et valoriser les compétences uniques que chacun apporte à l'entreprise.
-SAP s'engage à respecter les principes d'égalité des chances en matière d'emploi et à adapter raisonnablement ses installations à destination des candidats présentant un handicap physique et/ou mental. Si vous avez besoin d'installations spécifiques ou d'une aide particulière pour accéder à notre site Web ou finaliser votre candidature, envoyez un e-mail précisant votre demande à l'équipe Recruiting Operations Team (Amériques : Careers.NorthAmerica@sap.com ou Careers.LatinAmerica@sap.com, zone APJ : Careers.APJ@sap.com, zone EMEA : Careers@sap.com).
-Les candidats retenus feront peut-être l'objet d'une vérification des références menée par un fournisseur externe.
-Emplacements Supplémentaires:
+Traitement du langage stageAIRUDIT33600 PessacStageA répondu à 75 % ou plus des candidatures sur les 30 derniers jours, généralement en 5 jours.Airudit – Stage Traitement Automatique du Langage – Formalisation de corpus F/HPrésentation sociétéSpécialisée dans la conception d’interfaces Humains / Systèmes pilotées par la voix, AIRUDIT maîtrise toute la chaîne de traitement, de l’expression orale d’un locuteur en langage naturel à la réponse qui lui est apportée par la machine.Dans le cadre de son développement et du volume d’affaires en forte croissance, AIRUDIT recherche une personne en stage pour aider au traitement Automatique du langage.Descriptif du posteVous travaillerez en étroite collaboration avec les membres des équipes reconnaissance automatique de parole (RAP) et traitement automatique du langage (TAL). Vous aurez en charge la création d’un modèle de langage pour le système RAP.Cette mission sera composée d’une étape de recherche de corpus avec l’objectif de formaliser ce corpus au système RAP. Ce poste nécessite donc d’être à l’aise avec la linguistique, la programmation et plus particulièrement le traitement de corpus.Un esprit de rigueur et de qualité sera indispensable pour répondre à nos besoinsAdaptable, vous êtes capable de remonter les problématiques rapidementUne bonne connaissance de la langue française sera particulièrement appréciéeProfil recherchéIssu(e) ou en cours d’obtention d’une Licence et/ou M1 dans le domaine du traitement automatique du langage, vous êtes de nature curieuse et motivée pour apprendre de nouveaux aspects techniques et travailler sur des projets complexes et innovants.Rencontrez-nous !Nous vous proposons :De vivre une aventure enthousiasmante au sein d’une start-up au fort potentiel de croissance !De travailler dans un environnement jeune, dynamique, ouvert d'esprit et convivial !Vous avez envie de vivre dans une ville universitaire, attractive et riche d’un écosystème d’innovation !Conditions d’embaucheStageDurée : Entre 2 et 6 moisEnvoyez-nous votre lettre de motivation et votre CV à l’adresse suivante : aneva.ferrand @ airudit.com.Type d'emploi : StageSalaire : à partir de 3,90€ par heureAvantages :Participation au TransportHoraires :Du Lundi au Vendredi

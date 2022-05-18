@@ -15,6 +15,9 @@
 
 <?php 
 
+
+    
+
     if(isset($_GET["connected"])){
         $db_host = "localhost";
         $db_user = "liuqinyu";
@@ -27,10 +30,14 @@
         $connect = mysqli_connect($db_host, $db_user, $db_pwd, $db_name);
         mysqli_set_charset($connect, 'utf8mb4');
 
+
         // verifier la connection
         if(!$connect){
             die("error while connecting to the database: ".mysqli_connect_error());
         }
+        $path = "backend/pyWebscrap.py";
+        $array = shell_exec("python3 ".$path);
+        # echo $array;
 
         include "templates/acc_connected.php";
         include "templates/recherche.php";
@@ -48,6 +55,7 @@
         
         
 ?>
+
   
 <script type="text/javascript" src="script.js" ></script>
 </body>

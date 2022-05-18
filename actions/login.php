@@ -63,11 +63,12 @@ if ($result->num_rows == 0){
         echo "Mots de passe pas correct";
     }else{
         echo "Login succeeded";
+        
         $connect->close();
-        header('Location: /~tangyuhe/Intershiplz-main-7/connected.php?connected='.$username);
-        // header('Location: /~liuqinyu/connected.php?connected='.$username);
+        header('Location: /~tangyuhe/connected.php?connected='.$username);
     }
 }
+
 
 
 

@@ -1,65 +1,147 @@
-Titre: Evaluation de l'utilisation de Transformers pour l'annotation d'entités et de relations dans des textes
-Date: 12/01/2022
-Organisme: Thales
-Lieu: Palaiseau
+Titre: Évaluation de la cohérence des résumés automatiques par l’étude de la rupture des chaînes de coréférence
+Date: 2022-01-17
+Organisme: LIFAT
+Lieu: Blois
 
 
-Sujet : Evaluation de l'utilisation de Transformers pour l'annotation
-        d'entités et de relations dans des textes (H/F)
+Évaluation de la cohérence des résumés automatiques par l'étude de la rupture des chaînes de coréférence.
 
-STAGE de 6 mois à partir de mars 2022, poste basé à Palaiseau (91).
+*Encadrant :*
+Valentin Nyzam (LIFAT)
 
-Le traitement automatique des langues est un sujet transverse dans le groupe Thales. De nombreux besoins concernent l'analyse rapide de masses textuelles selon des concepts spécifiques, mais le manque de corpus volumineux annotés manuellement, nécessaires pour l'apprentissage, ne permet pas d'utiliser directement les méthodes classiques de machine learning.
+*Problématique scientifique :*
+Dès la fin des années 1950, est apparue la volonté de résumer automatiquement des documents (Luhn, 1958). Le besoin de systèmes de résumé automatique s'est alors fait progressivement ressentir jusqu'à aujourd'hui avec l'émergence de notre société de l'information. En effet, l'idée d'affecter la tâche de résumer des documents à une machine plutôt qu'à des humains devient à l'heure actuelle de plus en plus pressante sous l'effet de la masse croissante de documents (textes techniques et scientifiques, courriers électroniques, articles de presse, ...) disponibles en format numérique.
 
-L'objectif du stage est de tester les capacités d'adaptation des
-Transformers pour l'identification automatique d'entités et de relations entre entités spécifiques à un domaine, avec un ensemble restreint de données d'apprentissage.
+L'écriture d'un résumé court et compréhensif nécessite des capacités de réorganisation, de modification et de fusion des informations issues des différentes phrases des documents sources. La compréhension complète suivie du résumé des documents en entrée n'est pas toujours simple pour une majorité de personnes et n'est pas encore à la portée des systèmes "état de l'art" dans le résumé automatique. La plupart des systèmes évite ainsi la compréhension complète de l'entrée et la génération de texte, en utilisant pour cela des méthodes extractives.
+L'approche extractive du résumé automatique cherche à déterminer quelle phrase est importante au sein d'un ensemble de phrases. Au fil des années, ces méthodes ont pu bénéficier du développement des méthodes globales de traitement automatique des langues et d'apprentissage. Plus récemment, les chercheurs étudient de plus en plus la tâche de génération de résumés en utilisant des méthodes abstractives, notamment grâce aux développement des méthodes d'apprentissage profond (Subramanian et al., 2019; Zhang et al., 2020).
 
-Nous développons un outil interne, STRASS, visant l'annotation automatique de textes par l'acquisition de patrons linguistiques à partir d'annotations manuelles. L'objectif de la plateforme STRASS est de permettre l'obtention d'annotations automatiques sans disposer au préalable de corpus métier volumineux annoté manuellement ni nécessiter de compétences linguistiques de l'utilisateur. Cette méthode s'appuie sur des patrons linguistiques générés automatiquement à partir d'annotations manuelles réalisées par des experts du domaine.
+Traditionnellement, l'évaluation du résumé implique un jugement humain sur différentes mesures de qualité, telles que la cohérence, la concision, la grammaticalité, la lisibilité et le contenu (Mani and
+Maybury, 2001). Cependant, même une simple évaluation manuelle des résumés à grande échelle sur la qualité linguistique et la couverture du contenu comme dans la campagne d'évaluation DUC (Document
+Understanding Conference) nécessite plus de 3 000 heures d'efforts humains. C'est ainsi très coûteux et difficile à mener fréquemment. Par conséquent, les méthodes d'évaluation de résumés ont attiré beaucoup d'attention au cours des dernières années chez les chercheurs. Ils ont ainsi mis en place des protocoles d'évaluation automatique permettant d'évaluer le contenu d'un résumé (Lin, 2004; Vasilyev, Dharnidharka, and Bohannon, 2020; Fabbri et al., 2021). Depuis très récemment, les chercheurs ont commencé à étudier l'évaluation de la consistance au sein des résumés automatiques (Vasilyev and Bohannon, 2021; Xie et al., 2021). Néanmoins, aucune étude, à notre connaissance, ne s'est focalisée sur l'évaluation de la cohérence au sein d'un résumé. Or, les techniques de résumé automatique utilisées aujourd'hui peuvent entraîner des problèmes importants de cohérence, notamment avec l'utilisation de pronoms sans références.
 
-Les récentes approches neuronales regroupées sous l'appellation
-Transformers semblent très prometteuses, notamment parce qu'elles nécessitent moins de données d'apprentissage que les approches statistiques classiques, ce qui est primordial dans les domaines Thales où les entités et relations sont spécifiques à chaque besoin et qu'il n'existe pas de volumineux corpus annotés pour l'apprentissage.
+Afin d'analyser cette problématique, nous souhaiterions étudier la rupture des chaînes de coréférence au sein des résumés automatiques. La coréférence est le phénomène qui consiste pour différents syntagmes nominaux à désigner le même objet sémantique. Dans l'exemple ci-dessous, les mots en gras réfèrent à la même personne : le pronom il désigne Paul.
 
-La mission proposée a pour objet de tester quelques Transformers afin d'évaluer leur adaptabilité à un domaine spécifique ainsi que d'identifier la complémentarité entre ce type d'approche et celle mise en oeuvre par STRASS. Les tests s'appliqueront sur un sous-ensemble de Transformers à définir dans l'offre spaCy 3 afin d'identifier l'approche la plus prometteuse ou complétant au mieux ce qui est proposé par STRASS. L'objectif sera d'évaluer leur capacité à annoter non seulement les entités mais aussi les relations entre entités.
+> *Paul* aime les frites et *il* va en manger ce soir.
+>
 
-Vous serez ainsi amené.e à :
+La résolution de la coréférence est une tâche fortement étudiée au sein du LIFAT (Adele Désoyer et al., 2016; Adèle Désoyer et al., 2015;
+Muzerelle et al., 2014). Le résumé cherche à condenser l'information la plus importante provenant d'un document (ou de plusieurs documents) afin d'en produire une version abrégée pour un utilisateur. Un résumé automatique de texte correspond à la génération d'un résumé au moyen de techniques informatiques. Il existe deux grandes familles de méthodes de résumé automatique : les méthodes extractives qui vont extraire des phrases des documents, ou bien des méthodes abstractives qui vont réellement générer un résumé à partir des documents (Exemples en
+Annexe). Le résumé automatique a fait partie du sujet de thèse du docteur  Valentin Nyzam, encadrant proposé (Nyzam, 2021).
 
--   Construire un corpus d'apprentissage et un corpus d'évaluation à
-    partir de textes existants et avec un modèle de connaissance
-    pour l'annotation prédéfini ou à adapter aux outils à évaluer.
+Ce stage a pour objectif d'étudier cette problématique en abordant les tâches suivantes :
 
--   Définir une grille d'évaluation selon différents critères (volume
-    des données d'apprentissage, nombre d'instances annotées par type
-    d'entité ou de relation=85).
+   -    Mettre en parallèle les phrases du résumé automatique avec les
+        phrases dont elles sont issues dans les documents sources. Il
+        est possible d'utiliser pour cela les méthodes issues de la
+        tâche de Question-Answering,
+   -    Appliquer une détection des chaînes de coréférence entre les
+        différents groupements de phrases obtenus,
+   -    Observer les différences entre les chaînes de coréférences pour
+        les résumés humains et automatiques,
+   -    Déterminer une métrique permettant d'évaluer les différences
+        observées.
 
--   Effectuer des tests des Transformers pour leur prise en main, la
-    sélection d'un ou deux outils et leur application sur le corpus
-    dédié pour une évaluation selon la grille d'évaluation
-    prédéfinie.
+L'utilisation d'un système de détection de la coréférence apportera potentiellement des erreurs supplémentaires. C'est pourquoi il sera probablement nécessaire d'adapter la métrique à la valeur de certitude obtenue lors de la détection.
 
--   Réaliser également des tests avec l'outil STRASS pour une prise en
-    main puis son évaluation dans les mêmes conditions que les
-    Transformers.
+*Pré-requis :*
+Des compétences sont attendues en programmation et en traitement automatique de la langue. Des connaissances en science des données (Machine Learning et Deep Learning) seront appréciées.
 
--   Rédiger un rapport pour détailler le travail réalisé et les
-    résultats obtenus.
+Profil recherché : Master 1 ou 2 Informatique
+Lieu du stage : Laboratoire LIFAT, IUT de Blois.
+Période de stage : 5 mois à partir de février 2022
 
+*Candidature :*
+Envoyer un mail présentant votre parcours et vos motivations ainsi que votre CV à : valentin.nyzam@univ-tours.fr
 
-Profil recherché :
+*Bibliographie :*
 
-Etudiant.e en école d'Ingénieur.e ou formation équivalente, vous préparez un Master 2. Votre formation vous a permis d'acquérir des compétences dans les domaines suivants :
+Désoyer, Adele et al. (2016). "Coreference resolution for french oral data: Machine learning experiments with ANCOR". In: International
+Conference on Intelligent Text Processing and Computational
+Linguistics. Springer, pp.507-519.
 
--   Traitement automatique du langage naturel
+Désoyer, Adèle et al. (2015). "Les coréférences à l'oral: une expérience d'apprentissage automatique sur le corpus ANCOR".
+In: Traitement Automatique des Langues 55.2, pp. 97-121.
 
--   Connaissance théorique des Transformers
+Fabbri, Alexander R et al. (2021). "Summeval: Re-evaluating summarization evaluation". In: Transactions of the Association for
+Computational Linguistics 9, pp. 391-409.
 
--   Programmation Python
+Lin, Chin-Yew (2004). "Rouge: A package for automatic evaluation of summaries". In: Text summarization branches out, pp. 74-81.
+Luhn, Hans Peter (1958). "The automatic creation of literature abstracts". In: IBM Journal of research and development 2.2, pp. 159-165.
 
--   Avoir une expérience avec spaCy 3 et quelques Transformers serait
-    un plus
+Mani, Inderjeet and Mark T Maybury (2001). "Automatic summarization".
+In. Muzerelle, Judith et al. (2014). "ANCOR_Centre, a large free spoken
+French coreference corpus: description of the resource and reliability measures". In: LREC'2014, 9th Language Resources and Evaluation
+Conference. Pp. 843-847.
 
--   Votre faites preuve de curiosité au quotidien, vous êtes dynamique
-    et autonome
+Nyzam, Valentin (2021). "Résumé comparatif crosslingue et multilingue".
+PhD thesis. Université Paris 8.
 
--   Vous êtes à l'aise en anglais
+Subramanian, Sandeep et al. (2019). "On extractive and abstractive neural document summarization with transformer language models".
+In: arXiv preprint arXiv:1909.03186.
 
-CV plus lettre de motivation à envoyer à l'adresse : benedicte.goujon@thalesgroup.com 
+Vasilyev, Oleg and John Bohannon (2021). "Estimation of Summary-to-Text
+Inconsistency by Mismatched Embeddings". In: arXiv preprint arXiv:2104.05156.
+
+Vasilyev, Oleg, Vedant Dharnidharka, and John Bohannon (2020). "Fill in the blanc: Human-free quality estimation of document summaries".
+In: arXiv preprint arXiv:2002.09836.
+
+Xie, Yuexiang et al. (2021). "Factual Consistency Evaluation for Text
+Summarization via Counterfactual Estimation". In: arXiv preprint arXiv:2108.13134.
+
+Zhang, Jingqing et al. (2020). "Pegasus: Pre-training with extracted gap-sentences for abstractive summarization". In: International
+Conference on Machine Learning. PMLR, pp. 11328-11339.
+
+Ce stage est financé par le groupement de recherche ICVL.
+
+*Exemples de résumé pour le corpus CNN/DM*
+Exemples de résumé pour un article de CNN
+https://edition.cnn.com/2015/04/01/europe/france-germanwings-plane-crash-main/index.html en utilisant l'outil MOTS disponible librement sur github https://github.com/ToolAutomaticSum/MOTS.
+
+*Résumé humain*
+Marseille prosecutor says "so far no videos were used in the crash investigation" despite media reports. Journalists at Bild and Paris
+Match are "very confident" the video clip is real, an editor says.
+Andreas Lubitz had informed his Lufthansa training school of an episode of severe depression, airline says.
+
+*Méthode lead*
+The French prosecutor leading an investigation into the crash of
+Germanwings Flight 9525 insisted Wednesday that he was not aware of any video footage from on board the plane. Marseille prosecutor Brice Robin told CNN that "so far no videos were used in the crash investigation."
+
+*Méthode tf-idf MMR*
+The publications said that they watched the video, which was found by a source close to the investigation. Lubitz told his Lufthansa flight training school in 2009 that he had a "previous episode of severe depression," the airline said Tuesday.
+
+*Méthode centroïde MMR*
+CNN's Frederik Pleitgen, Pamela Boykoff, Antonia Mortensen, Sandrine
+Amiel and Anna-Maja Rappard contributed to this report. Lt. Col.
+Jean-Marc Menichini, a French Gendarmerie spokesman in charge of communications on rescue efforts around the Germanwings crash site, told CNN that the reports were "completely wrong" and "unwarranted."
+
+*Méthode 2G centroïde MMR*
+The two publications described the supposed video, but did not post it on their websites. He added, "A person who has such a video needs to immediately give it to the investigators." Paris Match and Bild reported that the video was recovered from a phone at the wreckage site.
+
+*Méthode LexRank MMR*
+The French prosecutor leading an investigation into the crash of
+Germanwings Flight 9525 insisted Wednesday that he was not aware of any video footage from on board the plane. Cell phones have been collected at the site, he said, but that they "hadn't been exploited yet."
+
+*Méthode 2G LexRank MMR*
+The French prosecutor leading an investigation into the crash of
+Germanwings Flight 9525 insisted Wednesday that he was not aware of any video footage from on board the plane. Marseille prosecutor Brice Robin told CNN that "so far no videos were used in the crash investigation."
+
+*Méthode LDA MMR*
+The French prosecutor leading an investigation into the crash of
+Germanwings Flight 9525 insisted Wednesday that he was not aware of any video footage from on board the plane. CNN's Margot Haddad reported from Marseille and Pamela Brown from Dusseldorf, while Laura
+Smith-Spark wrote from London.
+
+*Méthode KCore Query MMR*
+Reichelt told "Erin Burnett: Outfront" that he had watched the video and stood by the report, saying Bild and Paris Match are "very confident" that the clip is real. Marseille prosecutor Brice Robin told
+CNN that "so far no videos were used in the crash investigation."
+
+*Méthode 2G centroïde KS*
+The French prosecutor leading an investigation into the crash of
+Germanwings Flight 9525 insisted Wednesday that he was not aware of any video footage from on board the plane. He added, "A person who has such a video needs to immediately give it to the investigators."
+
+*Méthode 2G JS KS*
+The French prosecutor leading an investigation into the crash of
+Germanwings Flight 9525 insisted Wednesday that he was not aware of any video footage from on board the plane. But none of the cell phones found so far have been sent to the institute, Menichini said.
+
+*Méthode génétique*
+The French prosecutor leading an investigation into the crash of
+Germanwings Flight 9525 insisted Wednesday that he was not aware of any video footage from on board the plane. Marseille prosecutor Brice Robin told CNN that "so far no videos were used in the crash investigation."  

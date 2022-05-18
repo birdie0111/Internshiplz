@@ -1,69 +1,35 @@
-Titre: 'Litte_Bot' le chatbot Molière
-Date: 26/01/2022
-Organisme: LIASD
-Lieu: Saint Denis
+Titre: Recurrent neural network models of the textualization process
+Date: 2022-02-14
+Organisme: LIPN
+Lieu: Villetaneuse
 
 
-OFFRE DE STAGE DE MASTER OU D'INGENIEUR
 
-`Litte_Bot' le chatbot Molière
+Title: Recurrent neural network models of the textualization process
+Location: LIPN (UMR CNRS 7030), Université Sorbonne Paris Nord (99 Ave nue Jean Baptiste Clément, 93430 Villetaneuse)
+Advisors: Nadi Tomeh (tomeh@lipn.fr), Joseph Le Roux (leroux@lipn.fr)
 
-Laboratoire d'accueil : LIASD - (équipe PASTIS), Université Paris 8, 2 rue de la liberté, 93526 Saint Denis
+Context ======
+In the context of the ANR project Pro-TEXT
+(https://pro-text.huma-num.fr/) we aim to conduct a comprehensive linguistic analysis of the textualization process, i.e. the real-time progressive construction of a text. We will study "bursts of writing", which are textual segments produced between "pauses", in order to provide insight into the relation between regularities of language performance and the cognitive and contextual constraints. The aim is to understand some of the layout mechanisms that allow language to give rise to novelty out of known and prefabricated structures. The project's aim is to build on recent developments in linguistics, cognitive psychology and machine learning to analyze burst data.
 
-Mots clés : Agent conversationnel, Apprentissage profond
+Internship proposal ===============
+Burst data are collected through real-time recording of the writing process using keystroke logging tools Inputlog (http://www.inputlog.net/) and Scriptlog, which produces temporal data (chronology and duration of text production and pause length), language data (language sequences produced continuously between two pauses), and topological textual data (dynamics of text planning, revising already written text).
 
-Contexte et objectifs Le projet LITTE\_BOT
-(https://eur-artec.fr/projets/litte\_bot/) est un projet collaboratif autour d'un chatbot, pour dialoguer avec un personnage de Molière, figure emblématique de la littérature française. Le projet s'inscrit dans la perspective du quatre-centième anniversaire de la naissance de
-Molière en 2022. Partant d'un corpus composé de tous les oeuvres de
-Molière ainsi que d'autres pièces de théâtre du 17e siècle faisant référence au personnage de Don Juan, nous avons créé un dataset de répliques (67ko) pour le modèle d'apprentissage Seq2Seq qui a été utilisé pour le prototype du chatbot qui est déjà en phase de test.
-Nous souhaitons pour la suite agrandir le corpus et tester d'autres modèles d'apprentissage.
-Le stage comportera les étapes suivantes (la réutilisabilité des ressources et les codes produits, feront l'objet d'une documentation tout au long du stage) :
--   agrandir le dataset avec l'ajout de dialogues (par le retour de
-    phase de tests du prototype mis en place), en intégrant des
-    répliques par catégories (proposées par la dramaturge :
-    introduction, séduction, amour, fuite),
--   adapter et structurer le dataset pour le modèle Bert,
--   mettre en place et tester un modèle basé sur Bert pré-entraîné pour
-    la langue française (FlauBERT ou CamemBERT).
+In this internship, we propose to explore the use of recurrent neural networks such as LSTMs in modeling the three types of sequences mentioned above.
+We plan to study multiple modeling tasks. For instance, pause prediction can be cast as an LSTM-based sequence labeling task where input text is labeled with pause position and duration. A different network can be used to model the sequence of text editing actions including insertion and deletion of characters but also the intervening pauses. The network is then trained to predict the next action as in language models. Furthermore, we plan to explore the use of data structures inspired by the stack LSTM (Dyer et al., 2015) to use both action and word embeddings when predicting pauses.
+Such a structure should allow for updating state representations in a non-linear and non-local way while maintaining a low complexity.
 
-Durée du stage : 5/6 mois (début : Mars-Avril 2022)
+Candidate profile =============
+-   Master in Computer Science or related field
+-   Strong programming skills
+-   Good reading and writing of English
+-   Experience in training deep learning models (with Pytorch/Jax)
 
-Gratification : montant légal en vigueur (environ 600¤ / mois).
+How to apply ? ===========
+Send your CV and transcript of Master grades to tomeh@lipn.fr and leroux@lipn.fr
 
-
-Candidature
-
-En master 1 ou 2 ou école d'ingénieur dans le domaine d'IA,
-Sciences de Données, TAL.
-
-
-Compétences
-
-Programmation Python, Machine (deep) learning (modèles Transformers), très bon niveau en Anglais
-
-
-Aptitudes personnelles
-
-Adaptabilité, Réactivité, Bon relationnel
-
-
-Contact :
-
-Anna Pappa, LIASD, équipe PASTIS, UP8, ap@up8.edu
-
-
-References
-
-[1] Louis Martin, Benjamin Muller, Pedro Javier Ortiz Suarez, Yoann
-    Dupont, Laurent Romary, Eric de laClergerie, Djame Seddah, and
-    Benoit Sagot. Camembert: a tasty french language model.
-    Proceedings of the 58th Annual Meeting of the Association for
-    Computational Linguistics, 2020.
-
-[2] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova.
-    Bert: Pre-training of deep bidirec-tional transformers for language
-    understanding , 2019.
-
-[3] Dorottya Demszky, Dana Movshovitz-Attias, Jeongwoo Ko, Alan Cowen,
-    Gaurav Nemade, and Sujith Ravi. Goemotions : A dataset of
-    fine-grained emotions , ACL 2020.
+References ========= (Dyer et al., 2015) https://aclanthology.org/P15-1033/
+Transition-Based Dependency Parsing with Stack Long Short-Term Memory.
+Chris Dyer, Miguel Ballesteros, Wang Ling, Austin Matthews, Noah A.
+Smith.

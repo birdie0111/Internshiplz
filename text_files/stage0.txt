@@ -1,36 +1,28 @@
-Titre: Multilingual chatbot
-Date: 01/04/2022
-Organisme: Luxembourg Institute of Science and Technology
-Lieu: Luxembourg
-
-
-Internship position at Luxembourg Institute of Science and Technology
-
-We have an opening for a 6-month internship at Luxembourg Institute of
-Science and Technology (LIST). LIST is a Research and Technology
-Organization (RTO) active in the fields of materials, environment and
-IT. By transforming scientific knowledge into technologies, smart data and tools, LIST empowers citizens in their choices, public authorities in their decisions and businesses in their strategies.
-
-https://www.list.lu/
-
-The internship will be in the context of the ENRICH4ALL project (https://www.enrich4all.eu/) which is about the design and development of a multilingual chatbot service that will be deployed in public administration in Luxembourg, Denmark, and Romania. ENRICH4ALL is a
-European funded project (CEF-TC-2020-1: Automated Translation) and the duration is from 01.06.2021 - 31.05.2023.
-
-The intern will work closely with the ENRICH4ALL team of LIST. In
-ENRICH4ALL there are three more partners apart from LIST: BEIA Consult
-International (Romania), SupWiz Aps (Denmark), and the Research
-Institute for Artificial Intelligence, Romanian Academy. The intern will participate in biweekly meetings with the other partners, but also internal meetings to discuss the progress and show the results of the assigned tasks.
-
-Requirements: French or German native speaker, Natural Language
-Processing, JSON, Python
-
-Please send your application with CV at dimitra.anastasiou@list.lu
-
-Closing date: 30.04
+Titre: Amélioration et déploiement du graphe de connaissances HOLINET
+Date: 2022-05-09
+Organisme: LPL
+Lieu: Aix-en-Provence
 
 
 
-_______________________________________________
-UNSUBSCRIBE from this page: http://mailman.uib.no/options/corpora
-Corpora mailing list
-Corpora@uib.no https://mailman.uib.no/listinfo/corpora 
+Titre : Amélioration et déploiement du graphe de connaissances HOLINET
+Dates : du 15 mai (ou plus tard, si toujours disponible) au 31 juillet 2022
+Encadrant : Jean-Philippe Prost (LPL - ILCB, Aix-Marseille Université)
+Lieu de stage : LPL, Aix-en-Provence
+Rémunération : 136,5 ¤ / semaine complète
+
+* Sujet
+Dans le cadre du projet de développement du graphe de connaissances
+HOLINET (http://holinet.lpl-aix.fr), l'ILCB propose un stage financé en linguistique computationnelle pour un étudiant de
+M1 ou M2 informatique. L'objet de ce stage serait de contribuer au développement de la ressource principale (disponible sur ORTOLANG : https://hdl.handle.net/11403/holinet-1-0/v1). La construction initiale de cette ressource est décrite dans un article accepté récemment pour présentation orale à LREC 2022.
+Accessoirement, ce stage pourrait ouvrir la voie sur une thèse à l'horizon de la rentrée 2023-2024, dont le sujet concernerait le raisonnement sur graphe de connaissances pour l'analyse sémantique du langage naturel.
+L'intérêt du graphe HOLINET est de constituer un graphe multi-niveaux, qui intègre une couche lexico-sémantique à travers le réseau JeuxDeMots (https://www.jeuxdemots.org/jdm-accueil.php), et une couche grammaticale. La couche grammaticale est construite initialement sur la base du corpus arboré French Treebank (FTB) annoté en constituance.
+Plus précisément, plusieurs objectifs de développement seront proposés au stagiaire, selon son avancement et ses centres d'intérêt :
+- déployer la ressource HOLINET sur un serveur du LPL : configuration de neo4j, installation des données du graphe, développement d'une interface web pour l'interrogation de la base en ligne comme service, développement d'une API d'interrogation hors-ligne.
+- améliorer la qualité de l'intégration entre couches lexico-sémantique et grammaticale, en ajoutant au graphe les annotations POS manquantes sur la couche sémantique
+- intégration de nouvelles relations sur la couche grammaticale, pour la représentation de relations grammaticales de dépendances, extraites à partir du FTB annoté en dépendances.
+
+* Candidature
+Envoyer CV, lettre de motivation, et si possible notes de Licence et
+Master à Jean-Philippe.Prost@univ-amu.fr
+

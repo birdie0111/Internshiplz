@@ -1,41 +1,69 @@
-Titre: Génération automatique de hashtags pour des messages textuels courts issus de Twitter
-Date: 17/01/2022
-Organisme: LS2N
-Lieu: Nantes
+Titre: 'Litte_Bot' le chatbot Molière
+Date: 2022-01-26
+Organisme: LIASD
+Lieu: Saint Denis
 
 
-Proposition de stage - 2022
+OFFRE DE STAGE DE MASTER OU D'INGENIEUR
 
-Génération automatique de hashtags pour des messages textuels courts issus de Twitter
+`Litte_Bot' le chatbot Molière
 
-Niveau : Master 2
+Laboratoire d'accueil : LIASD - (équipe PASTIS), Université Paris 8, 2 rue de la liberté, 93526 Saint Denis
 
-Équipe : TALN - Traitement Automatique du Langage Naturel
+Mots clés : Agent conversationnel, Apprentissage profond
 
-Durée : 6 mois - Début : Février 2022
+Contexte et objectifs Le projet LITTE\_BOT
+(https://eur-artec.fr/projets/litte\_bot/) est un projet collaboratif autour d'un chatbot, pour dialoguer avec un personnage de Molière, figure emblématique de la littérature française. Le projet s'inscrit dans la perspective du quatre-centième anniversaire de la naissance de
+Molière en 2022. Partant d'un corpus composé de tous les oeuvres de
+Molière ainsi que d'autres pièces de théâtre du 17e siècle faisant référence au personnage de Don Juan, nous avons créé un dataset de répliques (67ko) pour le modèle d'apprentissage Seq2Seq qui a été utilisé pour le prototype du chatbot qui est déjà en phase de test.
+Nous souhaitons pour la suite agrandir le corpus et tester d'autres modèles d'apprentissage.
+Le stage comportera les étapes suivantes (la réutilisabilité des ressources et les codes produits, feront l'objet d'une documentation tout au long du stage) :
+-   agrandir le dataset avec l'ajout de dialogues (par le retour de
+    phase de tests du prototype mis en place), en intégrant des
+    répliques par catégories (proposées par la dramaturge :
+    introduction, séduction, amour, fuite),
+-   adapter et structurer le dataset pour le modèle Bert,
+-   mettre en place et tester un modèle basé sur Bert pré-entraîné pour
+    la langue française (FlauBERT ou CamemBERT).
 
-Salaire : 600 euros/mois environ
+Durée du stage : 5/6 mois (début : Mars-Avril 2022)
 
-Profil du candidat : Le stage proposé correspond à un profil bac+5
-(Master 2 ou équivalent). Il doit maîtriser au moins un langage de programmation objet courant (Java, C++...) et un langage de script (Python, Perl...). En outre, des cours ou expériences liés au sujet (traitement automatique de langage, fouille de données, apprentissage automatique, réseaux complexes...) seraient appréciés.
+Gratification : montant légal en vigueur (environ 600¤ / mois).
 
-Résumé du stage :
 
-L'objectif du stage est de proposer des approches originales permettant de générer automatiquement des hashtags sur un message (ici, tweet) à partir de son contenu textuel et des méta-données associées. Il s'agira de mettre l'accent sur la capacité du système à produire des hashtags complémentaires au texte, c.-à-d. qui n'existent pas directement dans le contenu textuel. Afin de mener à bien les expériences, un corpus a déjà été collecté et un premier système de type sequence-to-sequence (seq2seq) a également été mis en place. Globalement, trois sous-objectifs sont visés : 1) terminer et compléter l'évaluation du système seq2seq et en réaliser une étude qualitative, 2) compléter l'état de l'art sur le sujet de la génération de hashtags/mots-clés et proposer d'autres approches, 3) intégrer les méta-données des tweets au sein d'une architecture "multimodale" (i.e. qui intègrera ici les méta-données au contenu textuel).
+Candidature
 
-Mots-clés :
+En master 1 ou 2 ou école d'ingénieur dans le domaine d'IA,
+Sciences de Données, TAL.
 
-Traitement automatique des Langues (TAL), Indexation, Apprentissage automatique, Enrichissement de documents, Réseaux sociaux,
-Métadonnées.
 
-Les candidatures doivent être adressées à :
+Compétences
 
-    Florian Boudin (florian.boudin@univ-nantes.fr)
-    Richard Dufour (richard.dufour@univ-nantes.fr)
+Programmation Python, Machine (deep) learning (modèles Transformers), très bon niveau en Anglais
 
-et doivent inclure :
 
-- un CV détaillé (formation et expériences en recherche)
-- les notes de Licence et de Master
-- éventuellement un lien vers des réalisations personnelles si disponible (ex : github)
+Aptitudes personnelles
 
+Adaptabilité, Réactivité, Bon relationnel
+
+
+Contact :
+
+Anna Pappa, LIASD, équipe PASTIS, UP8, ap@up8.edu
+
+
+References
+
+[1] Louis Martin, Benjamin Muller, Pedro Javier Ortiz Suarez, Yoann
+    Dupont, Laurent Romary, Eric de laClergerie, Djame Seddah, and
+    Benoit Sagot. Camembert: a tasty french language model.
+    Proceedings of the 58th Annual Meeting of the Association for
+    Computational Linguistics, 2020.
+
+[2] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova.
+    Bert: Pre-training of deep bidirec-tional transformers for language
+    understanding , 2019.
+
+[3] Dorottya Demszky, Dana Movshovitz-Attias, Jeongwoo Ko, Alan Cowen,
+    Gaurav Nemade, and Sujith Ravi. Goemotions : A dataset of
+    fine-grained emotions , ACL 2020.

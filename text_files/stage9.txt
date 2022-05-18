@@ -1,55 +1,71 @@
-Titre: Prédiction de l'état mental d'un participant d'une conversation écrite à l'aide d'émojis et d'adaptation au domaine
-Date: 08/02/2022
-Organisme: LS2N
-Lieu: Nantes
+Titre: Exploration du Quantum Machine Learning appliqué au NLP
+Date: 2022-02-24
+Organisme: EDF R&D
+Lieu: Palaiseau
 
 
-Nous recherchons un(e) stagiaire pour travailler sur la problématique de prédiction des émotions à partir des émojis et son "adaptation" à des corpus autres que Twitter.
 
-Si votre profil correspond à la description ci-dessous et que vous êtes intéressé(e), merci d'envoyer votre dossier de candidature à nicolas.hernandez@univ-nantes.fr.
+EDF R&D Palaiseau recherche un(e) stagiaire intéressé(e) pour travailler sur l'exploration du Quantum Machine Learning pour le
+Traitement Automatique du Langage Naturel. Aucun prérequis n'est demandé sur la partie Quantum Machine Learning, si vous possédez des bases en TALN et en Deep Learning n'hésitez pas à postuler. Télétravail partiel possible selon autorisation de votre école ou université. Vous trouverez l'offre détaillée ci-dessous.
 
-**Titre** : Prédiction de l'état mental d'un participant d'une conversation écrite à l'aide d'émojis et d'adaptation au domaine
+Mission :
+    Exploration du Quantum Machine Learning appliqué au NLP - H/F
+Durée : 3-6 mois
+Début du stage souhaité : mars à juin 2022
+Lieu : EDF Lab Paris-Saclay, 7 boulevard Gaspard Monge, 91120 Palaiseau
 
-**Lieu du stage** : Laboratoire des Sciences du Numérique de Nantes (LS2N) - Équipe Traitement Automatique du Langage Naturel (TALN)
 
-**Durée** : 5 mois - **Début** : Mars 2022
+Contexte et objectifs :
 
-**Salaire** : 600 euros/mois environ
+La R&D d'EDF (2000 chercheurs) a pour missions principales de contribuer à l'amélioration de la performance des unités opérationnelles du groupe EDF, d'identifier et de préparer les relais de croissance à moyen et long terme. Dans ce cadre, le département
+Services, Economie, Outils Innovants et IA (SEQUOIA) est un département pluridisciplinaire (sciences de l'ingénieur, sciences humaines et sociales) qui fournit un appui à l'élaboration et au portage des offres, des services et des outils de relation client aux directions opérationnelles du groupe EDF. Au sein de ce département, ce stage sera rattaché au groupe « Statistiques et Outils d'Aide à la Décision » (SOAD) qui compte une vingtaine d'ingénieurs chercheurs spécialisés en
+Data Science.
 
-**Profil recherché** :  Niveau bac+5 (Master 2, ingénieur ou équivalent)
--   Des compétences solides en développement logiciel (python)
--   Une formation en Traitement Automatique des Langues, en
-    Apprentissage Automatique, en Linguistique computationnelle, ou en
-    Sciences des données/Fouille de texte
--   Des qualités d'expression orale et d'écriture (en français et en
-    anglais)
--   Des capacités de travail en autonomie comme en équipe, un sens
-    de l'organisation et une capacité de restitution
--   Des qualités relationnelles (accompagnement, collaboration)
--   Dynamique et curieux.se
+Le développement de l'informatique quantique, une technologie radicalement nouvelle, connaît une accélération ces dernières années.
+La R&D d'EDF mène des travaux sur le sujet en partenariat avec des acteurs académiques et industriels de premier plan. De nombreux cas d'usage sont étudiés, pour lesquels l'informatique quantique ouvre de nouvelles perspectives pour des mises en application réelles.
 
-**Candidature** : CV, lettre de motivation, derniers bulletins de notes à envoyer à nicolas.hernandez@univ-nantes.fr
+L'informatique quantique appliquée au Natural Language Processing (NLP) est un domaine de recherche récent dont les possibilités restent encore à explorer. Des travaux antérieurs ont permis de réaliser une tâche de classification de texte sur de petits jeux de données (Meichanetzidis et al.,2020, Lorenz et al., 2021), et une librairie de développement spécialisée a récemment été créée (Kartsaklis, Dimitri, et al., 2021). Notre équipe explore ce sujet afin d'en cibler les axes de recherche actuels, et d'identifier les possibilités d'application pour les métiers du groupe. Il sera demandé de collaborer sur ces objectifs.
 
-**Mots clefs** : Traitement Automatique des Langues, Apprentissage profond, Fouille de texte, Adaptation au domaine, Analyse d'émotions,
-Emojis, Twitter
+Etapes du stage :
 
-**Description courte** : Comprendre les intentions, désirs, croyances...
-d'un intervenant au sein d'une conversation écrite est un problème difficile en l'absence d'information non verbale comme la modulation de la voix ou de l'expression du visage.
+    -   Réaliser un état de l'art des publications scientifiques sur le
+        Quantum Computing appliqué au NLP.
+   -    Reproduire une ou plusieurs expérimentations en NLP Quantum
+        Machine Learning décrites dans des publications scientifiques.
+   -    Définir des axes de recherche dans le domaine du Quantum Machine
+        Learning pouvant être appliqués à moyen/long terme aux métiers
+        du groupe.
 
-Les objectifs de ce stage sont
-    - 1)    de faire un état des performances et des limites d'un
-            système de prédiction d'émotions construits à partir d'un
-            corpus contenant des émojis
-    - 2)    d'évaluer un tel système après adaptation sur un corpus
-            cible non étiqueté de genre et de domaine différent.
-    - 3)    compte tenu de l'avancement, l'étude pourra chercher à
-            évaluer l'apport de la prise en compte de la structure
-            dialogique des contextes d'expression des émotions ainsi
-            qu'une configuration d'apprentissage avec de multiples
-            tâches voisines (analyse de la polarité d'une opinion, de
-            l'intensité d'une émotion, de la subjectivité d'un propos...).
+Profil recherché :
 
-L'étude portera sur des architectures classiques à base d'apprentissage profond (plongement de mots + Bi-LSTM, modèle de langage à base de
-Transformer) décrites dans la littérature. La recherche s'appuiera sur les données rendues disponibles ces dernières années au travers des campagnes d'évaluation SemEval.
+    -   Etudiant(e) en Master 1 ou 2 ou équivalent école d'ingénieur
+    -   Compétences en Machine Learning (Deep Learning)
+    -   Compétences en Natural Language Processing
+    -   Bon niveau en Python
+    -   Spécialisation en Recherche (ex : Master Recherche, ou suivi
+        d'enseignements en Recherche)
+    -   Bon niveau de rédaction en français et en anglais
 
-**Description étendue du sujet** : https://www.ls2n.fr/stage-these/prediction-de-letat-mental-dun-utilisateur-de-twitter 
+Un temps sera accordé pour monter en compétence sur les librairies de développement pour le Quantum Machine Learning (ex : TensorFlow
+Quantum).
+
+Bibliographie :
+
+-   Kartsaklis, Dimitri, et al. "lambeq: An Efficient High-Level Python
+    Library for Quantum NLP." arXiv preprint arXiv:2110.04236 (2021).
+
+-   Lorenz, Robin, et al. "Qnlp in practice: Running compositional
+    models of meaning on a quantum computer." arXiv preprint
+    arXiv:2102.12846 (2021).
+
+-   Meichanetzidis, Konstantinos, et al. "Grammar-Aware
+    Question-Answering on Quantum Computers." arXiv preprint
+    arXiv:2012.03756 (2020).
+
+Unité d'accueil : Groupe SOAD (Statistique et Outils d'Aide à la
+Décision), département SEQUOIA d'EDF Lab Paris-Saclay, 7 boulevard
+Gaspard Monge, 91120 Palaiseau.
+
+Le stage sera encadré par un ingénieur-chercheur Data Scientist du département SEQUOIA.
+
+Transmettre par mail un CV et une lettre de motivation à: sabrina.campano@edf.fr (Département SEQUOIA) 
