@@ -10,6 +10,9 @@ Project of M1S2, a website where you can find information of internships (or job
     yuhe        yuhe
 *ou vous pouvez aussi créer votre propre compte*
 
+#### cahier des charges:
+![avatar](UML.png)
+
 #### structure de fichiers:
 
     /actions (contient les fichiers de script pour traiter base de données de php pure (sauf login.php))
