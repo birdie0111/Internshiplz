@@ -1,44 +1,29 @@
 Titre: Energy-Based Models for Controlled Text Generation
-Date: 06/04/2022
+Date: 2022-04-06
 Organisme: Naver Labs Europe
 Lieu: Grenoble
 
-Research internship position at NAVER LABS Europe (Grenoble, France)
-on Energy-Based Models for Controlled Text Generation
+
+
+Research internship position at NAVER LABS Europe (Grenoble, France) on Energy-Based Models for Controlled Text Generation
 
 Start date: June 2022
 Duration: 5-6 months
 
 DESCRIPTION
 Large language models can now be used to generate highly fluent texts.
-However, the synthesized utterances can be deficient on other important
-levels: semantic consistency, faithfulness to the facts, toxic or
-socially biased content.
+However, the synthesized utterances can be deficient on other important levels: semantic consistency, faithfulness to the facts, toxic or socially biased content.
 
-Our team has developed several effective solutions on that front
-[1,2,3,4] exploiting the expressive power of Energy-Based Models in
-defining constraints over generative models. However, certain
-challenges remain: (1) How can we quickly adapt to changing control
-conditions without the need for model retraining? (2) Can we exploit
-these techniques to improve on hard-to-quantify features, such as
-safety, unbiasedness, textual coherence, or matching the human
-intention? (3) Can we improve training speed/robustness, for example,
-by leveraging techniques from RL?
+Our team has developed several effective solutions on that front [1,2,3,4] exploiting the expressive power of Energy-Based Models in defining constraints over generative models. However, certain challenges remain: (1) How can we quickly adapt to changing control conditions without the need for model retraining? (2) Can we exploit these techniques to improve on hard-to-quantify features, such as safety, unbiasedness, textual coherence, or matching the human intention? (3) Can we improve training speed/robustness, for example, by leveraging techniques from RL?
 
-We are looking for a motivated intern to help us develop techniques
-and algorithms addressing these challenges. Experiments will be
-conducted on selected text generation tasks using the state of art
-pre-trained language models.
+We are looking for a motivated intern to help us develop techniques and algorithms addressing these challenges. Experiments will be conducted on selected text generation tasks using the state of art pre-trained language models.
 
-The successful candidate should be enrolled in a graduate program, at
-the Master or (preferably) PhD level.
+The successful candidate should be enrolled in a graduate program, at the Master or (preferably) PhD level.
 
 The intern will work in a team integrated by Hady Elsahar, Marc
 Dymetman, Germán Kruszewski, and Jos Rozen.
 
-Publication of this internship's results in major
-conferences/journals
-will be strongly encouraged.
+Publication of this internship's results in major conferences/journals will be strongly encouraged.
 
 REQUIRED SKILLS
 -   Strong programming skills
@@ -61,33 +46,19 @@ REFERENCES
     Distributional Policy Gradients, In CtrlGen at Neurips 2021
 
 APPLICATION INSTRUCTIONS
-Please note that applicants must be registered students at a university
-or other academic institution and that this establishment will need to
-sign an 'Internship Convention' with NAVER LABS Europe before the
-student is accepted.
+Please note that applicants must be registered students at a university or other academic institution and that this establishment will need to sign an 'Internship Convention' with NAVER LABS Europe before the student is accepted.
 
-You can apply for this position online at
-https://europe.naverlabs.com/job/energy-based-models-for-controlled-text-generation-internship-2/.
+You can apply for this position online at https://europe.naverlabs.com/job/energy-based-models-for-controlled-text-generation-internship-2/.
 Don't forget to upload your CV and cover letter before you submit.
 Incomplete applications will not be accepted.
 
 ABOUT NAVER LABS
-NAVER is the #1 Internet portal in Korea with activities that span a
-wide range of businesses including search, commerce, content, financial
-and cloud platforms.
+NAVER is the #1 Internet portal in Korea with activities that span a wide range of businesses including search, commerce, content, financial and cloud platforms.
 
-NAVER LABS, co-located in Korea and France, is the organization
-dedicated to preparing NAVER's future. NAVER LABS Europe is
-located in a spectacular setting in Grenoble, in the heart of the
-French Alps. Scientists at NAVER LABS Europe are empowered to pursue
-long-term research problems that, if successful, can have significant
-impact and transform NAVER. We take our ideas as far as research can to
-create the best technology of its kind. Active participation in the
-academic community and collaborations with world-class public research
-groups are, among others, important tools to achieve these goals.
+NAVER LABS, co-located in Korea and France, is the organization dedicated to preparing NAVER's future. NAVER LABS Europe is located in a spectacular setting in Grenoble, in the heart of the
+French Alps. Scientists at NAVER LABS Europe are empowered to pursue long-term research problems that, if successful, can have significant impact and transform NAVER. We take our ideas as far as research can to create the best technology of its kind. Active participation in the academic community and collaborations with world-class public research groups are, among others, important tools to achieve these goals.
 Teamwork, focus and persistence are important values for us.
 
 NAVER LABS Europe is an equal opportunity employer.
 
-For more information and application see
-https://europe.naverlabs.com/job/energy-based-models-for-controlled-text-generation-internship-2/
+For more information and application see https://europe.naverlabs.com/job/energy-based-models-for-controlled-text-generation-internship-2/ 

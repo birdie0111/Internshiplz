@@ -24,6 +24,6 @@ if (isset($_POST["new_user"]) and isset($_POST["new_psword"])){
     mysqli_query($connect, $query);
 
     $connect->close();
-    header('Location: /~liuqinyu/index.php');
+    header('Location: /~tangyuhe/index.php');
 }
 ?>

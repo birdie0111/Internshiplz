@@ -1,0 +1,35 @@
+Titre: Recurrent neural network models of the textualization process
+Date: 2022-02-14
+Organisme: LIPN
+Lieu: Villetaneuse
+
+
+
+Title: Recurrent neural network models of the textualization process
+Location: LIPN (UMR CNRS 7030), Université Sorbonne Paris Nord (99 Ave nue Jean Baptiste Clément, 93430 Villetaneuse)
+Advisors: Nadi Tomeh (tomeh@lipn.fr), Joseph Le Roux (leroux@lipn.fr)
+
+Context ======
+In the context of the ANR project Pro-TEXT
+(https://pro-text.huma-num.fr/) we aim to conduct a comprehensive linguistic analysis of the textualization process, i.e. the real-time progressive construction of a text. We will study "bursts of writing", which are textual segments produced between "pauses", in order to provide insight into the relation between regularities of language performance and the cognitive and contextual constraints. The aim is to understand some of the layout mechanisms that allow language to give rise to novelty out of known and prefabricated structures. The project's aim is to build on recent developments in linguistics, cognitive psychology and machine learning to analyze burst data.
+
+Internship proposal ===============
+Burst data are collected through real-time recording of the writing process using keystroke logging tools Inputlog (http://www.inputlog.net/) and Scriptlog, which produces temporal data (chronology and duration of text production and pause length), language data (language sequences produced continuously between two pauses), and topological textual data (dynamics of text planning, revising already written text).
+
+In this internship, we propose to explore the use of recurrent neural networks such as LSTMs in modeling the three types of sequences mentioned above.
+We plan to study multiple modeling tasks. For instance, pause prediction can be cast as an LSTM-based sequence labeling task where input text is labeled with pause position and duration. A different network can be used to model the sequence of text editing actions including insertion and deletion of characters but also the intervening pauses. The network is then trained to predict the next action as in language models. Furthermore, we plan to explore the use of data structures inspired by the stack LSTM (Dyer et al., 2015) to use both action and word embeddings when predicting pauses.
+Such a structure should allow for updating state representations in a non-linear and non-local way while maintaining a low complexity.
+
+Candidate profile =============
+-   Master in Computer Science or related field
+-   Strong programming skills
+-   Good reading and writing of English
+-   Experience in training deep learning models (with Pytorch/Jax)
+
+How to apply ? ===========
+Send your CV and transcript of Master grades to tomeh@lipn.fr and leroux@lipn.fr
+
+References ========= (Dyer et al., 2015) https://aclanthology.org/P15-1033/
+Transition-Based Dependency Parsing with Stack Long Short-Term Memory.
+Chris Dyer, Miguel Ballesteros, Wang Ling, Austin Matthews, Noah A.
+Smith.

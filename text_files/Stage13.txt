@@ -1,0 +1,55 @@
+Titre: Prédiction de l'état mental d'un participant d'une conversation écrite à l'aide d'émojis et d'adaptation au domaine
+Date: 2022-02-08
+Organisme: LS2N
+Lieu: Nantes
+
+
+Nous recherchons un(e) stagiaire pour travailler sur la problématique de prédiction des émotions à partir des émojis et son "adaptation" à des corpus autres que Twitter.
+
+Si votre profil correspond à la description ci-dessous et que vous êtes intéressé(e), merci d'envoyer votre dossier de candidature à nicolas.hernandez@univ-nantes.fr.
+
+**Titre** : Prédiction de l'état mental d'un participant d'une conversation écrite à l'aide d'émojis et d'adaptation au domaine
+
+**Lieu du stage** : Laboratoire des Sciences du Numérique de Nantes (LS2N) - Équipe Traitement Automatique du Langage Naturel (TALN)
+
+**Durée** : 5 mois - **Début** : Mars 2022
+
+**Salaire** : 600 euros/mois environ
+
+**Profil recherché** :  Niveau bac+5 (Master 2, ingénieur ou équivalent)
+-   Des compétences solides en développement logiciel (python)
+-   Une formation en Traitement Automatique des Langues, en
+    Apprentissage Automatique, en Linguistique computationnelle, ou en
+    Sciences des données/Fouille de texte
+-   Des qualités d'expression orale et d'écriture (en français et en
+    anglais)
+-   Des capacités de travail en autonomie comme en équipe, un sens
+    de l'organisation et une capacité de restitution
+-   Des qualités relationnelles (accompagnement, collaboration)
+-   Dynamique et curieux.se
+
+**Candidature** : CV, lettre de motivation, derniers bulletins de notes à envoyer à nicolas.hernandez@univ-nantes.fr
+
+**Mots clefs** : Traitement Automatique des Langues, Apprentissage profond, Fouille de texte, Adaptation au domaine, Analyse d'émotions,
+Emojis, Twitter
+
+**Description courte** : Comprendre les intentions, désirs, croyances...
+d'un intervenant au sein d'une conversation écrite est un problème difficile en l'absence d'information non verbale comme la modulation de la voix ou de l'expression du visage.
+
+Les objectifs de ce stage sont
+    - 1)    de faire un état des performances et des limites d'un
+            système de prédiction d'émotions construits à partir d'un
+            corpus contenant des émojis
+    - 2)    d'évaluer un tel système après adaptation sur un corpus
+            cible non étiqueté de genre et de domaine différent.
+    - 3)    compte tenu de l'avancement, l'étude pourra chercher à
+            évaluer l'apport de la prise en compte de la structure
+            dialogique des contextes d'expression des émotions ainsi
+            qu'une configuration d'apprentissage avec de multiples
+            tâches voisines (analyse de la polarité d'une opinion, de
+            l'intensité d'une émotion, de la subjectivité d'un propos...).
+
+L'étude portera sur des architectures classiques à base d'apprentissage profond (plongement de mots + Bi-LSTM, modèle de langage à base de
+Transformer) décrites dans la littérature. La recherche s'appuiera sur les données rendues disponibles ces dernières années au travers des campagnes d'évaluation SemEval.
+
+**Description étendue du sujet** : https://www.ls2n.fr/stage-these/prediction-de-letat-mental-dun-utilisateur-de-twitter 

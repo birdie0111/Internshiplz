@@ -21,9 +21,9 @@
             <h2>C'est quoi ce site ?</h2>
             <p>· Il s'agit d'un site regroupant les annonces de stages dans le domaine TAL pour les étudiants en master.
                 Nous avons utilisé la méthode de webscraping pour recueillir des informations. Les sites qu'on a
-                parcouri comme sources sont les suivants : <a
+                parcouri comme sources sont les suivants : <br /><a
                     href="http://w3.erss.univ-tlse2.fr/membre/tanguy/offres.html" target="_blank">Offres d'emploi en
-                    TAL</a>, <a href="http://" target="_blank">LinkedIn</a>, <a href="http://" target="_blank">site3</a>
+                    TAL</a>, <a href="https://www.linkedin.com/jobs/search/?f_E=1&geoId=105015875&keywords=nlp&location=France" target="_blank">LinkedIn</a>, <a href="https://fr.indeed.com/emplois?q=traitement+automatique+des+langues&jt=internship" target="_blank">Indeed</a>
             </p>
         </div>
 
@@ -31,9 +31,11 @@
             <br />
             <br />
             <p>État du site :</p>
-            <p>Nombre de compte :<span id="nbCompte"></span></p>
-            <p>Nombre de résultat : sur la page "Recherche"</p>
-            <p>Nombre de commentaire :<span id="nbCommentaire"></span></p>
+            <p>Nombre de compte :<span id="nbCompte"><br/>Cliquez "Accueil" pour voir</span></p>
+            <p>Nombre de résultat : <br/>sur la page "Recherche"</p>
+            <p>Nombre de commentaire :<span id="nbCommentaire"><br/>Cliquez "Accueil" pour voir</span></p>
+            <br />
+            <br />
         </div>
     </div>
     <div class="a-img1"></div>

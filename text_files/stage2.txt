@@ -1,106 +1,92 @@
 Titre: Analyse des mentions en coréférence impliquant des Entités Nommées
-Date: 13/04/2022
+Date: 2022-04-13
 Organisme: Nextino
 Lieu: Orléans
-Nextino propose le sujet de stage ci-dessous Ã  partir de mai 2022
 
-Offre de stage :    Analyse des mentions en corÃ©fÃ©rence impliquant des
-                    EntitÃ©s NommÃ©es
+
+Nextino propose le sujet de stage ci-dessous à partir de mai 2022
+
+Offre de stage :    Analyse des mentions en coréférence impliquant des
+                    Entités Nommées
 
 # Contexte
 
-Nextino est un centre de recherche en intelligence artificielle du
-groupe Atempo dÃ©diÃ© Ã  l'innovation dans le domaine de la protection des
-donnÃ©es. Au sein du DÃ©partement Innovation et Technologies, vous
-rejoindrez une Ã©quipe dÃ©diÃ©e aux travaux dans le domaine du Traitement
+Nextino est un centre de recherche en intelligence artificielle du groupe Atempo dédié à l'innovation dans le domaine de la protection des données. Au sein du Département Innovation et Technologies, vous rejoindrez une équipe dédiée aux travaux dans le domaine du Traitement
 Automatique des Langues (TAL).
 
-Dans le cadre du projet RGPD (RÃ¨glement GÃ©nÃ©ral sur la Protection des
-donnÃ©es), Nextino s'engage Ã  protÃ©ger les donnÃ©es Ã  caractÃ¨re personnel
-de ses clients tout en conservant la qualitÃ© informative du contenu.
+Dans le cadre du projet RGPD (Règlement Général sur la Protection des données), Nextino s'engage à protéger les données à caractère personnel de ses clients tout en conservant la qualité informative du contenu.
 
-Pour mener Ã  bien sa mission, l'Ã©quipe TAL dÃ©veloppe un systÃ¨me capable
-de dÃ©tecter les donnÃ©es personnelles ; tÃ¢che qui s'apparente en partie
-Ã  la tÃ¢che de reconnaissance d'EntitÃ©s NommÃ©es (EN). Pour atteindre cet
-objectif, il est nÃ©cessaire de dÃ©tecter l'ensemble des chaÃ®nes de
-corÃ©fÃ©rence afin de dÃ©tecter les liens entre les EN.
+Pour mener à bien sa mission, l'équipe TAL développe un système capable de détecter les données personnelles ; tâche qui s'apparente en partie à la tâche de reconnaissance d'Entités Nommées (EN). Pour atteindre cet objectif, il est nécessaire de détecter l'ensemble des chaînes de coréférence afin de détecter les liens entre les EN.
 
-La rÃ©solution des corÃ©fÃ©rences consiste Ã  identifier les suites
-(chaines) d'unitÃ©s linguistiques faisant rÃ©fÃ©rence Ã  une mÃªme entitÃ© ou
-concept. Le stage proposÃ© ici consiste Ã  dÃ©finir prÃ©cisÃ©ment notre
-sujet d'Ã©tude (les corÃ©fÃ©rences impliquant des EN) par la crÃ©ation et
-l'annotation d'un corpus regroupant des exemples concrets en anglais et
-en franÃ§ais - et participer Ã  l'Ã©tude du risque liÃ© Ã  l'Ã©chec de
-dÃ©tection d'une mention.
+La résolution des coréférences consiste à identifier les suites (chaines) d'unités linguistiques faisant référence à une même entité ou concept. Le stage proposé ici consiste à définir précisément notre sujet d'étude (les coréférences impliquant des EN) par la création et l'annotation d'un corpus regroupant des exemples concrets en anglais et en français - et participer à l'étude du risque lié à l'échec de détection d'une mention.
 
 
 # Description du stage
 
-Le stage se dÃ©roulera en 4 phases :
+Le stage se déroulera en 4 phases :
 
 -   Phase 1 : Etudier/quantifier/qualifier nos corpus (fr/en) en termes
-    de corÃ©fÃ©rence : il s'agira de relever des exemples dans nos
-    donnÃ©es pour chaque type de relations proposÃ© dans le Guide
-    dÃ©crivant le corpus ANCOR (Muzerelle et al., 2014) et d'analyser et
-    caractÃ©riser plus prÃ©cisÃ©ment les exemples impliquant des EN.
+    de coréférence : il s'agira de relever des exemples dans nos
+    données pour chaque type de relations proposé dans le Guide
+    décrivant le corpus ANCOR (Muzerelle et al., 2014) et d'analyser et
+    caractériser plus précisément les exemples impliquant des EN.
 
--   Phase 2 : RÃ©cupÃ©rer et analyser les rÃ©sultats de modÃ¨les de
-    dÃ©tections des EN dÃ©jÃ  entrainÃ©s sur les documents relevÃ©s pendant
+-   Phase 2 : Récupérer et analyser les résultats de modèles de
+    détections des EN déjà entrainés sur les documents relevés pendant
     la Phase 1.
 
--   Phase 3 : CrÃ©er un guide d'annotation adaptÃ© Ã  nos donnÃ©es et
-    tester l'annotation des mentions en corÃ©fÃ©rence. Cette Ã©tape
-    d'annotation impliquera l'utilisation du dÃ©tecteur de mentions
-    (Grobol et al., 2017) et l'analyse de son efficacitÃ© sur nos
-    donnÃ©es. L'outil WebAnno sera utilisÃ© pour rÃ©aliser les
+-   Phase 3 : Créer un guide d'annotation adapté à nos données et
+    tester l'annotation des mentions en coréférence. Cette étape
+    d'annotation impliquera l'utilisation du détecteur de mentions
+    (Grobol et al., 2017) et l'analyse de son efficacité sur nos
+    données. L'outil WebAnno sera utilisé pour réaliser les
     annotations.
 
 -   Phase 4 : Etudier l'impact de l'oubli de certaines mentions dans la
-    chaine de corÃ©fÃ©rence.
+    chaine de coréférence.
 
-# Profil recherchÃ©
+# Profil recherché
 
 -   Etudiant(e) en Master 1 ou Master 2 en Traitement Automatique des
     Langues ou Linguistique
 
--   FranÃ§ais langue maternelle obligatoire
+-   Français langue maternelle obligatoire
 
--   Maitrise de l'anglais Ã  l'Ã©crit
+-   Maitrise de l'anglais à l'écrit
 
--   CompÃ©tence en analyse linguistique de corpus
+-   Compétence en analyse linguistique de corpus
 
--   Connaissance du langage de dÃ©veloppement Python apprÃ©ciÃ©e
+-   Connaissance du langage de développement Python appréciée
 
--   Connaissance de l'outil d'annotation Webanno apprÃ©ciÃ©e
+-   Connaissance de l'outil d'annotation Webanno appréciée
 
 
 # Informations sur le stage
 
--   Lieu : OrlÃ©ans, le Lab'O
+-   Lieu : Orléans, le Lab'O
 
--   Gratification : Selon les rÃ¨gles en vigueur + tickets restaurant
+-   Gratification : Selon les règles en vigueur + tickets restaurant
 
--   DurÃ©e du stage : 3 Ã  4 mois (ou plus) dÃ©marrage souhaitÃ©
+-   Durée du stage : 3 à 4 mois (ou plus) démarrage souhaité
     courant mai 2022
 
-Pour postuler, envoyer un CV, et une lettre de motivation,
-par mail Ã  bernard.peultier@nextino.eu
+Pour postuler, envoyer un CV, et une lettre de motivation, par mail à bernard.peultier@nextino.eu
 
 
-# RÃ©fÃ©rences
+# Références
 
--   LoÃ¯c Grobol, Isabelle Tellier, Ã‰ric de La Clergerie, Marco
-    Dinarelli, and FrÃ©dÃ©ric Landragin. 2017. Apports des analyses
-    syntaxiques pour la dÃ©tection automatique de mentions dans un
-    corpus de franÃ§ais oral (Experiences in using deep and shallow
+-   Loïc Grobol, Isabelle Tellier, Éric de La Clergerie, Marco
+    Dinarelli, and Frédéric Landragin. 2017. Apports des analyses
+    syntaxiques pour la détection automatique de mentions dans un
+    corpus de français oral (Experiences in using deep and shallow
     parsing to detect entity mentions in oral French). In Actes des
-    24Ã¨me ConfÃ©rence sur le Traitement Automatique des Langues
-    Naturelles. Volume 2 - Articles courts, pages 200-208, OrlÃ©ans,
+    24ème Conférence sur le Traitement Automatique des Langues
+    Naturelles. Volume 2 - Articles courts, pages 200-208, Orléans,
     France. ATALA.
 
--   Judith Muzerelle, AnaÃ¯s Lefeuvre, Emmanuel Schang, Jean-Yves
+-   Judith Muzerelle, Anaïs Lefeuvre, Emmanuel Schang, Jean-Yves
     Antoine, Aurore Pelletier, et al.. ANCOR_Centre, a Large Free
     Spoken French Coreference Corpus: description of the Resource and
     Reliability Measures. LREC'2014, 9th Language Resources and
     Evaluation Conference., May 2014, Reyjavik, Iceland. pp.843-847.
-    (hal-01075679)
+    (hal-01075679) 

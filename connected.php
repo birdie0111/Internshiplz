@@ -35,11 +35,9 @@
         if(!$connect){
             die("error while connecting to the database: ".mysqli_connect_error());
         }
-        $path = dirname(__FILE__);
         $path = "backend/pyWebscrap.py";
-        //echo $path;
         $array = shell_exec("python3 ".$path);
-        //print_r($array);
+        # echo $array;
 
         include "templates/acc_connected.php";
         include "templates/recherche.php";
@@ -57,6 +55,7 @@
         
         
 ?>
+
   
 <script type="text/javascript" src="script.js" ></script>
 </body>

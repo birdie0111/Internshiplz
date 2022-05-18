@@ -9,16 +9,13 @@ $db_port = 3306;
 $conn = mysqli_connect($db_host, $db_user, $db_pwd, $db_name);
 mysqli_set_charset($conn, 'utf8mb4');
 
-
 // verifier la connection
 if(!$conn){
     die("error while connecting to the database: ".mysqli_connect_error());
 }
 
-
 // afficher les résultats sur la page web
-// SELECT  count(Titre) FROM `testAffich`
-$sql = "SELECT * FROM Users"; # nbCompte
+$sql = "SELECT * FROM Users";    # nbCompte
 $query = mysqli_query($conn, $sql);
 
 $result = array(strval($query->num_rows));

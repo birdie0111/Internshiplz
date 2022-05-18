@@ -1,0 +1,124 @@
+Titre: Adaptation au domaine en traduction neuronale
+Date: 2022-02-03
+Organisme: CEA LIST
+Lieu: Palaiseau
+
+
+Titre de stage: Adaptation au domaine en traduction neuronale
+
+Lieu du stage: CEA Saclay Nano-INNOV, Laboratoire Analyse Sémantique
+Texte et Image (LASTI), 8 Avenue de la Vauve, 91120 Palaiseau
+
+Encadrant: Nasredine Semmar, CEA LIST, Laboratoire Analyse Sémantique
+Texte et Image (LASTI)
+
+
+Le Laboratoire d'Analyse Sémantique des Textes et des Images (LASTI) est une équipe de 25 personnes (chercheurs, ingénieurs, doctorants) menant des travaux de recherche sur les technologies de description et de compréhension du contenu multimédia (image, texte, parole) et des documents multilingues, en particulier à grande échelle. Les enjeux scientifiques sont:
+-   développer des algorithmes efficaces et robustes pour l'analyse et
+    l'extraction de contenu multimédia, leur classification et analyse
+    sémantique;
+-   reconstitution ou fusion de données hétérogènes pour interpréter
+    des scènes ou documents;
+-   développer des méthodes et des outils pour la construction, la
+    formalisation et l'organisation des ressources et connaissances
+    nécessaires au fonctionnement de ces algorithmes;
+-   intégrer plusieurs de ces briques technologiques afin d'accéder à
+    l'information et répondre à un besoin utilisateur (moteurs de
+    recherche, chatbot, rapports synthétiques de veille).
+
+Contexte :
+
+L'adaptation au domaine en traduction automatique est devenu un axe de recherche important en Traitement Automatique des Langues (TAL) et en apprentissage profond. Cet axe de recherche englobe généralement l'adaptation de la terminologie et du style de la rédaction. Au cours des dernières années, plusieurs approches ont été explorées pour adapter des modèles de traduction automatique statistique construits pour un domaine source pour lequel existe une quantité suffisante de données d'apprentissage vers un domaine cible pour lequel peu de données sont disponibles (Lewis et al., 2010; Pecina et al., 2011; Wang et al., 2012). L'approche la plus étudiée est celle qui explore l'utilisation des lexiques bilingues spécialisés. La plupart des travaux fondés sur cette approche consistent, soit à ajouter au corpus d'apprentissage un lexique bilingue ou un corpus parallèle du domaine de spécialité, soit à étendre les tables de traduction du modèle statistique en leur incorporant les entrées du lexique spécialisé (Langlais, 2002; Bouamor et al., 2012; Semmar et al., 2017). En comparaison avec la traduction statistique, peu de travaux ont été réalisés pour intégrer des lexiques bilingues dans des systèmes de traduction utilisant des modèles neuronaux pour leur adaptation au domaine (Wang et al., 2017; Duan et al., 2019; Nag et al., 2019; Hu et al., 2019), et ceci même si, plusieurs études récentes ont abordé l'adaptation au domaine en traduction neuronale (Chu et al., 2020).
+Cette adaptation au domaine peut être appliquée à trois différents niveaux : en amont, en cours ou en aval de la phase d'apprentissage (Servan et al., 2017).
+
+
+Sujet de stage:
+
+L'objectif de ce stage est d'explorer et d'expérimenter les différentes approches pour l'adaptation au domaine en traduction neuronale.
+L'approche qui consiste à intégrer des lexiques bilingues spécialisés dans un modèle de traduction factorisé sera privilégiée.
+
+
+Le stage se déroulera selon les étapes suivantes:
+
+-   Recherche bibliographique sur les approches d'adaptation au domaine
+    des modèles factorisés pour la traduction neuronale.
+
+-   Etude et adaptation du moteur de traduction OpenNMT
+    (http://fr.opennmt.net/) pour la prise en compte de traits
+    morpho-syntaxiques (Partie de discours, genre, nombre, etc.) lors
+    du processus de génération des traductions.
+
+-   Spécification et implémentation d'un modèle pour l'intégration dans
+    le système OpenNMT d'un lexique bilingue spécialisé.
+
+-   Evaluation de l'impact de ce lexique sur la qualité de traduction
+    du système OpenNMT.
+
+
+Les expérimentations concerneront de préférence le couple de langues anglais-français et un domaine de spécialité pour lequel un lexique bilingue est disponible.
+
+Mots-clés :
+Traitement automatique des langues, traduction automatique, adaptation au domaine, extraction terminologique, lexique bilingue spécialisé, réseaux de neurones.
+
+Références:
+-   Lewis W. D., Wendt C., Bullock D. Achieving Domain Specificity in
+    SMT without Overt Siloing. Proceedings of the seventh international
+    conference on Language Resources and Evaluation, 2010.
+-   Pecina P., Toral A., Way A., Papavassiliou V., Prokopidis P.,
+    Giagkou M. Towards Using Web-Crawled Data for Domain Adaptation in
+    Statistical Machine Translation, 2011. Proceedings of the 15th
+    Conference of the European Association for Machine Translation.
+-   Wang W., Macherey K., Macherey W., Och F., Xu P. Improved Domain
+    Adaptation for Statistical Machine Translation. Proceedings of the
+    Conference of the North American Chapter of  the Association for
+    Computational Linguistics: Human Language Technologies, 2012.
+-   Langlais P. Improving a general-purpose statistical translation
+    engine by terminological lexicons. Proceedings of the 2nd
+    International Workshop on Computational Terminology
+    (COMPUTERM-2002), 2002.
+-   Bouamor D., Semmar N.,  Zweignebaum P. Identifying bilingual
+    Multi-Word Expressions for Statistical Machine Translation.
+    Proceedings of LREC 2012.
+-   Semmar N., Zennaki O., Laib M. Improving the Performance of an
+    Example-Based Machine Translation System Using a Domain-specific
+    Bilingual Lexicon.  Proceedings of  the 29th Pacific Asia
+    Conference on Language, Information and Computation, Shanghai,
+    China, 2015.
+-   Wang X., Tu Z., Xiong D., Zhang M. Translating Phrases in Neural
+    Machine Translation. Actes de EMNLP 2017.
+-   Duan X., Ji B., Jia H., Tan M., Zhang M., Chen B., Luo W., Zhang Y.
+    Bilingual Dictionary Based Neural Machine Translation without Using
+    Parallel Sentences. Proceedings of the 58th Annual Meeting of the
+    Association for Computational Linguistics, 2020.
+-   Nag S., Kale M., Lakshminarasimhan V., Singhavi S. Incorporating
+    bilingual dictionaries for low resource semi-supervised neural
+    machine translation. Proceedings of ICLR 2019.
+-   Hu J., Xia M., Neubig G., Carbonell J. Domain Adaptation of Neural
+    Machine Translation by Lexicon Induction. Proceedings of the 57th
+    Annual Meeting of the Association for Computational Linguistics,
+    2019.
+-   Chu C., Wang R. A Survey of Domain Adaptation for Machine
+    Translation. Journal of Information Processing, Vol.28, 2020.
+-   Servan C., Crego J., Senellart J. Adaptation incrémentale de
+    modèles de traduction neuronaux. Actres de la 24ème Conférence sur
+    le Traitement Automatique des Langues Naturelles (TALN), 2017.
+
+Conditions sur les candidatures et Profil recherché:
+Niveau demandé: Master 2, Ingénieur
+Durée : 4-6 mois
+Rémunération : entre 700 ¤ et 1300 ¤ selon la formation
+Compétences requises :
+-   environnement de travail : linux
+-   maîtrise de langages de programmation : Python, C++, Java
+-   expérience avec une bibliothèque de type Tensorflow, PyTorch, etc.
+-   notion de base en apprentissage automatique et en réseaux de
+    neurones
+-   notions de base en traitement automatique des langues.
+
+Modalité de dépôt de candidature :
+Les candidatures (CV + Lettre de motivation) sont à envoyer le plus rapidement possible à Nasredine Semmar (nasredine.semmar@cea.fr).
+
+Contacts pour plus d'information :
+Nasredine SEMMAR,
+Email: nasredine.semmar@cea.fr,
+Tél: +33 (0)1 69 08 01 46

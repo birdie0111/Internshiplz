@@ -12,29 +12,32 @@ if ($conn->connect_error) {
 }
 
 // vider la base de donnée
-$sql = "DELETE FROM `testAffich` WHERE 1";
+$sql = "DELETE FROM `InfoStage` WHERE 1";
 $retval = mysqli_query( $conn, $sql );
 if(! $retval ) {
   die('Erreur: ' . mysqli_error($conn));
 }
 
 // obtenir les résultats de webscraping
-$dir = "text_files";
+$dir = "../text_files";
 $i = 0;
 $NdE = "";
 $Filiere = "";
+$TempsStage = "";
+$Anglais = 0;
+$Teletravail = 0;
+$Remuneration = 0;
+$Recommandation = 0;
 if (is_dir($dir)) {
     $dh = opendir($dir);
     while (($file = readdir($dh)) !== false) {
         // les informations à obtenir
         if (!is_dir($file)) {
             $hfic = fopen("$dir/$file", "r");
-            $file = str_replace(".txt",".html",$file);
-            $Path = "fichier_html/$file"; # ouvrir les fichier .html
+            $path = "text_files/$file"; # ouvrir les fichier .txt
             while ($ligne = fgets($hfic)) {
                 // echo "$ligne<br/>";
                 // echo "<tr><td> contenu </td><td> contenu </td></tr>";
-                
                 if (strpos($ligne, "Titre: ") !== false) {
                     $i = $i + 1;
                     $titre = str_replace("Titre: ", "", $ligne);
@@ -78,14 +81,37 @@ if (is_dir($dir)) {
                         $Filiere = $Filiere . "Linguistique ";
                     }
                 }
+                if (preg_match("/(?i)janvier|février|\bmars\b|avril|\bmai\b|\bjuin\b|juillet|août|septembre|octobre|novembre|décembre|january|february|\bmarch\b|april|\bmay\b|june|july|august|september|october|november|december/", $ligne)) {
+                    if (strstr($TempsStage, $ligne) == false) {
+                        $TempsStage = $TempsStage . $ligne ;
+                    }
+                }
+                if (preg_match("/(?i)anglais|english/", $ligne)) {
+                    $Anglais = 1 ;
+                }
+                if (preg_match("/(?i)télétravail/", $ligne)) {
+                    $Teletravail = 1 ;
+                }
+                if (preg_match("/(?i)rémunération|gratification|salaire/", $ligne)) {
+                    $Remuneration = 1 ;
+                }
+                if (preg_match("/(?i)lettre de recommandation/", $ligne)) {
+                    $Recommandation = 1 ;
+                }
             }
+            $TempsStage = str_replace("'","''",$TempsStage);
             // écrire dans la base de donnée
-            $sql = "INSERT INTO `testAffich` (`Numéro`, `Titre`, `Date`, `Organisme`, `Niveaux_études`, `Filière`, `Lieu`, `realPath`) VALUES ($i, '$titre', '$date', '$inst', '$NdE', '$Filiere', '$lieu', '$Path')";
+            $sql = "INSERT INTO `InfoStage` (`Numéro`, `Titre`, `Date`, `Organisme`, `Niveaux_études`, `Filière`, `Lieu`, `realPath`, `TempsStage`, `Anglais`, `Télétravail`, `Rémunération`, `Recommandation`) VALUES ($i, '$titre', '$date', '$inst', '$NdE', '$Filiere', '$lieu', '$path', '$TempsStage', '$Anglais', '$Teletravail', '$Remuneration', '$Recommandation')";
             // vérifier l'action d'écrire
             if ($conn->query($sql) === TRUE) {
                 // vider les variables avant la boucle
                 $NdE = "";
                 $Filiere = "";
+                $TempsStage = "";
+                $Anglais = 0;
+                $Teletravail = 0;
+                $Remuneration = 0;
+                $Recommandation = 0;
             } else {
                 echo "Erreur: " . $sql . "<br>" . $conn->error;
             }
@@ -96,27 +122,24 @@ if (is_dir($dir)) {
 }
 
 // afficher les résultats sur la page web
-$sql = "SELECT (@j:=@j+1) j, `Titre`,`Date`, `Organisme`, `Niveaux_études`, `Filière`, `Lieu`, `realPath` FROM `testAffich`,(SELECT @j:=0) as j ORDER BY `Date` DESC";
+$sql = "SELECT (@j:=@j+1) j, `Titre`,`Date`, `Organisme`, `Niveaux_études`, `Filière`, `Lieu`, `realPath` FROM `InfoStage`,(SELECT @j:=0) as j ORDER BY `Date` DESC";
 $result = mysqli_query($conn, $sql);
 while ($row = mysqli_fetch_row($result)) {
     echo '<tr>';
     $i = 0 ;
     foreach ($row as $data) {
-        if ($i == 1) {  # ajouter href="XXX.txt" dans le 2e colonne
-            // obtenir le path du fichier .txt
-            // SELECT `realPath` FROM `testAffich` WHERE `Titre` REGEXP $data 
-            //$seg = str_replace("'","''",$data);
-            //$sql = "SELECT realPath FROM testAffich WHERE Titre LIKE %$seg% ";
-            //$path = mysqli_query($conn, $sql);
-            //echo "<td> <a href=\"".$path."\">".$data."</a></td>";
-            echo "<td>{$data}</td>";
+        if ($i == 1) {        # ajouter href="XXXXX.html" dans le 2e colonne
+            $file = str_replace(".txt",".html",$row[7]);
+            $file = str_replace("text_files","fichier_html",$file);
+            echo "<td> <a href=\"".$file."\">".$data."</a></td>";
             $i = $i + 1 ;
-        } elseif ($i == 7) {
-            echo "<td> <a class=\"fakePath\" href=\"".$data."\">".$data."</a></td>";
+        } elseif ($i == 7) {  # ajouter href="XXXXX.txt" dans le dernier colonne
+            $file = str_replace("text_files/","",$data);
+            echo "<td> <a class=\"realPath\" href=\"".$data."\">".$file."</a></td>";
         } else {
             echo "<td>{$data}</td>";
             $i = $i + 1 ;
-        }sftp:
+        }
     }
     $i = 0 ;
     echo '</tr>';

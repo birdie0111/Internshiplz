@@ -55,7 +55,7 @@ $result = mysqli_query($connect,$query);
 if ($result->num_rows == 0){
     print " 
             <div id='no_account'>
-                <p>Votre username pas trouve, creez un compte plz</p>
+                <p>Votre login n'est pas trouvé, veuillez créer un compte svp.</p>
                 <button id = 'new_account' class = 'moyen' >create</button>
             </div>"
             ;
@@ -69,7 +69,7 @@ if ($result->num_rows == 0){
         echo "Login succeeded";
         
         $connect->close();
-        header('Location: /~liuqinyu/connected.php?connected='.$username);
+        header('Location: /~tangyuhe/connected.php?connected='.$username);
     }
 }
 

@@ -1,7 +1,9 @@
 Titre: Amélioration d’un ChatBot / Service d’automatisations sémantiques
-Date: 09/05/2022
+Date: 2022-05-09
 Organisme: Besoindinfos
 Lieu: Télétravail
+
+
 Société : Besoin d'infos
 Contact : Renaud lacroix
 Mail : renaud_lacroix@yahoo.fr
@@ -16,13 +18,10 @@ Gratification de stage :
 
 ##  À propos
 
-L'entreprise : Besoindinfos est une entreprise internet qui a
-développé une technologie d'automatisations sémantiques et de dialogue
-automatisé (langage naturel, scénarisation).
+L'entreprise : Besoindinfos est une entreprise internet qui a développé une technologie d'automatisations sémantiques et de dialogue automatisé (langage naturel, scénarisation).
 
 Dans ce cadre, nous sommes en train de mettre en place un Chatbot
-Universel capable de répondre à toute sorte de questions et de
-dialoguer avec l'internaute :
+Universel capable de répondre à toute sorte de questions et de dialoguer avec l'internaute :
 
 - Un ChatBot universel : [www.moomoot.fr](http://www.moomoot.fr/)
 - Une offre professionnelle pour proposer des automatisations
@@ -34,13 +33,9 @@ dialoguer avec l'internaute :
 
 Le stagiaire linguiste aura comme mission : 
 
-Participer à l'amélioration globale de nos outils propriétaires
-d'analyse sémantique à travers des tâches très opérationnelles de
-réglages et d'enrichissements sémantiques et de réflexion / R&D
+Participer à l'amélioration globale de nos outils propriétaires d'analyse sémantique à travers des tâches très opérationnelles de réglages et d'enrichissements sémantiques et de réflexion / R&D
 
-- Créer des Intentions et motifs et leurs réponses
-*objectif : détecter un motif/intention, extraire des informations,
-générer un texte)*
+- Créer des Intentions et motifs et leurs réponses *objectif : détecter un motif/intention, extraire des informations, générer un texte)*
 
     - Créer des modèles de matching utilisant notre langage dédié
     - Spécifier les variables qui manquent
@@ -84,4 +79,4 @@ générer un texte)*
   public
 
 - Maîtrise des outils bureautique Office / Google suite + Navigateurs
-  Chrome et Firefox
+  Chrome et Firefox 

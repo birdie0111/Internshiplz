@@ -1,46 +1,23 @@
 Titre: Machine Learning pour les réseaux sociaux et les images
-Date: 08/03/2022
+Date: 2022-03-08
 Organisme: CERES
 Lieu: Paris
-*Offre de Stage en Machine Learning pour les réseaux sociaux et les
-images, Sorbonne Université*
 
-Le stage s'inscrit dans une recherche conduite à CERES (Centre
-d'Expérimentation en méthodes numériques pour les recherches en SHS),
-Faculté des Lettres - Sorbonne Université, en partenariat avec
-l'Université Paris 8.
+
+*Offre de Stage en Machine Learning pour les réseaux sociaux et les images, Sorbonne Université*
+
+Le stage s'inscrit dans une recherche conduite à CERES (Centre d'Expérimentation en méthodes numériques pour les recherches en SHS),
+Faculté des Lettres - Sorbonne Université, en partenariat avec l'Université Paris 8.
 
 *Contexte*
 
-La recherche d'information est un domaine de recherche en perpétuel
-mutation à cause de la transformation numérique. Le volume des données
-produit via les outils numériques connectés excède la capacité humaine
-de les traiter manuellement et un recours à l'intelligence artificielle
-(IA) devient incontournable. Toutefois, ces modèles intelligents issus
-d'IA doivent garantir au moins le passage à l'échelle, la compréhension
-des données hétérogènes et la catégorisation sémantique de ces données.
-Dans ce contexte, la recherche de similitudes au sein d'un large corpus
-multimédia où se mêlent images, vidéos et textes (structurés ou non)
-est une tâche très complexe.
-Dans le cadre d'une recherche sur les controverses en ligne, nous nous
-intéressons à la circulation d'informations et de discours dans les
-réseaux sociaux numériques (Twitter, TikTok, Instagram par exemple)
-sous différentes formes (textes, images, vidéo). Plus spécifiquement,
-nous cherchons à capturer, caractériser, analyser et expliquer les
-déclinaisons iconographiques, textuelles et narratives des images à
-mesure qu'elles circulent dans les RSN.
+La recherche d'information est un domaine de recherche en perpétuel mutation à cause de la transformation numérique. Le volume des données produit via les outils numériques connectés excède la capacité humaine de les traiter manuellement et un recours à l'intelligence artificielle (IA) devient incontournable. Toutefois, ces modèles intelligents issus d'IA doivent garantir au moins le passage à l'échelle, la compréhension des données hétérogènes et la catégorisation sémantique de ces données.
+Dans ce contexte, la recherche de similitudes au sein d'un large corpus multimédia où se mêlent images, vidéos et textes (structurés ou non) est une tâche très complexe.
+Dans le cadre d'une recherche sur les controverses en ligne, nous nous intéressons à la circulation d'informations et de discours dans les réseaux sociaux numériques (Twitter, TikTok, Instagram par exemple) sous différentes formes (textes, images, vidéo). Plus spécifiquement, nous cherchons à capturer, caractériser, analyser et expliquer les déclinaisons iconographiques, textuelles et narratives des images à mesure qu'elles circulent dans les RSN.
 
 *Sujet et missions*
 
-Quand il s'agit d'une image, celle-ci peut subir différentes
-transformations faisant appel à de nombreux outils de traitement
-d'images. Ces traitements peuvent être simples et agissent par exemple
-sur les couleurs, ou encore sur la répartition spatiale des pixels (le
-recadrage, le découpage, etc.), ou bien plus complexes afférant à des
-outils : de génération d'images à partir de motifs d'une image de
-référence ; de substitution de l'image source ; de l'augmentation de
-l'image source par une caricature, un slogan, un tag, une image
-codifiée, voire même une nouvelle image.
+Quand il s'agit d'une image, celle-ci peut subir différentes transformations faisant appel à de nombreux outils de traitement d'images. Ces traitements peuvent être simples et agissent par exemple sur les couleurs, ou encore sur la répartition spatiale des pixels (le recadrage, le découpage, etc.), ou bien plus complexes afférant à des outils : de génération d'images à partir de motifs d'une image de référence ; de substitution de l'image source ; de l'augmentation de l'image source par une caricature, un slogan, un tag, une image codifiée, voire même une nouvelle image.
 
 *Travail demandé*
 -   cibler des événements clés sur les réseaux sociaux : constituer des
@@ -70,17 +47,8 @@ codifiée, voire même une nouvelle image.
 
 *Profil du/de la candidate :*
 
-Vous êtes étudiant·e dans un Master 2 en informatique, sciences des
-données ou statistiques, ou étudiant·e· dans une école d'ingénieur
-(informatique). Vous êtes enthousiaste pour la recherche, vous aimez
-comprendre en profondeur les problèmes et trouver des solutions
-élégantes. Vous êtes intéressé·e par l'intelligence artificielle, et
-plus précisément l'apprentissage automatique des techniques
-d'optimisation d'analyse de données. Vous avez un intérêt pour le
-domaine des sciences humaines et sociales.
+Vous êtes étudiant·e dans un Master 2 en informatique, sciences des données ou statistiques, ou étudiant·e· dans une école d'ingénieur (informatique). Vous êtes enthousiaste pour la recherche, vous aimez comprendre en profondeur les problèmes et trouver des solutions élégantes. Vous êtes intéressé·e par l'intelligence artificielle, et plus précisément l'apprentissage automatique des techniques d'optimisation d'analyse de données. Vous avez un intérêt pour le domaine des sciences humaines et sociales.
 
 
-Candidature à adresser à virginie.julliard@sorbonne-universite.fr ;
-n.mellouli@iut.univ-paris8.fr et orion.alie@gmail.com
-ayant pour objet « Candidature Stage CERES-Semiosis »
+Candidature à adresser à virginie.julliard@sorbonne-universite.fr ; n.mellouli@iut.univ-paris8.fr et orion.alie@gmail.com ayant pour objet « Candidature Stage CERES-Semiosis »
 

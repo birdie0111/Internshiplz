@@ -11,8 +11,12 @@ body {
     background: rgb(220, 209, 205, 0.62);
     color: #fff;
     border-radius: 5px;
-    font-size: 19px;
+    font-size: 20px;
     width: 700px;
+}
+
+.a-text p {
+    line-height: 120%;
 }
 
 .a-text1 {
@@ -20,8 +24,12 @@ body {
     background: rgb(220, 209, 205, 0.62);
     color: #fff;
     border-radius: 5px;
-    font-size: 19px;
+    font-size: 20px;
     padding: 10px;
+}
+
+.a-text1 p {
+    line-height: 120%;
 }
 
 .a-img1 {
@@ -63,7 +71,7 @@ body {
     background-position: center center;
 }
 
-/*——————————————————————————————————————————————————————————————————————————顶部状态栏——div id="begin"————*/
+/*————————————————————————————————————————————————————————————————————————————div id="begin"————*/
 #begin {
     background: rgb(220, 209, 205, 0.62);
     letter-spacing:2px;
@@ -75,7 +83,7 @@ body {
     font-size: 20px;
     color: #fdfdfd;
 }
-/*—————————————————————————————————————选项卡—————————————————————————————*/
+/*—————————————————————————————————————Pages—————————————————————————————*/
 #menu li:hover{
     background-color: rgba(163, 121, 43, 0.61);
     color: white;
@@ -90,7 +98,7 @@ body {
     color: white;
 }
 
-/*—————————————————————————————————————右上角账户状态——————————————————————*/
+/*—————————————————————————————————————Statut du compte—————————————————————*/
 #user {
     border: rgb(206,192,148);
     border-style: dashed;
@@ -100,9 +108,9 @@ body {
     color: white;
 }
 
-/*————————————————————————————————————————————————————————————————————————介绍与登录页面——div id="accueil"————*/
+/*——————————————————————————————————————————————————————————————————————————div id="accueil"————*/
 
-/*—————————————————————————————————————介绍板块————————————————————————*/
+/*—————————————————————————————————————Intro————————————————————————*/
 h1 {
     font-family: comic sans ms;
     font-size: 22px;
@@ -114,20 +122,15 @@ h2 {
     color: rgb(83, 71, 59);
     margin-bottom: -5px;
 }
-#intro p {
-    font-family: open sans;
-    font-size: 20px;
-    color:#695d46;
+
+h3 {
+    font-family: comic sans ms;
+    font-size: 18px;
+    color: rgb(83, 71, 59);
+    margin-bottom: -5px;
 }
 
-a:link{
-    color:#fff;
-}
-
-a:visited{
-    color:#fff;
-}
-/*—————————————————————————————————————账户板块————————————————————————*/
+/*—————————————————————————————————————compte————————————————————————*/
 #compte {
     border-radius: 5px;
     background-color: rgb(220, 209, 205, 0.62);
@@ -151,7 +154,7 @@ a:visited{
 #no_account p{
     color:rgb(255, 255, 255);
 }
-/*———————————账户板块下——按钮板块——————————————————————*/
+/*—————————————button type moyen——————————————————————*/
 .moyen {
     font-size: 18px;
     background-color:rgba(163, 121, 43, 0.61);;
@@ -165,9 +168,9 @@ a:visited{
     box-shadow: 0px 2px 0px 0px rgba(0,0,0,.2);
     top: 1px;
 }
-/*————————————————————————————————————————————————————————————————————————搜索与下载页面——div id="recherche"————*/
+/*——————————————————————————————————————————————————————————————————————————div id="recherche"————*/
 
-/*—————————————————————————————————————操作板块————————————————————————*/
+/*—————————————————————————————————————options————————————————————————*/
 #options {
     /*   深蓝  background-color: rgb(115,187,173);  */
     /*   淡蓝  background-color: rgb(163,231,218);  */
@@ -180,13 +183,13 @@ a:visited{
     background-color: rgb(220, 209, 205, 0.62);
     color: white;
 }
-/*———————————操作板块下——按钮板块——————————————————————*/
+/*—————————————button type grand——————————————————————*/
 button.grand {
-    background: linear-gradient(to bottom, #4eb5e5 0%,#389ed5 100%);
+    background: linear-gradient(to bottom, rgb(158, 187, 35) 5%,rgb(134, 165, 2) 100%);
     border: none;
     border-radius: 5px;
     position: relative;
-    border-bottom: 4px solid #2b8bc6;
+    border-bottom: 4px solid rgba(82, 95, 3,0.5);
     color: #fbfbfb;
     font-weight: 300;
     font-family: comic sans ms;
@@ -209,10 +212,10 @@ button.grand:after {
     width: 0;
     height: 0;
     display: block;
-    border-top: 15px solid #187dbc;
-    border-bottom: 15px solid #187dbc;
+    border-top: 15px solid rgb(82, 95, 3);
+    border-bottom: 15px solid rgb(82, 95, 3);
     border-left: 16px solid transparent;
-    border-right: 20px solid #187dbc;
+    border-right: 20px solid rgb(82, 95, 3);
     position: absolute;
     opacity: 0.6; 
     right: 0;
@@ -220,7 +223,7 @@ button.grand:after {
     border-radius: 0 5px 5px 0;  
 }
 
-/*—————————————————————————————————————内容板块————————————————————————*/
+/*—————————————————————————————————————contenu————————————————————————*/
 #resultat{
     color:white;
 }
@@ -231,7 +234,7 @@ button.grand:after {
     font-size: 18px;
 }
 
-/*————————————————————————————————————————————————————————————————————————搜索与下载页面——div id="discussion"————*/
+/*——————————————————————————————————————————————————————————————————————————div id="discussion"————*/
 #discussion{
     color: white;
 }

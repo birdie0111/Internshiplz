@@ -1,0 +1,41 @@
+Titre: Génération automatique de hashtags pour des messages textuels courts issus de Twitter
+Date: 2022-01-17
+Organisme: LS2N
+Lieu: Nantes
+
+
+Proposition de stage - 2022
+
+Génération automatique de hashtags pour des messages textuels courts issus de Twitter
+
+Niveau : Master 2
+
+Équipe : TALN - Traitement Automatique du Langage Naturel
+
+Durée : 6 mois - Début : Février 2022
+
+Salaire : 600 euros/mois environ
+
+Profil du candidat : Le stage proposé correspond à un profil bac+5
+(Master 2 ou équivalent). Il doit maîtriser au moins un langage de programmation objet courant (Java, C++...) et un langage de script (Python, Perl...). En outre, des cours ou expériences liés au sujet (traitement automatique de langage, fouille de données, apprentissage automatique, réseaux complexes...) seraient appréciés.
+
+Résumé du stage :
+
+L'objectif du stage est de proposer des approches originales permettant de générer automatiquement des hashtags sur un message (ici, tweet) à partir de son contenu textuel et des méta-données associées. Il s'agira de mettre l'accent sur la capacité du système à produire des hashtags complémentaires au texte, c.-à-d. qui n'existent pas directement dans le contenu textuel. Afin de mener à bien les expériences, un corpus a déjà été collecté et un premier système de type sequence-to-sequence (seq2seq) a également été mis en place. Globalement, trois sous-objectifs sont visés : 1) terminer et compléter l'évaluation du système seq2seq et en réaliser une étude qualitative, 2) compléter l'état de l'art sur le sujet de la génération de hashtags/mots-clés et proposer d'autres approches, 3) intégrer les méta-données des tweets au sein d'une architecture "multimodale" (i.e. qui intègrera ici les méta-données au contenu textuel).
+
+Mots-clés :
+
+Traitement automatique des Langues (TAL), Indexation, Apprentissage automatique, Enrichissement de documents, Réseaux sociaux,
+Métadonnées.
+
+Les candidatures doivent être adressées à :
+
+    Florian Boudin (florian.boudin@univ-nantes.fr)
+    Richard Dufour (richard.dufour@univ-nantes.fr)
+
+et doivent inclure :
+
+- un CV détaillé (formation et expériences en recherche)
+- les notes de Licence et de Master
+- éventuellement un lien vers des réalisations personnelles si disponible (ex : github)
+
