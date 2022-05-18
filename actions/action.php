@@ -24,18 +24,19 @@ if ($conn->connect_error) {
 //$sql = " SELECT * FROM `testAffich` WHERE `Date` LIKE '$d' AND `Filière` LIKE '$f' AND `Niveaux_études` LIKE '$m' AND `Lieu` LIKE '$l' ";
 //$sql = " SELECT * FROM `testAffich` WHERE `Niveaux_études` IN ('Master 2') AND `Filière` IN ('TAL')
 $sql = "SELECT (@j:=@j+1) j, `Titre`,`Date`, `Organisme`, `Niveaux_études`, `Filière`, `Lieu`, `realPath` FROM `InfoStage`,(SELECT @j:=0) as j WHERE `Niveaux_études` REGEXP '$m' AND `Filière` REGEXP '$f' AND `TempsStage` REGEXP '$temps' AND `Anglais` LIKE '%$a%' AND `Télétravail` LIKE '%$tele%' AND `Rémunération` LIKE '%$r%' AND `Recommandation` LIKE '%$l%' ORDER BY `Date` DESC ";
+// afficher seulement 8 colonnes pour rester lisible
 
 $result = mysqli_query($conn, $sql);
 while ($row = mysqli_fetch_row($result)) {
     echo '<tr>';
     $i = 0 ;
     foreach ($row as $data) {
-        if ($i == 1) { 
+        if ($i == 1) {          # ajouter href="XXXXX.html" dans le 2e colonne
             $file = str_replace(".txt",".html",$row[7]);
             $file = str_replace("text_files","fichier_html",$file);
             echo "<td> <a href=\"".$file."\">".$data."</a></td>";
             $i = $i + 1 ;
-        } elseif ($i == 7) {
+        } elseif ($i == 7) {    # ajouter href="XXXXX.txt" dans le dernier colonne
             $file = str_replace("text_files/","",$data);
             echo "<td> <a class=\"fakePath\" href=\"".$data."\">".$file."</a></td>";
         } else {

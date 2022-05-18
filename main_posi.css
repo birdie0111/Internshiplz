@@ -3,7 +3,7 @@ body {
     flex-direction:column;
 }
 
-/*——————————————————————————————————————————————————————————————————————————顶部状态栏——div id="begin"————*/
+/*————————————————————————————————————————————————————————————————————————————div id="begin"————*/
 #begin {
     display: flex;
     letter-spacing:2px;
@@ -11,7 +11,7 @@ body {
 	padding : 5px 5px 5px 5px;
     height: 30px;
 }
-/*—————————————————————————————————————左上角UGA图标——————————————————————*/
+/*—————————————————————————————————————UGA icône——————————————————————*/
 #icone {
     position:relative;
     display: flex;
@@ -22,7 +22,7 @@ body {
     width:95%;
     height:auto;
 }
-/*—————————————————————————————————————选项卡—————————————————————————————*/
+/*—————————————————————————————————————Pages—————————————————————————————*/
 #menu {
     display: flex;
     justify-content: space-around;
@@ -31,7 +31,7 @@ body {
 #menu li {
     padding : 1px 20px 5px 20px;
 }
-/*—————————————————————————————————————右上角账户状态——————————————————————*/
+/*—————————————————————————————————————Statut du compte——————————————————————*/
 #user {
     position:relative;
     right:1%;
@@ -56,24 +56,34 @@ body {
     text-align: left;
 }
 
+#ins_form {
+    text-align: center;
+    left: 30%;
+}
+
+#no_account {
+    text-align: 30%;
+    left:30%
+}
+
 #form_login {
     display: flex;
     flex-direction:column;
     padding-bottom: 20px;
     align-items: center;
 }
-/*———————————账户板块下——按钮板块——————————————————————*/
+/*—————————————button type moyen——————————————————————*/
 .moyen {
     width: 150px;
     margin: 10px 10px 10px 10px;
 }
 
-/*————————————————————————————————————————————————————————————————————————搜索与下载页面——div id="recherche"————*/
+/*——————————————————————————————————————————————————————————————————————————div id="recherche"————*/
 #recherche {
     display: none;
     position:relative;
 }
-/*—————————————————————————————————————操作板块————————————————————————*/
+/*—————————————————————————————————————options————————————————————————*/
 #options {
     position:relative;
     display: flex;
@@ -101,7 +111,7 @@ form {
     display: flex;
     align-items:center;
 }
-/*———————————操作板块下——按钮板块——————————————————————*/
+/*—————————————button——————————————————————*/
 #operer {
     float:right;
     display: flex;
@@ -109,7 +119,7 @@ form {
     align-items:center;
     padding : 10px 5px 0px 5px;
 }
-/*—————————————————————————————————————内容板块————————————————————————*/
+/*—————————————————————————————————————contenu————————————————————————*/
 #resultat {
     width: 83%;
     padding-bottom: 20px;
@@ -123,7 +133,7 @@ form {
     padding-left: 3%;
 }
 
-/*————————————————————————————————————————————————————————————————————————搜索与下载页面——div id="discussion"————*/
+/*——————————————————————————————————————————————————————————————————————————div id="discussion"————*/
 #discussion {
     display: none;
 }

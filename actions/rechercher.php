@@ -128,18 +128,12 @@ while ($row = mysqli_fetch_row($result)) {
     echo '<tr>';
     $i = 0 ;
     foreach ($row as $data) {
-        if ($i == 1) {  # ajouter href="XXX.txt" dans le 2e colonne
-            // obtenir le path du fichier .txt
-            // SELECT `realPath` FROM `testAffich` WHERE `Titre` REGEXP $data 
-            //$seg = str_replace("'","''",$data);
-            //$sql = "SELECT realPath FROM testAffich WHERE Titre LIKE %$seg% ";
-            //$path = mysqli_query($conn, $sql);
+        if ($i == 1) {        # ajouter href="XXXXX.html" dans le 2e colonne
             $file = str_replace(".txt",".html",$row[7]);
             $file = str_replace("text_files","fichier_html",$file);
             echo "<td> <a href=\"".$file."\">".$data."</a></td>";
-            //echo "<td>{$data}</td>";
             $i = $i + 1 ;
-        } elseif ($i == 7) {
+        } elseif ($i == 7) {  # ajouter href="XXXXX.txt" dans le dernier colonne
             $file = str_replace("text_files/","",$data);
             echo "<td> <a class=\"realPath\" href=\"".$data."\">".$file."</a></td>";
         } else {

@@ -12,7 +12,6 @@ if ($conn->connect_error) {
 }
 
 // afficher les résultats sur la page web
-// SELECT  count(Titre) FROM `testAffich`
 $sql = "SELECT count(Titre) FROM `InfoStage`";
 $query = mysqli_query($conn, $sql);
 $result = mysqli_fetch_array($query);
