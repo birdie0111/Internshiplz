@@ -1,12 +1,14 @@
-from bs4 import BeautifulSoup
-from lxml import etree
-import requests
-import datetime
-import os, stat
-import chardet
-import sys
-import re
-import io
+from bs4 import BeautifulSoup   # retourne un parse-tree 
+                                # pour sélectionné par xpath
+from lxml import etree          # retourne un parse-tree pour 
+                                # sélectionné par xpath
+import requests                 # envoyer request HTTP
+import datetime                 # obtenir la date d'aujourd'hui
+import os, stat                 # changer le mod des fichiers
+import chardet                  # obtenir la valeur de encoding
+import sys                      # changer l'encodage du stdout
+import re                       # selectionner par regex
+import io                       # changer l'encodage du stdout
 
 #------------------------------------------------------------------------------------------définir dossiers text_files & fichier_html
 #           /home/IdL/2021/liuqinyu/public_html
@@ -27,6 +29,15 @@ url = "http://w3.erss.univ-tlse2.fr/membre/tanguy/offres.html#Stages"
 days = 20
 
 def get_posts(url):
+    '''
+    Retourner les urls des stages dans le site
+
+    Parameters:
+        url (str): url du site de stages
+
+    Returns:
+        real_urls (list str): une liste de urls des stages
+    '''
     posts = requests.get(url)
     posts.encoding = "utf-8"
 
@@ -41,6 +52,17 @@ def get_posts(url):
     return real_urls
 
 def get_content(real_urls, url):
+    '''
+    Parcourir les informations des stages, et ecrire dans fichiers .txt et .html
+    dans le serveur
+
+    Parameters:
+        url (str): url du site de stages
+        real_urls (list str): une liste de urls des stages
+
+    Returns:
+        None
+    '''
     half_url = "http://w3.erss.univ-tlse2.fr/membre/tanguy/"
     if(real_urls == []):
         print("no urls\n")
@@ -127,6 +149,16 @@ get_content(real_urls, url)
 url_lin = "https://www.linkedin.com/jobs/search?keywords=Nlp&location=France&locationId=&geoId=105015875&f_TPR=&f_JT=I"
 
 def get_posts_linkedin(url_lin):
+    '''
+    Parcourir les informations des stages, et ecrire dans fichiers .txt et .html
+    dans le serveur
+
+    Parameters:
+        url_lin (str): url du site de linked_in
+
+    Returns:
+        None
+    '''
     posts = requests.get(url_lin)
     posts.encoding = "utf-8"
 
@@ -206,15 +238,32 @@ for hrefStage in a :
     href = server + hrefStage.get('href')
     urls.append(href)
 
-# obtenir html du site Indeed
+
 def getUrl(urlhtml):
+    '''
+    Obtenir le code source en html du site
+
+    Parameters:
+        urlhtml (str): url du site de stages
+
+    Returns:
+        html (any): code source du site
+    '''
     response = requests.get(url=urlhtml)
     wb_data = response.text
     html = etree.HTML(wb_data) 
     return html
 
-# obtenir les titres des stages
 def getTitle(urlStage) : 
+    '''
+    Obtenir le titre de stage
+
+    Parameters:
+        urlStage (str): url du site de stages
+
+    Returns:
+        title[0] (str): le titre
+    '''
     htmlStage = getUrl(urlStage)
     title = htmlStage.xpath('//*[@id="viewJobSSRRoot"]/div[1]/div/div[3]/div/div/div[1]/div[1]/div[2]/div[1]/div[1]/h1/text()')
     #                        //*[@id="viewJobSSRRoot"]/div[1]/div/div[3]/div/div/div[1]/div[1]/div[3]/div[1]/div[1]/h1
@@ -223,8 +272,16 @@ def getTitle(urlStage) :
         title = htmlStage.xpath('//*[@id="viewJobSSRRoot"]/div[1]/div/div[3]/div/div/div[1]/div[1]/div[3]/div[1]/div[1]/h1/text()')
     return title[0] # avoir une liste avec un seul titre, pour obtenir le titre seulement, utiliser indice = 0
 
-# obtenir les institues des stages
 def getInst(urlStage):
+    '''
+    Obtenir l'institut de stage
+
+    Parameters:
+        urlStage (str): url du site de stages
+
+    Returns:
+        institue[0] (str): l'institue
+    '''
     htmlStage = getUrl(urlStage)
     institue = htmlStage.xpath('//*[@id="viewJobSSRRoot"]/div[1]/div/div[3]/div/div/div[1]/div[1]/div[2]/div[1]/div[2]/div/div/div/div[1]/div[2]/div//text()')
     if len(institue) == 0 : 
@@ -232,16 +289,32 @@ def getInst(urlStage):
     #                           //*[@id="viewJobSSRRoot"]/div[1]/div/div[3]/div/div/div[1]/div[1]/div[3]/div[1]/div[2]/div/div/div/div[1]/div[2]/div/a
     return institue[0]
 
-# obtenir les lieux des stages
 def getPlace(urlStage):
+    '''
+    Obtenir le lieu de stage
+
+    Parameters:
+        urlStage (str): url du site de stages
+
+    Returns:
+        place[0] (str): le lieu
+    '''
     htmlStage = getUrl(urlStage)
     place = htmlStage.xpath('//*[@id="viewJobSSRRoot"]/div[1]/div/div[3]/div/div/div[1]/div[1]/div[2]/div[1]/div[2]/div/div/div/div[2]/div/text()')
     if len(place) == 0 :
         place = htmlStage.xpath('//*[@id="viewJobSSRRoot"]/div[1]/div/div[3]/div/div/div[1]/div[1]/div[3]/div[1]/div[2]/div/div/div/div[2]/div/text()')
     return place[0]
 
-# obtenir les dates des stages
 def getDate(urlStage):
+    '''
+    Obtenir la date de stage
+
+    Parameters:
+        urlStage (str): url du site de stages
+
+    Returns:
+        Date (str): la date
+    '''
     htmlStage = getUrl(urlStage)
     dateChaine = htmlStage.xpath('//*[@id="viewJobSSRRoot"]/div[1]/div/div[3]/div/div/div[1]/div[1]/div[6]/div[2]//text()')
     if len(dateChaine) == 0 :
@@ -260,6 +333,16 @@ def getDate(urlStage):
             return Date
 
 def getContent(urlStage):
+    '''
+    Parcourir les informations des stages, et ecrire dans fichiers .txt et .html
+    dans le serveur
+
+    Parameters:
+        urlStage (str): url du site de stages
+
+    Returns:
+        None
+    '''
     htmlStage = getUrl(urlStage)
     head = htmlStage.xpath('//*[@id="viewJobSSRRoot"]/div[1]/div/div[3]/div/div/div[1]/div[1]/div[2]//text()')
     body = htmlStage.xpath('//*[@id="jobDescriptionText"]//text()')
