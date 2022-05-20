@@ -130,6 +130,14 @@ h3 {
     margin-bottom: -5px;
 }
 
+a:link{
+    color:#fff;
+}
+
+a:visited{
+    color:#fff;
+}
+
 /*—————————————————————————————————————compte————————————————————————*/
 #compte {
     border-radius: 5px;
