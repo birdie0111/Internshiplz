@@ -46,3 +46,4 @@ Project of M1S2, a website where you can find information of internships (or job
     main_style.css  # styles des éléments css
     index.php       # page avant la connection
     script.js       # js pour les boutons etc. avec fonction ajax
+    FichierHtml_style.css   #styles des éléments css pour les fichiers .html
